@@ -24,12 +24,12 @@
     "github_url": "",
     "keywords": [
       "3d-aware",
+      "dit",
       "physical",
       "text-to-video",
+      "video generation",
       "trajectory",
-      "dit",
-      "video synthesis",
-      "video generation"
+      "video synthesis"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -59,16 +59,16 @@
     ],
     "github_url": "",
     "keywords": [
-      "style",
-      "denoising",
-      "benchmark",
-      "autoregressive",
-      "video-to-video",
-      "efficient",
-      "video editing",
-      "diffusion model",
       "dit",
-      "video generation"
+      "video editing",
+      "video generation",
+      "efficient",
+      "video-to-video",
+      "style",
+      "diffusion model",
+      "denoising",
+      "autoregressive",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -99,12 +99,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "diffusion transformer",
-      "benchmark",
-      "autoregressive",
-      "architecture",
       "dit",
-      "video generation"
+      "diffusion transformer",
+      "video generation",
+      "architecture",
+      "autoregressive",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -137,9 +137,9 @@
     ],
     "github_url": "",
     "keywords": [
+      "video synthesis",
       "trajectory",
-      "dit",
-      "video synthesis"
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -175,11 +175,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "autonomous driving",
       "controllable",
-      "simulation",
       "video diffusion",
-      "video generation"
+      "video generation",
+      "autonomous driving",
+      "simulation"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -210,9 +210,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "super-resolution",
-      "temporal consistency",
       "talking head",
+      "temporal consistency",
+      "super-resolution",
       "identity",
       "dynamics",
       "avatar"
@@ -246,12 +246,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
       "streaming",
-      "autoregressive",
+      "video generation",
+      "evaluation",
       "architecture",
       "long video",
-      "video generation"
+      "autoregressive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -287,13 +287,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "benchmark",
+      "temporal consistency",
       "physical",
       "image-to-video",
-      "temporal consistency",
+      "i2v",
+      "evaluation",
       "dynamics",
-      "i2v"
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -323,12 +323,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "autonomous driving",
-      "controllable",
       "temporal consistency",
+      "controllable",
       "dit",
-      "video generation"
+      "video generation",
+      "autonomous driving",
+      "evaluation"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -361,13 +361,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "long video",
-      "benchmark",
-      "autoregressive",
-      "diffusion model",
       "trajectory",
+      "video generation",
       "video synthesis",
-      "video generation"
+      "diffusion model",
+      "long video",
+      "autoregressive",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -464,13 +464,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "distillation",
-      "diffusion transformer",
       "acceleration",
-      "diffusion model",
       "video diffusion",
+      "distillation",
       "dit",
-      "video generation"
+      "diffusion transformer",
+      "video generation",
+      "diffusion model"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -502,10 +502,10 @@
     "github_url": "https://github.com/linYDTHU/StableVelocity",
     "keywords": [
       "acceleration",
-      "text-to-video",
-      "dynamics",
+      "flow matching",
       "dit",
-      "flow matching"
+      "text-to-video",
+      "dynamics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -534,10 +534,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "long-form",
-      "long video",
       "efficient",
-      "video generation"
+      "long video",
+      "video generation",
+      "long-form"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -569,8 +569,8 @@
     "keywords": [
       "evaluation",
       "dynamics",
-      "efficient",
-      "video generation"
+      "video generation",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -633,11 +633,11 @@
     ],
     "github_url": "https://github.com/chengtao-lv/LightForcing",
     "keywords": [
-      "autoregressive",
-      "efficient",
       "video diffusion",
       "dit",
-      "video generation"
+      "video generation",
+      "autoregressive",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -669,12 +669,12 @@
     "github_url": "https://github.com/zerzerzerz/Euphonium",
     "keywords": [
       "distillation",
-      "efficient",
-      "text-to-video",
-      "dynamics",
-      "dit",
       "flow matching",
-      "video generation"
+      "dit",
+      "text-to-video",
+      "video generation",
+      "dynamics",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -704,8 +704,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
-      "4d generation"
+      "4d generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -735,11 +735,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "diffusion transformer",
-      "architecture",
       "video diffusion",
       "dit",
-      "video generation"
+      "diffusion transformer",
+      "video generation",
+      "architecture"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -770,8 +770,8 @@
     "github_url": "",
     "keywords": [
       "benchmark",
-      "text-to-video",
       "evaluation",
+      "text-to-video",
       "video generation"
     ],
     "citations": 0,
@@ -803,12 +803,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "physical",
-      "efficient",
-      "dynamics",
-      "diffusion model",
       "video diffusion",
-      "dit"
+      "dit",
+      "physical",
+      "diffusion model",
+      "dynamics",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -838,9 +838,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
+      "creative",
       "film",
-      "creative"
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -868,10 +868,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "video manipulation",
       "video editing",
-      "dit",
-      "identity"
+      "identity",
+      "video manipulation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -902,13 +902,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "motion control",
-      "human motion",
-      "dynamics",
-      "camera control",
-      "dit",
       "3d-aware",
-      "video generation"
+      "dit",
+      "video generation",
+      "dynamics",
+      "human motion",
+      "motion control",
+      "camera control"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -943,13 +943,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "style",
-      "world model",
-      "architecture",
       "dit",
+      "world model",
+      "video generation",
       "robotics",
-      "video generation"
+      "evaluation",
+      "architecture",
+      "style"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -980,12 +980,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "physical",
-      "simulation",
       "physical simulation",
-      "efficient",
       "dit",
-      "video generation"
+      "physical",
+      "video generation",
+      "simulation",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1014,8 +1014,8 @@
     "github_url": "",
     "keywords": [
       "super-resolution",
-      "dit",
-      "diffusion model"
+      "diffusion model",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1044,13 +1044,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "autonomous driving",
-      "world model",
       "temporal consistency",
-      "identity",
       "dit",
-      "video generation"
+      "world model",
+      "identity",
+      "video generation",
+      "autonomous driving",
+      "evaluation"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1076,12 +1076,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "autonomous driving",
-      "world model",
       "temporal consistency",
+      "world model",
       "identity",
       "trajectory",
-      "video generation"
+      "video generation",
+      "autonomous driving"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1122,13 +1122,13 @@
     "github_url": "",
     "keywords": [
       "layout",
-      "benchmark",
-      "autoregressive",
-      "diffusion model",
-      "identity",
       "video diffusion",
+      "identity",
+      "video generation",
+      "diffusion model",
       "long video",
-      "video generation"
+      "autoregressive",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1251,13 +1251,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "distillation",
-      "autoregressive",
       "interactive",
-      "diffusion model",
       "video diffusion",
+      "distillation",
       "dit",
-      "video generation"
+      "video generation",
+      "diffusion model",
+      "autoregressive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1301,13 +1301,13 @@
     ],
     "github_url": "",
     "keywords": [
+      "video diffusion",
+      "dit",
       "diffusion transformer",
       "image-to-video",
-      "architecture",
-      "diffusion model",
-      "video diffusion",
       "i2v",
-      "dit"
+      "diffusion model",
+      "architecture"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1333,14 +1333,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "simulation",
-      "physical",
-      "image-to-video",
-      "world model",
       "temporal consistency",
-      "dynamics",
-      "trajectory",
       "dit",
+      "world model",
+      "physical",
+      "trajectory",
+      "image-to-video",
+      "dynamics",
+      "simulation",
       "action-conditioned"
     ],
     "citations": 0,
@@ -1371,16 +1371,16 @@
     ],
     "github_url": "",
     "keywords": [
-      "controllable",
-      "benchmark",
-      "physical",
-      "physics",
-      "temporal consistency",
-      "efficient",
-      "video editing",
       "interactive",
+      "temporal consistency",
+      "controllable",
+      "dit",
+      "video editing",
+      "physical",
+      "efficient",
       "dynamics",
-      "dit"
+      "benchmark",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1438,10 +1438,10 @@
     "github_url": "",
     "keywords": [
       "distillation",
-      "denoising",
+      "video generation",
       "diffusion model",
-      "dynamics",
-      "video generation"
+      "denoising",
+      "dynamics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1471,13 +1471,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "long-form",
-      "streaming",
-      "autoregressive",
-      "world model",
-      "diffusion model",
       "interactive",
-      "video diffusion"
+      "video diffusion",
+      "streaming",
+      "world model",
+      "long-form",
+      "diffusion model",
+      "autoregressive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1507,15 +1507,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "simulation",
-      "physical",
       "physical simulation",
-      "physics",
-      "efficient",
-      "dynamics",
-      "diffusion model",
       "video diffusion",
-      "dit"
+      "dit",
+      "physical",
+      "diffusion model",
+      "simulation",
+      "dynamics",
+      "efficient",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1544,9 +1544,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "multi-modal",
       "evaluation",
       "architecture",
+      "multi-modal",
       "dit"
     ],
     "citations": 0,
@@ -1578,8 +1578,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "interactive",
-      "avatar"
+      "avatar",
+      "interactive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1609,10 +1609,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "t2v",
-      "text-to-video",
       "temporal consistency",
-      "video generation"
+      "text-to-video",
+      "video generation",
+      "t2v"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1645,12 +1645,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "physical",
       "multi-modal",
-      "text-to-video",
       "dit",
-      "video generation"
+      "physical",
+      "text-to-video",
+      "video generation",
+      "evaluation"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1689,13 +1689,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "human motion",
       "controllable",
-      "benchmark",
       "dit",
+      "video generation",
       "video synthesis",
-      "avatar",
-      "video generation"
+      "human motion",
+      "benchmark",
+      "avatar"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1721,10 +1721,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
       "diffusion model",
       "latent video",
-      "video diffusion"
+      "video diffusion",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1753,15 +1753,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "distillation",
-      "denoising",
-      "acceleration",
       "interactive",
-      "trajectory",
-      "dit",
+      "acceleration",
+      "distillation",
       "flow matching",
-      "video generation"
+      "dit",
+      "trajectory",
+      "video generation",
+      "evaluation",
+      "denoising"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1800,10 +1800,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "identity",
       "benchmark",
       "evaluation",
-      "video generation"
+      "video generation",
+      "identity"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1842,12 +1842,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "diffusion transformer",
-      "benchmark",
-      "architecture",
       "dit",
-      "video generation"
+      "diffusion transformer",
+      "video generation",
+      "evaluation",
+      "architecture",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1877,11 +1877,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "diffusion transformer",
-      "autoregressive",
-      "world model",
       "video diffusion",
-      "trajectory"
+      "world model",
+      "diffusion transformer",
+      "trajectory",
+      "autoregressive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1909,13 +1909,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "autoregressive",
       "temporal consistency",
-      "architecture",
       "dit",
-      "long video",
+      "video generation",
       "video synthesis",
-      "video generation"
+      "architecture",
+      "long video",
+      "autoregressive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1943,13 +1943,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
       "layout",
-      "image-to-video",
-      "diffusion model",
-      "identity",
       "video diffusion",
-      "i2v"
+      "identity",
+      "image-to-video",
+      "i2v",
+      "evaluation",
+      "diffusion model"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -1984,12 +1984,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "denoising",
-      "physical",
-      "efficient",
-      "diffusion model",
       "video diffusion",
-      "video generation"
+      "physical",
+      "video generation",
+      "diffusion model",
+      "denoising",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -2051,11 +2051,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "diffusion transformer",
-      "efficient",
       "video diffusion",
       "dit",
-      "long video"
+      "diffusion transformer",
+      "long video",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -2087,14 +2087,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "sound",
-      "video-to-video",
       "multi-modal",
-      "dynamics",
-      "diffusion model",
-      "identity",
       "video diffusion",
-      "dit"
+      "dit",
+      "identity",
+      "video-to-video",
+      "diffusion model",
+      "dynamics",
+      "sound"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -2128,15 +2128,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "human motion",
-      "audio-driven",
+      "talking head",
+      "video diffusion",
+      "dit",
+      "identity",
       "diffusion transformer",
       "video-to-video",
       "diffusion model",
-      "talking head",
-      "identity",
-      "video diffusion",
-      "dit"
+      "human motion",
+      "audio-driven"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -2164,15 +2164,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "simulation",
-      "physical",
       "physical simulation",
-      "physics",
-      "world model",
-      "architecture",
-      "dynamics",
       "dit",
-      "video generation"
+      "world model",
+      "physical",
+      "video generation",
+      "architecture",
+      "simulation",
+      "dynamics",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -2228,12 +2228,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "image-to-video",
+      "video restoration",
       "temporal consistency",
-      "text-to-video",
-      "diffusion model",
       "video diffusion",
-      "video restoration"
+      "text-to-video",
+      "image-to-video",
+      "diffusion model"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -2261,12 +2261,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "benchmark",
-      "autoregressive",
-      "efficient",
       "video diffusion",
+      "video generation",
+      "efficient",
       "video synthesis",
-      "video generation"
+      "autoregressive",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -2326,15 +2326,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "simulation",
-      "physical",
-      "physics",
-      "world model",
       "interactive",
-      "dynamics",
       "video prediction",
-      "video generation"
+      "world model",
+      "physical",
+      "video generation",
+      "evaluation",
+      "dynamics",
+      "simulation",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -2405,11 +2405,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
       "controllable",
-      "benchmark",
+      "dit",
+      "evaluation",
       "architecture",
-      "dit"
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -2442,15 +2442,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "benchmark",
-      "physical",
-      "concept",
       "world model",
+      "physical",
+      "video generation",
       "efficient",
-      "physics",
+      "evaluation",
+      "concept",
       "dynamics",
-      "video generation"
+      "benchmark",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -2549,10 +2549,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
       "diffusion model",
       "novel view",
-      "video diffusion"
+      "video diffusion",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -2582,14 +2582,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "t2v",
-      "evaluation",
-      "denoising",
-      "text-to-video",
-      "diffusion model",
-      "identity",
       "video diffusion",
-      "video generation"
+      "identity",
+      "text-to-video",
+      "video generation",
+      "evaluation",
+      "diffusion model",
+      "denoising",
+      "t2v"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -2694,10 +2694,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "world simulator",
       "world model",
-      "dynamics",
       "video generation",
+      "world simulator",
+      "dynamics",
       "style"
     ],
     "citations": 0,
@@ -2729,11 +2729,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "t2v",
-      "benchmark",
+      "video generation",
       "diffusion model",
       "dynamics",
-      "video generation"
+      "t2v",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -2764,13 +2764,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "denoising",
-      "autoregressive",
-      "efficient",
-      "diffusion model",
       "video diffusion",
       "dit",
-      "video generation"
+      "video generation",
+      "diffusion model",
+      "denoising",
+      "autoregressive",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -2804,8 +2804,8 @@
     "github_url": "",
     "keywords": [
       "evaluation",
-      "dit",
-      "video generation"
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -2835,10 +2835,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
       "efficient",
       "diffusion transformer",
-      "video generation"
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -2867,13 +2867,13 @@
     ],
     "github_url": "https://github.com/Tele-AI/TeleStyle",
     "keywords": [
-      "evaluation",
+      "temporal consistency",
+      "dit",
       "diffusion transformer",
       "video-to-video",
-      "temporal consistency",
-      "customization",
-      "dit",
-      "style"
+      "style",
+      "evaluation",
+      "customization"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -2906,9 +2906,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "autoregressive",
       "architecture",
-      "video generation"
+      "video generation",
+      "autoregressive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -2940,11 +2940,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "benchmark",
-      "video editing",
       "dit",
-      "video generation"
+      "video editing",
+      "video generation",
+      "evaluation",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -2978,11 +2978,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "diffusion model",
       "video diffusion",
-      "trajectory",
       "dit",
-      "video generation"
+      "trajectory",
+      "video generation",
+      "diffusion model"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3008,8 +3008,8 @@
     "github_url": "",
     "keywords": [
       "benchmark",
-      "text-to-video",
       "evaluation",
+      "text-to-video",
       "video generation"
     ],
     "citations": 0,
@@ -3040,11 +3040,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "denoising",
+      "dit",
       "physical",
-      "physics",
       "dynamics",
-      "dit"
+      "denoising",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3072,17 +3072,17 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "denoising",
-      "benchmark",
-      "physical",
-      "physics",
       "temporal consistency",
-      "text-driven video",
-      "video editing",
-      "dynamics",
       "dit",
-      "physics-aware"
+      "video editing",
+      "physical",
+      "evaluation",
+      "dynamics",
+      "denoising",
+      "physics-aware",
+      "benchmark",
+      "text-driven video",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3109,8 +3109,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "acceleration",
-      "efficient"
+      "efficient",
+      "acceleration"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3139,10 +3139,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "i2v",
-      "dit",
       "subject-driven",
-      "video generation"
+      "dit",
+      "video generation",
+      "i2v"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3183,13 +3183,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "long-form",
-      "evaluation",
       "creative",
-      "benchmark",
+      "long-form",
+      "video generation",
       "film",
+      "evaluation",
       "concept",
-      "video generation"
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3234,17 +3234,17 @@
     ],
     "github_url": "https://github.com/SkyworkAI/SkyReels-V3",
     "keywords": [
-      "evaluation",
-      "diffusion transformer",
-      "video-to-video",
       "temporal consistency",
-      "world model",
-      "architecture",
-      "identity",
       "dit",
+      "world model",
+      "diffusion transformer",
+      "identity",
+      "video generation",
+      "video-to-video",
+      "evaluation",
       "video synthesis",
-      "avatar",
-      "video generation"
+      "architecture",
+      "avatar"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3282,8 +3282,8 @@
     "keywords": [
       "benchmark",
       "novel view",
-      "temporal consistency",
-      "video generation"
+      "video generation",
+      "temporal consistency"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3313,13 +3313,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "distillation",
-      "benchmark",
-      "autoregressive",
-      "efficient",
       "temporal consistency",
+      "distillation",
+      "video generation",
+      "efficient",
       "architecture",
-      "video generation"
+      "autoregressive",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3353,9 +3353,9 @@
     "github_url": "",
     "keywords": [
       "long-form",
+      "video generation",
       "autoregressive",
-      "streaming",
-      "video generation"
+      "streaming"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3389,11 +3389,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "diffusion transformer",
       "acceleration",
-      "efficient",
       "video diffusion",
-      "video generation"
+      "diffusion transformer",
+      "video generation",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3424,13 +3424,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "video-to-video",
-      "video editing",
-      "diffusion model",
-      "novel view",
       "video diffusion",
       "dit",
-      "long video"
+      "video editing",
+      "video-to-video",
+      "diffusion model",
+      "long video",
+      "novel view"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3462,11 +3462,11 @@
     "github_url": "",
     "keywords": [
       "controllable",
+      "video diffusion",
+      "dit",
       "video-to-video",
       "diffusion model",
-      "novel view",
-      "video diffusion",
-      "dit"
+      "novel view"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3504,14 +3504,14 @@
     ],
     "github_url": "",
     "keywords": [
+      "world model",
+      "physical",
+      "video generation",
       "evaluation",
       "world simulator",
-      "benchmark",
-      "physical",
-      "world model",
       "architecture",
       "dynamics",
-      "video generation"
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3542,10 +3542,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "benchmark",
-      "efficient",
       "video diffusion",
+      "efficient",
       "diffusion model",
+      "benchmark",
       "novel view",
       "camera control"
     ],
@@ -3581,8 +3581,8 @@
     "keywords": [
       "benchmark",
       "text-to-video",
-      "autoregressive",
-      "video generation"
+      "video generation",
+      "autoregressive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3612,8 +3612,8 @@
     "github_url": "",
     "keywords": [
       "benchmark",
-      "dit",
-      "diffusion transformer"
+      "diffusion transformer",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3649,14 +3649,14 @@
     ],
     "github_url": "",
     "keywords": [
+      "dit",
+      "world model",
+      "physical",
+      "video generation",
+      "robotics",
       "evaluation",
       "simulation",
-      "benchmark",
-      "physical",
-      "world model",
-      "dit",
-      "robotics",
-      "video generation"
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3723,13 +3723,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "simulation",
-      "benchmark",
-      "physical",
-      "physics",
       "world model",
+      "physical",
+      "video generation",
+      "simulation",
       "physics-aware",
-      "video generation"
+      "benchmark",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3786,13 +3786,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "physical",
-      "survey",
       "world model",
+      "physical",
+      "video generation",
+      "evaluation",
+      "survey",
       "dynamics",
-      "medical",
-      "video generation"
+      "medical"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3822,15 +3822,15 @@
     "github_url": "",
     "keywords": [
       "controllable",
-      "physical",
-      "world model",
-      "dynamics",
-      "architecture",
-      "diffusion model",
       "video diffusion",
       "dit",
-      "action-conditioned",
-      "video generation"
+      "world model",
+      "physical",
+      "video generation",
+      "diffusion model",
+      "architecture",
+      "dynamics",
+      "action-conditioned"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3864,12 +3864,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
       "physical",
-      "benchmark",
+      "video generation",
       "efficient",
       "robotics",
-      "video generation"
+      "evaluation",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3901,10 +3901,10 @@
     ],
     "github_url": "",
     "keywords": [
+      "interactive",
+      "temporal consistency",
       "controllable",
       "world model",
-      "temporal consistency",
-      "interactive",
       "video generation"
     ],
     "citations": 0,
@@ -3937,9 +3937,9 @@
     "keywords": [
       "controllable",
       "video diffusion",
+      "dit",
       "diffusion model",
-      "camera control",
-      "dit"
+      "camera control"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -3975,8 +3975,8 @@
     "github_url": "",
     "keywords": [
       "trajectory",
-      "dit",
-      "video generation"
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4042,11 +4042,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "pose-guided",
-      "customization",
-      "dynamics",
       "video generation",
-      "style"
+      "style",
+      "dynamics",
+      "pose-guided",
+      "customization"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4072,12 +4072,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "diffusion transformer",
-      "simulation",
-      "autoregressive",
       "video diffusion",
       "dit",
-      "video generation"
+      "diffusion transformer",
+      "video generation",
+      "simulation",
+      "autoregressive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4112,9 +4112,9 @@
     ],
     "github_url": "https://github.com/zhangzaibin/spagent",
     "keywords": [
+      "interactive",
       "physical",
-      "dit",
-      "interactive"
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4146,8 +4146,8 @@
     "github_url": "",
     "keywords": [
       "evaluation",
-      "audio-driven",
-      "talking head"
+      "talking head",
+      "audio-driven"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4179,11 +4179,11 @@
     "github_url": "",
     "keywords": [
       "controllable",
-      "image-to-video",
-      "diffusion model",
       "video diffusion",
       "dit",
-      "video generation"
+      "video generation",
+      "image-to-video",
+      "diffusion model"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4221,11 +4221,11 @@
     "github_url": "",
     "keywords": [
       "distillation",
+      "dit",
       "streaming",
       "diffusion transformer",
-      "efficient",
-      "dit",
-      "video generation"
+      "video generation",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4281,12 +4281,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "sound",
       "interactive",
-      "diffusion model",
       "education",
       "dit",
-      "video generation"
+      "video generation",
+      "diffusion model",
+      "sound"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4315,11 +4315,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "t2v",
-      "text-to-video",
-      "dynamics",
       "dit",
-      "video generation"
+      "text-to-video",
+      "video generation",
+      "dynamics",
+      "t2v"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4354,9 +4354,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "distillation",
       "multi-modal",
       "rectified flow",
+      "distillation",
       "dit",
       "video generation"
     ],
@@ -4391,16 +4391,16 @@
     ],
     "github_url": "",
     "keywords": [
-      "denoising",
-      "simulation",
-      "benchmark",
-      "physical",
-      "body motion",
-      "concept",
-      "physics",
       "dit",
+      "physical",
+      "video generation",
+      "concept",
+      "simulation",
+      "denoising",
       "physics-aware",
-      "video generation"
+      "benchmark",
+      "physics",
+      "body motion"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4435,8 +4435,8 @@
     "keywords": [
       "evaluation",
       "architecture",
-      "dit",
-      "video generation"
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4466,10 +4466,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "physical",
-      "dit",
       "human motion",
-      "video generation"
+      "physical",
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4502,11 +4502,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "human motion",
-      "denoising",
-      "diffusion model",
       "video diffusion",
-      "video generation"
+      "video generation",
+      "diffusion model",
+      "human motion",
+      "denoising"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4584,11 +4584,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "denoising",
-      "physics",
-      "world model",
       "dit",
-      "video generation"
+      "world model",
+      "video generation",
+      "denoising",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4618,11 +4618,11 @@
     "github_url": "",
     "keywords": [
       "video diffusion",
-      "diffusion model",
-      "camera control",
-      "trajectory",
       "dit",
-      "video generation"
+      "trajectory",
+      "video generation",
+      "diffusion model",
+      "camera control"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4664,16 +4664,16 @@
     ],
     "github_url": "",
     "keywords": [
+      "interactive",
+      "temporal consistency",
       "distillation",
       "streaming",
-      "style",
-      "temporal consistency",
-      "efficient",
-      "architecture",
-      "interactive",
       "dit",
+      "video generation",
+      "style",
       "video synthesis",
-      "video generation"
+      "architecture",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4744,16 +4744,16 @@
     ],
     "github_url": "",
     "keywords": [
-      "distillation",
-      "denoising",
-      "efficient",
-      "text-to-video",
-      "diffusion model",
       "interactive",
       "video diffusion",
-      "trajectory",
+      "distillation",
       "dit",
-      "video generation"
+      "trajectory",
+      "text-to-video",
+      "video generation",
+      "diffusion model",
+      "denoising",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4782,12 +4782,12 @@
     "github_url": "",
     "keywords": [
       "controllable",
-      "efficient",
-      "diffusion model",
-      "trajectory",
       "dit",
+      "trajectory",
+      "video generation",
       "video synthesis",
-      "video generation"
+      "diffusion model",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4816,16 +4816,16 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "diffusion transformer",
-      "denoising",
-      "benchmark",
       "acceleration",
-      "efficient",
-      "architecture",
       "video diffusion",
       "dit",
-      "video generation"
+      "diffusion transformer",
+      "video generation",
+      "efficient",
+      "evaluation",
+      "architecture",
+      "denoising",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4853,15 +4853,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "autonomous driving",
       "controllable",
-      "physical",
-      "efficient",
-      "world model",
-      "dynamics",
-      "diffusion model",
       "video diffusion",
-      "dit"
+      "dit",
+      "world model",
+      "physical",
+      "autonomous driving",
+      "diffusion model",
+      "dynamics",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4889,12 +4889,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "motion control",
       "controllable",
       "physical",
-      "physics",
+      "video generation",
       "dynamics",
-      "video generation"
+      "motion control",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4929,12 +4929,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "physical",
-      "efficient",
       "temporal consistency",
+      "physical",
       "text-to-video",
+      "video generation",
       "dynamics",
-      "video generation"
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4962,11 +4962,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
       "creative",
-      "text-driven video",
       "interactive",
-      "dit"
+      "dit",
+      "evaluation",
+      "text-driven video"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -4992,10 +4992,10 @@
     "github_url": "",
     "keywords": [
       "physical",
-      "autoregressive",
-      "physics",
       "architecture",
-      "dynamics"
+      "dynamics",
+      "autoregressive",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5022,8 +5022,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "trajectory",
-      "benchmark"
+      "benchmark",
+      "trajectory"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5053,11 +5053,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "video-to-video",
-      "image-to-video",
+      "dit",
       "text-to-video",
-      "dynamics",
-      "dit"
+      "image-to-video",
+      "video-to-video",
+      "dynamics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5090,8 +5090,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "architecture",
       "efficient",
+      "architecture",
       "video generation"
     ],
     "citations": 0,
@@ -5122,8 +5122,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
-      "physics"
+      "physics",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5150,12 +5150,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "distillation",
-      "diffusion transformer",
       "acceleration",
-      "efficient",
+      "distillation",
       "dit",
-      "video generation"
+      "diffusion transformer",
+      "video generation",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5184,15 +5184,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "diffusion transformer",
-      "denoising",
-      "benchmark",
-      "image-to-video",
-      "diffusion model",
       "video diffusion",
+      "dit",
+      "diffusion transformer",
+      "image-to-video",
       "i2v",
-      "dit"
+      "evaluation",
+      "diffusion model",
+      "denoising",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5277,14 +5277,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "diffusion transformer",
-      "denoising",
-      "benchmark",
       "temporal consistency",
-      "text-to-video",
       "video diffusion",
-      "dit"
+      "dit",
+      "diffusion transformer",
+      "text-to-video",
+      "evaluation",
+      "denoising",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5315,11 +5315,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "sound",
-      "benchmark",
       "dit",
+      "video generation",
+      "sound",
       "long video",
-      "video generation"
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5350,10 +5350,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "autoregressive",
-      "dynamics",
       "efficient",
-      "video generation"
+      "dynamics",
+      "video generation",
+      "autoregressive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5387,16 +5387,16 @@
     ],
     "github_url": "",
     "keywords": [
-      "physical",
-      "concept",
-      "world model",
-      "physics",
       "interactive",
-      "dynamics",
       "dit",
-      "physics-aware",
+      "world model",
+      "physical",
+      "video generation",
       "robotics",
-      "video generation"
+      "concept",
+      "dynamics",
+      "physics-aware",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5432,12 +5432,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "image-to-video",
+      "flow matching",
       "trajectory",
       "text-to-video",
-      "i2v",
-      "flow matching",
-      "video generation"
+      "video generation",
+      "image-to-video",
+      "i2v"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5473,12 +5473,12 @@
     "github_url": "",
     "keywords": [
       "controllable",
-      "image-to-video",
-      "diffusion model",
-      "novel view",
       "video diffusion",
       "dit",
-      "video generation"
+      "video generation",
+      "image-to-video",
+      "diffusion model",
+      "novel view"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5523,8 +5523,8 @@
     "github_url": "https://github.com/aifinlab/UniFinEval",
     "keywords": [
       "benchmark",
-      "dit",
-      "evaluation"
+      "evaluation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5554,11 +5554,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "temporal consistency",
       "interactive",
+      "temporal consistency",
       "identity",
-      "avatar",
-      "video generation"
+      "video generation",
+      "avatar"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5594,14 +5594,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "simulation",
-      "physical",
-      "diffusion model",
-      "identity",
-      "multi-view video",
       "dit",
+      "identity",
+      "physical",
+      "video generation",
       "robotics",
-      "video generation"
+      "multi-view video",
+      "diffusion model",
+      "simulation"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5632,11 +5632,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "benchmark",
-      "autoregressive",
-      "camera control",
       "dit",
-      "video generation"
+      "video generation",
+      "autoregressive",
+      "benchmark",
+      "camera control"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5666,11 +5666,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "world model",
       "video diffusion",
-      "diffusion model",
+      "dit",
+      "world model",
       "dynamics",
-      "dit"
+      "diffusion model"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5698,14 +5698,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "benchmark",
-      "personalization",
-      "efficient",
       "multi-modal",
       "education",
       "dit",
-      "long video"
+      "efficient",
+      "evaluation",
+      "long video",
+      "personalization",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5771,8 +5771,8 @@
     "keywords": [
       "benchmark",
       "dynamics",
-      "dit",
-      "video generation"
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5798,10 +5798,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "autoregressive",
       "acceleration",
-      "dit",
-      "video generation"
+      "video generation",
+      "autoregressive",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5826,13 +5826,13 @@
     ],
     "github_url": "",
     "keywords": [
+      "video diffusion",
       "distillation",
       "diffusion transformer",
-      "efficient",
-      "architecture",
+      "video generation",
       "diffusion model",
-      "video diffusion",
-      "video generation"
+      "architecture",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5866,10 +5866,10 @@
     "github_url": "",
     "keywords": [
       "distillation",
-      "physical",
-      "dynamics",
       "dit",
-      "robotics"
+      "physical",
+      "robotics",
+      "dynamics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5898,13 +5898,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "t2v",
-      "denoising",
-      "efficient",
+      "video diffusion",
+      "dit",
       "text-to-video",
       "diffusion model",
-      "video diffusion",
-      "dit"
+      "denoising",
+      "t2v",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5936,9 +5936,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
+      "video synthesis",
       "architecture",
-      "video synthesis"
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -5967,9 +5967,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
       "diffusion model",
-      "video diffusion"
+      "video diffusion",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6000,9 +6000,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "text-to-video",
-      "diffusion model",
       "efficient",
+      "diffusion model",
+      "text-to-video",
       "video diffusion"
     ],
     "citations": 0,
@@ -6034,12 +6034,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "t2v",
-      "evaluation",
-      "benchmark",
-      "efficient",
+      "dit",
       "text-to-video",
-      "dit"
+      "efficient",
+      "evaluation",
+      "t2v",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6097,15 +6097,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "physical",
-      "concept",
-      "physics",
-      "architecture",
-      "dynamics",
       "dit",
+      "physical",
+      "video generation",
+      "evaluation",
+      "architecture",
+      "concept",
+      "dynamics",
       "physics-aware",
-      "video generation"
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6138,11 +6138,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "long-form",
-      "benchmark",
-      "identity",
       "dit",
-      "video generation"
+      "identity",
+      "long-form",
+      "video generation",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6167,8 +6167,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "architecture",
-      "efficient"
+      "efficient",
+      "architecture"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6197,9 +6197,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
       "video editing",
-      "film"
+      "film",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6251,15 +6251,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "style",
-      "efficient",
-      "text-to-video",
-      "architecture",
-      "diffusion model",
       "video diffusion",
       "dit",
-      "video generation"
+      "text-to-video",
+      "video generation",
+      "style",
+      "evaluation",
+      "diffusion model",
+      "architecture",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6293,12 +6293,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "benchmark",
       "acceleration",
-      "architecture",
+      "video generation",
+      "evaluation",
       "diffusion model",
-      "video generation"
+      "architecture",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6327,12 +6327,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "style",
+      "dit",
+      "video generation",
       "image-to-video",
       "i2v",
-      "dit",
-      "video generation"
+      "evaluation",
+      "style"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6361,11 +6361,11 @@
     "github_url": "",
     "keywords": [
       "controllable",
-      "diffusion model",
       "video diffusion",
-      "trajectory",
       "dit",
-      "video synthesis"
+      "trajectory",
+      "video synthesis",
+      "diffusion model"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6394,13 +6394,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "long-form",
-      "diffusion transformer",
       "controllable",
-      "benchmark",
-      "identity",
       "dit",
-      "video generation"
+      "identity",
+      "diffusion transformer",
+      "long-form",
+      "video generation",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6460,10 +6460,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "autoregressive",
       "architecture",
-      "dit",
-      "video generation"
+      "video generation",
+      "autoregressive",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6522,11 +6522,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "physics",
-      "text-to-video",
       "interactive",
       "identity",
-      "video generation"
+      "text-to-video",
+      "video generation",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6558,14 +6558,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "t2v",
-      "evaluation",
+      "dit",
       "diffusion transformer",
-      "denoising",
       "text-to-video",
+      "evaluation",
       "architecture",
-      "customization",
-      "dit"
+      "denoising",
+      "t2v",
+      "customization"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6597,12 +6597,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
       "controllable",
-      "benchmark",
-      "identity",
       "dit",
-      "video generation"
+      "identity",
+      "video generation",
+      "evaluation",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6633,16 +6633,16 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "autonomous driving",
       "controllable",
-      "benchmark",
-      "simulation",
-      "physics",
+      "dit",
       "world model",
       "trajectory",
-      "dit",
-      "video generation"
+      "video generation",
+      "autonomous driving",
+      "evaluation",
+      "simulation",
+      "benchmark",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6674,12 +6674,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "diffusion transformer",
-      "benchmark",
-      "image-to-video",
       "temporal consistency",
+      "dit",
       "identity",
-      "dit"
+      "diffusion transformer",
+      "image-to-video",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6707,10 +6707,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
       "dynamics",
       "identity",
-      "video generation"
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6770,8 +6770,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "t2v",
-      "text-to-video"
+      "text-to-video",
+      "t2v"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6798,15 +6798,15 @@
     ],
     "github_url": "https://github.com/meghamariamkm/PhyEduVideo",
     "keywords": [
-      "t2v",
-      "evaluation",
-      "benchmark",
-      "concept",
-      "physics",
-      "text-to-video",
-      "dynamics",
       "education",
-      "video generation"
+      "text-to-video",
+      "video generation",
+      "evaluation",
+      "concept",
+      "dynamics",
+      "t2v",
+      "benchmark",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6836,8 +6836,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "multi-modal",
-      "evaluation"
+      "evaluation",
+      "multi-modal"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6865,13 +6865,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "denoising",
-      "image-to-video",
       "temporal consistency",
-      "dynamics",
-      "trajectory",
       "dit",
-      "video generation"
+      "trajectory",
+      "video generation",
+      "image-to-video",
+      "dynamics",
+      "denoising"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6902,10 +6902,10 @@
     ],
     "github_url": "https://github.com/Friskknight/ORCANet-SEUD",
     "keywords": [
-      "physical",
       "video restoration",
-      "dit",
-      "temporal consistency"
+      "physical",
+      "temporal consistency",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6935,12 +6935,12 @@
     ],
     "github_url": "",
     "keywords": [
+      "video diffusion",
       "distillation",
-      "simulation",
       "physical",
-      "physics",
       "diffusion model",
-      "video diffusion"
+      "simulation",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -6970,11 +6970,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "benchmark",
-      "simulation",
       "world model",
       "trajectory",
-      "video generation"
+      "video generation",
+      "simulation",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7007,10 +7007,10 @@
     ],
     "github_url": "https://github.com/ZheningHuang/spacetimepilot",
     "keywords": [
-      "dit",
       "diffusion model",
       "controllable",
-      "video diffusion"
+      "video diffusion",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7062,13 +7062,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "distillation",
-      "autoregressive",
-      "physical",
-      "efficient",
-      "world model",
       "interactive",
-      "video generation"
+      "distillation",
+      "world model",
+      "physical",
+      "video generation",
+      "autoregressive",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7100,11 +7100,11 @@
     ],
     "github_url": "https://github.com/RUCAIBox/VIPER",
     "keywords": [
+      "dit",
+      "video generation",
       "evaluation",
       "benchmark",
-      "physics",
-      "dit",
-      "video generation"
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7135,10 +7135,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "trajectory",
       "simulation",
-      "physical",
-      "video generation"
+      "trajectory",
+      "video generation",
+      "physical"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7166,9 +7166,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
       "acceleration",
-      "video generation"
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7206,13 +7206,13 @@
     ],
     "github_url": "https://github.com/caiyuanhao1998/Open-PhyGDPO",
     "keywords": [
-      "t2v",
       "physical",
-      "physics",
-      "efficient",
       "text-to-video",
+      "video generation",
       "physics-aware",
-      "video generation"
+      "t2v",
+      "efficient",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7248,11 +7248,11 @@
     "github_url": "",
     "keywords": [
       "controllable",
-      "benchmark",
-      "efficient",
-      "video editing",
       "dit",
-      "video generation"
+      "video editing",
+      "video generation",
+      "efficient",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7280,14 +7280,14 @@
     ],
     "github_url": "https://github.com/wm-research/mirage",
     "keywords": [
-      "autonomous driving",
-      "video translation",
-      "video-to-video",
       "temporal consistency",
-      "text-to-video",
-      "diffusion model",
       "video diffusion",
-      "dit"
+      "dit",
+      "text-to-video",
+      "autonomous driving",
+      "video-to-video",
+      "diffusion model",
+      "video translation"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7321,10 +7321,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
       "efficient",
       "diffusion transformer",
-      "video generation"
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7378,15 +7378,15 @@
     ],
     "github_url": "",
     "keywords": [
+      "dit",
+      "world model",
+      "physical",
+      "video generation",
+      "film",
       "evaluation",
       "sound",
       "benchmark",
-      "physical",
-      "film",
-      "physics",
-      "world model",
-      "dit",
-      "video generation"
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7415,10 +7415,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "autonomous driving",
       "diffusion model",
       "novel view",
-      "video diffusion"
+      "video diffusion",
+      "autonomous driving"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7447,13 +7447,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "t2v",
-      "evaluation",
-      "efficient",
-      "dynamics",
+      "video diffusion",
       "text-to-video",
+      "evaluation",
       "diffusion model",
-      "video diffusion"
+      "dynamics",
+      "t2v",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7491,15 +7491,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "denoising",
-      "benchmark",
-      "physical",
-      "video-to-video",
       "temporal consistency",
-      "efficient",
-      "diffusion model",
       "video diffusion",
-      "dit"
+      "dit",
+      "physical",
+      "efficient",
+      "video-to-video",
+      "diffusion model",
+      "denoising",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7529,21 +7529,21 @@
     ],
     "github_url": "",
     "keywords": [
-      "long-form",
-      "evaluation",
-      "distillation",
-      "denoising",
-      "benchmark",
-      "autoregressive",
-      "efficient",
-      "text-to-video",
-      "diffusion model",
       "interactive",
-      "identity",
       "video diffusion",
+      "distillation",
       "dit",
-      "avatar",
-      "video generation"
+      "identity",
+      "text-to-video",
+      "video generation",
+      "long-form",
+      "efficient",
+      "evaluation",
+      "diffusion model",
+      "denoising",
+      "autoregressive",
+      "benchmark",
+      "avatar"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7578,13 +7578,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "autonomous driving",
-      "benchmark",
-      "world model",
-      "architecture",
-      "trajectory",
       "video prediction",
-      "video generation"
+      "world model",
+      "trajectory",
+      "video generation",
+      "autonomous driving",
+      "architecture",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7640,12 +7640,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "diffusion transformer",
-      "denoising",
       "acceleration",
-      "architecture",
       "dit",
-      "video generation"
+      "diffusion transformer",
+      "video generation",
+      "architecture",
+      "denoising"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7676,10 +7676,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "film",
-      "architecture",
       "concept",
-      "video generation"
+      "architecture",
+      "video generation",
+      "film"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7741,12 +7741,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "diffusion transformer",
-      "advertising",
-      "identity",
       "dit",
+      "identity",
+      "diffusion transformer",
       "video generation",
       "robotics",
+      "advertising",
       "style"
     ],
     "citations": 0,
@@ -7775,14 +7775,14 @@
     ],
     "github_url": "https://github.com/Johnathan-Xie/arfm-motion-prediction",
     "keywords": [
-      "human motion",
-      "benchmark",
-      "autoregressive",
-      "robotics",
-      "dit",
       "video prediction",
       "flow matching",
-      "video generation"
+      "dit",
+      "video generation",
+      "robotics",
+      "human motion",
+      "autoregressive",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7818,14 +7818,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "benchmark",
+      "video diffusion",
+      "dit",
       "physical",
+      "trajectory",
+      "video generation",
       "image-to-video",
       "diffusion model",
-      "video diffusion",
-      "trajectory",
-      "dit",
-      "video generation"
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7854,12 +7854,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "long-form",
-      "style",
-      "text-to-video",
-      "identity",
       "dit",
-      "video generation"
+      "identity",
+      "text-to-video",
+      "video generation",
+      "long-form",
+      "style"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7923,12 +7923,12 @@
     ],
     "github_url": "",
     "keywords": [
+      "interactive",
+      "acceleration",
       "distillation",
       "streaming",
-      "acceleration",
-      "diffusion model",
-      "interactive",
-      "video generation"
+      "video generation",
+      "diffusion model"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -7964,17 +7964,17 @@
     ],
     "github_url": "",
     "keywords": [
+      "interactive",
+      "acceleration",
+      "video diffusion",
       "distillation",
       "streaming",
-      "autoregressive",
-      "acceleration",
-      "body motion",
-      "gesture",
-      "architecture",
       "diffusion model",
-      "interactive",
-      "video diffusion",
-      "avatar"
+      "architecture",
+      "autoregressive",
+      "avatar",
+      "gesture",
+      "body motion"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8077,12 +8077,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "image animation",
-      "diffusion transformer",
-      "human animation",
-      "diffusion model",
       "dit",
-      "video generation"
+      "diffusion transformer",
+      "video generation",
+      "diffusion model",
+      "human animation",
+      "image animation"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8108,11 +8108,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "efficient",
-      "dynamics",
       "dit",
+      "video generation",
+      "dynamics",
       "long video",
-      "video generation"
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8141,17 +8141,17 @@
     ],
     "github_url": "",
     "keywords": [
-      "streaming",
-      "autoregressive",
-      "image-to-video",
-      "efficient",
-      "diffusion model",
       "interactive",
-      "identity",
       "video diffusion",
+      "streaming",
       "dit",
-      "avatar",
-      "video generation"
+      "identity",
+      "video generation",
+      "image-to-video",
+      "diffusion model",
+      "autoregressive",
+      "efficient",
+      "avatar"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8187,13 +8187,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "benchmark",
-      "simulation",
-      "physical",
-      "world model",
-      "dynamics",
-      "trajectory",
       "dit",
+      "world model",
+      "physical",
+      "trajectory",
+      "dynamics",
+      "simulation",
+      "benchmark",
       "action-conditioned"
     ],
     "citations": 0,
@@ -8224,11 +8224,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "benchmark",
-      "concept",
       "text-to-video",
-      "video generation"
+      "video generation",
+      "evaluation",
+      "concept",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8295,16 +8295,16 @@
     ],
     "github_url": "",
     "keywords": [
-      "streaming",
-      "denoising",
-      "benchmark",
-      "autoregressive",
-      "film",
       "acceleration",
-      "efficient",
-      "diffusion model",
+      "streaming",
       "dit",
-      "video generation"
+      "video generation",
+      "efficient",
+      "film",
+      "diffusion model",
+      "denoising",
+      "autoregressive",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8332,14 +8332,14 @@
     "github_url": "",
     "keywords": [
       "layout",
-      "3d-aware",
-      "benchmark",
-      "efficient",
-      "diffusion model",
       "video diffusion",
+      "3d-aware",
       "dit",
+      "video generation",
+      "efficient",
       "video synthesis",
-      "video generation"
+      "diffusion model",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8376,11 +8376,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "film",
-      "efficient",
-      "architecture",
       "dit",
-      "video generation"
+      "video generation",
+      "film",
+      "architecture",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8416,9 +8416,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "physical",
       "benchmark",
       "evaluation",
+      "physical",
       "video generation"
     ],
     "citations": 0,
@@ -8448,9 +8448,9 @@
     ],
     "github_url": "",
     "keywords": [
+      "style",
       "autoregressive",
-      "dit",
-      "style"
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8486,11 +8486,11 @@
     "github_url": "",
     "keywords": [
       "layout",
-      "efficient",
-      "diffusion model",
       "dit",
+      "video generation",
+      "diffusion model",
       "long video",
-      "video generation"
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8524,13 +8524,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "diffusion transformer",
-      "benchmark",
-      "efficient",
-      "video editing",
       "video diffusion",
       "dit",
-      "robotics"
+      "video editing",
+      "diffusion transformer",
+      "robotics",
+      "efficient",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8561,8 +8561,8 @@
     "github_url": "",
     "keywords": [
       "benchmark",
-      "dit",
-      "evaluation"
+      "evaluation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8622,13 +8622,13 @@
     ],
     "github_url": "",
     "keywords": [
+      "dit",
       "virtual try-on",
       "diffusion transformer",
-      "efficient",
+      "video synthesis",
       "architecture",
       "dynamics",
-      "dit",
-      "video synthesis"
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8695,12 +8695,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "motion control",
-      "image animation",
+      "video generation",
       "image-to-video",
       "efficient",
       "diffusion model",
-      "video generation"
+      "motion control",
+      "image animation"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8756,10 +8756,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
-      "interactive",
       "diffusion model",
-      "video diffusion"
+      "interactive",
+      "video diffusion",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8790,10 +8790,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "dynamics",
-      "architecture",
       "diffusion model",
-      "video diffusion"
+      "video diffusion",
+      "architecture",
+      "dynamics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8831,8 +8831,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "sound",
-      "benchmark"
+      "benchmark",
+      "sound"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8860,9 +8860,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
       "novel view",
-      "video diffusion"
+      "video diffusion",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8892,8 +8892,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
-      "video inpainting"
+      "video inpainting",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8925,13 +8925,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "long-form",
-      "evaluation",
-      "benchmark",
-      "diffusion model",
       "video diffusion",
       "dit",
-      "long video"
+      "long-form",
+      "evaluation",
+      "diffusion model",
+      "long video",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8964,10 +8964,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "physical",
-      "dit",
       "architecture",
-      "video generation"
+      "physical",
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -8998,13 +8998,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "simulation",
-      "image-to-video",
       "temporal consistency",
       "video diffusion",
-      "i2v",
       "dit",
-      "video generation"
+      "video generation",
+      "image-to-video",
+      "i2v",
+      "simulation"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9038,11 +9038,11 @@
     "keywords": [
       "layout",
       "controllable",
-      "benchmark",
       "video diffusion",
-      "camera control",
       "dit",
-      "video generation"
+      "video generation",
+      "benchmark",
+      "camera control"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9075,11 +9075,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "human motion",
-      "diffusion transformer",
-      "architecture",
       "dit",
-      "video generation"
+      "diffusion transformer",
+      "video generation",
+      "architecture",
+      "human motion"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9108,12 +9108,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "diffusion transformer",
-      "speech-driven",
-      "architecture",
       "video diffusion",
+      "speech-driven",
       "dit",
-      "video generation"
+      "diffusion transformer",
+      "video generation",
+      "architecture"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9175,13 +9175,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "benchmark",
-      "autoregressive",
-      "world model",
-      "diffusion model",
       "interactive",
+      "world model",
+      "video generation",
+      "diffusion model",
       "long video",
-      "video generation"
+      "autoregressive",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9209,13 +9209,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "style",
-      "image-to-video",
-      "text-to-video",
       "dit",
+      "text-to-video",
+      "video generation",
+      "image-to-video",
+      "evaluation",
       "video synthesis",
-      "video generation"
+      "style"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9245,8 +9245,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "creative",
       "concept",
+      "creative",
       "controllable"
     ],
     "citations": 0,
@@ -9274,9 +9274,9 @@
     ],
     "github_url": "",
     "keywords": [
+      "diffusion model",
       "physical",
-      "film",
-      "diffusion model"
+      "film"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9309,18 +9309,18 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "human motion",
-      "audio-driven",
-      "image animation",
-      "benchmark",
-      "dance generation",
-      "architecture",
-      "diffusion model",
-      "identity",
       "dit",
+      "identity",
+      "dance generation",
+      "video generation",
+      "evaluation",
       "video synthesis",
-      "video generation"
+      "diffusion model",
+      "human motion",
+      "architecture",
+      "benchmark",
+      "audio-driven",
+      "image animation"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9348,16 +9348,16 @@
     ],
     "github_url": "",
     "keywords": [
-      "simulation",
-      "physical",
-      "world model",
-      "dynamics",
       "interactive",
       "video diffusion",
-      "trajectory",
       "dit",
-      "action-conditioned",
-      "video generation"
+      "world model",
+      "physical",
+      "trajectory",
+      "video generation",
+      "dynamics",
+      "simulation",
+      "action-conditioned"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9391,12 +9391,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "physical",
-      "autoregressive",
-      "dynamics",
-      "diffusion model",
       "video diffusion",
-      "video prediction"
+      "video prediction",
+      "physical",
+      "diffusion model",
+      "dynamics",
+      "autoregressive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9427,10 +9427,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "denoising",
-      "dit",
       "video editing",
-      "video diffusion"
+      "denoising",
+      "video diffusion",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9464,11 +9464,11 @@
     "github_url": "",
     "keywords": [
       "controllable",
-      "video editing",
-      "diffusion model",
       "dit",
+      "video editing",
+      "video generation",
       "video synthesis",
-      "video generation"
+      "diffusion model"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9498,9 +9498,9 @@
     "github_url": "",
     "keywords": [
       "multi-modal",
-      "dit",
       "controllable",
-      "video diffusion"
+      "video diffusion",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9527,10 +9527,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
       "frame interpolation",
       "diffusion model",
-      "temporal consistency"
+      "temporal consistency",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9557,12 +9557,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "diffusion transformer",
-      "denoising",
-      "diffusion model",
       "video diffusion",
       "dit",
-      "video generation"
+      "diffusion transformer",
+      "video generation",
+      "diffusion model",
+      "denoising"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9592,11 +9592,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "physical",
-      "physics",
       "world model",
+      "physical",
+      "video generation",
       "dynamics",
-      "video generation"
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9625,14 +9625,14 @@
     "github_url": "",
     "keywords": [
       "layout",
-      "denoising",
-      "text-to-video",
-      "architecture",
-      "diffusion model",
-      "customization",
       "video diffusion",
+      "dit",
       "trajectory",
-      "dit"
+      "text-to-video",
+      "diffusion model",
+      "denoising",
+      "architecture",
+      "customization"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9660,13 +9660,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "video-to-video",
       "video diffusion",
-      "diffusion model",
-      "camera control",
-      "trajectory",
       "dit",
-      "video generation"
+      "trajectory",
+      "video generation",
+      "video-to-video",
+      "diffusion model",
+      "camera control"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9705,13 +9705,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "controllable",
-      "simulation",
-      "image-to-video",
-      "world model",
       "interactive",
+      "controllable",
+      "world model",
       "identity",
-      "trajectory"
+      "trajectory",
+      "image-to-video",
+      "simulation"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9744,10 +9744,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
-      "text-to-video",
       "video editing",
-      "architecture"
+      "text-to-video",
+      "architecture",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9811,15 +9811,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "controllable",
-      "autoregressive",
-      "simulation",
-      "world model",
       "interactive",
-      "dynamics",
+      "controllable",
       "dit",
-      "video generation"
+      "world model",
+      "video generation",
+      "evaluation",
+      "dynamics",
+      "simulation",
+      "autoregressive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9881,12 +9881,12 @@
     ],
     "github_url": "",
     "keywords": [
+      "acceleration",
+      "video diffusion",
+      "identity",
       "diffusion transformer",
       "denoising",
-      "benchmark",
-      "acceleration",
-      "identity",
-      "video diffusion"
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -9916,10 +9916,10 @@
     "github_url": "",
     "keywords": [
       "distillation",
-      "efficient",
-      "diffusion model",
       "video diffusion",
       "3d-aware",
+      "diffusion model",
+      "efficient",
       "avatar"
     ],
     "citations": 0,
@@ -9955,9 +9955,9 @@
     ],
     "github_url": "",
     "keywords": [
+      "efficient",
       "simulation",
-      "upscaling",
-      "efficient"
+      "upscaling"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10048,11 +10048,11 @@
     ],
     "github_url": "",
     "keywords": [
+      "dit",
+      "video generation",
       "evaluation",
       "world simulator",
-      "efficient",
-      "dit",
-      "video generation"
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10076,8 +10076,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "acceleration",
-      "concept"
+      "concept",
+      "acceleration"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10104,15 +10104,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "t2v",
-      "controllable",
-      "benchmark",
-      "efficient",
-      "text-to-video",
-      "diffusion model",
       "video diffusion",
+      "controllable",
+      "text-to-video",
+      "video generation",
+      "efficient",
       "video synthesis",
-      "video generation"
+      "diffusion model",
+      "t2v",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10145,15 +10145,15 @@
     ],
     "github_url": "https://github.com/thu-ml/TurboDiffusion",
     "keywords": [
-      "t2v",
-      "distillation",
       "acceleration",
-      "efficient",
-      "diffusion model",
       "video diffusion",
-      "i2v",
+      "distillation",
       "dit",
-      "video generation"
+      "video generation",
+      "i2v",
+      "diffusion model",
+      "t2v",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10185,11 +10185,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "benchmark",
       "multi-modal",
+      "video diffusion",
+      "evaluation",
       "diffusion model",
-      "video diffusion"
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10219,12 +10219,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "temporal consistency",
       "interactive",
-      "camera control",
-      "dit",
+      "temporal consistency",
       "3d-aware",
-      "video generation"
+      "dit",
+      "video generation",
+      "camera control"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10255,14 +10255,14 @@
     ],
     "github_url": "",
     "keywords": [
+      "temporal consistency",
+      "video diffusion",
       "distillation",
+      "dit",
+      "diffusion model",
       "simulation",
       "autoregressive",
-      "temporal consistency",
-      "efficient",
-      "diffusion model",
-      "video diffusion",
-      "dit"
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10325,10 +10325,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "film",
-      "text-to-video",
       "identity",
-      "video generation"
+      "text-to-video",
+      "video generation",
+      "film"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10360,13 +10360,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "benchmark",
-      "efficient",
-      "text-to-video",
-      "diffusion model",
       "video diffusion",
-      "video generation"
+      "text-to-video",
+      "video generation",
+      "efficient",
+      "evaluation",
+      "diffusion model",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10396,10 +10396,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
       "diffusion model",
+      "video generation",
       "identity",
-      "video generation"
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10432,11 +10432,11 @@
     ],
     "github_url": "https://github.com/lian700/SoliReward",
     "keywords": [
-      "evaluation",
       "physical",
-      "benchmark",
+      "video generation",
       "efficient",
-      "video generation"
+      "evaluation",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10496,13 +10496,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "motion control",
-      "controllable",
-      "efficient",
       "interactive",
-      "identity",
+      "controllable",
+      "3d-aware",
       "dit",
-      "3d-aware"
+      "identity",
+      "efficient",
+      "motion control"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10533,11 +10533,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "audio-driven",
       "dit",
       "video generation",
       "long video",
-      "style"
+      "style",
+      "audio-driven"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10567,11 +10567,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "streaming",
-      "efficient",
       "dit",
+      "streaming",
+      "video generation",
       "long video",
-      "video generation"
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10605,12 +10605,12 @@
     ],
     "github_url": "",
     "keywords": [
+      "interactive",
+      "video diffusion",
       "distillation",
       "streaming",
       "world model",
-      "interactive",
-      "diffusion model",
-      "video diffusion"
+      "diffusion model"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10640,8 +10640,8 @@
     "github_url": "",
     "keywords": [
       "benchmark",
-      "distillation",
-      "video synthesis"
+      "video synthesis",
+      "distillation"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10670,10 +10670,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
+      "efficient",
       "long video",
       "temporal consistency",
-      "efficient"
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10704,16 +10704,16 @@
     ],
     "github_url": "",
     "keywords": [
-      "controllable",
-      "world simulator",
-      "benchmark",
-      "simulation",
       "temporal consistency",
-      "diffusion model",
+      "controllable",
       "video diffusion",
-      "trajectory",
       "dit",
-      "video generation"
+      "trajectory",
+      "video generation",
+      "world simulator",
+      "diffusion model",
+      "simulation",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10738,9 +10738,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "distillation",
       "diffusion model",
-      "video diffusion"
+      "video diffusion",
+      "distillation"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10773,8 +10773,8 @@
     "github_url": "",
     "keywords": [
       "benchmark",
-      "efficient",
       "evaluation",
+      "efficient",
       "autoregressive"
     ],
     "citations": 0,
@@ -10805,12 +10805,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "denoising",
       "multi-modal",
-      "diffusion model",
       "interactive",
       "video diffusion",
-      "video synthesis"
+      "video synthesis",
+      "denoising",
+      "diffusion model"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -10843,14 +10843,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "controllable",
-      "benchmark",
-      "autoregressive",
-      "temporal consistency",
-      "world model",
       "multi-modal",
+      "temporal consistency",
+      "controllable",
+      "world model",
+      "video generation",
       "long video",
-      "video generation"
+      "autoregressive",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11070,11 +11070,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "diffusion transformer",
       "acceleration",
+      "diffusion transformer",
+      "video generation",
       "architecture",
-      "camera control",
-      "video generation"
+      "camera control"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11141,8 +11141,8 @@
     "keywords": [
       "motion control",
       "pose-guided",
-      "dit",
-      "video generation"
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11169,10 +11169,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
       "controllable",
+      "video generation",
       "image-to-video",
-      "video generation"
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11224,12 +11224,12 @@
     ],
     "github_url": "",
     "keywords": [
+      "identity",
       "long-form",
+      "video generation",
       "upscaling",
       "efficient",
-      "identity",
-      "avatar",
-      "video generation"
+      "avatar"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11256,11 +11256,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "denoising",
       "physical",
-      "physics",
+      "video generation",
       "diffusion model",
-      "video generation"
+      "denoising",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11324,16 +11324,16 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "speech-driven",
-      "benchmark",
-      "autoregressive",
-      "diffusion model",
-      "novel view",
       "video diffusion",
-      "identity",
+      "3d-aware",
       "dit",
-      "3d-aware"
+      "speech-driven",
+      "identity",
+      "evaluation",
+      "diffusion model",
+      "autoregressive",
+      "benchmark",
+      "novel view"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11374,11 +11374,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "simulation",
       "world model",
-      "architecture",
-      "dynamics",
       "video generation",
+      "architecture",
+      "simulation",
+      "dynamics",
       "style"
     ],
     "citations": 0,
@@ -11411,15 +11411,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "streaming",
-      "autoregressive",
-      "temporal consistency",
-      "diffusion model",
       "interactive",
-      "video diffusion",
       "education",
+      "temporal consistency",
+      "video diffusion",
+      "streaming",
       "dit",
-      "video generation"
+      "video generation",
+      "diffusion model",
+      "autoregressive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11482,16 +11482,16 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
       "controllable",
-      "physical",
-      "physics",
+      "dit",
       "world model",
+      "physical",
+      "video generation",
+      "evaluation",
       "diffusion model",
       "dynamics",
-      "dit",
       "physics-aware",
-      "video generation"
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11515,13 +11515,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
       "creative",
-      "benchmark",
-      "efficient",
       "rectified flow",
+      "dit",
+      "efficient",
+      "evaluation",
       "architecture",
-      "dit"
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11551,11 +11551,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "distillation",
-      "text-to-video",
-      "diffusion model",
       "video diffusion",
-      "dit"
+      "distillation",
+      "dit",
+      "text-to-video",
+      "diffusion model"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11585,10 +11585,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
-      "diffusion model",
       "dynamics",
-      "video diffusion"
+      "diffusion model",
+      "video diffusion",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11615,14 +11615,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "streaming",
       "3d-aware",
-      "autoregressive",
-      "physical",
-      "efficient",
+      "streaming",
       "dit",
+      "physical",
+      "video generation",
       "long video",
-      "video generation"
+      "autoregressive",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11653,13 +11653,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "personalization",
-      "efficient",
-      "dynamics",
-      "diffusion model",
-      "identity",
       "video diffusion",
-      "dit"
+      "dit",
+      "identity",
+      "diffusion model",
+      "dynamics",
+      "personalization",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11716,16 +11716,16 @@
     ],
     "github_url": "",
     "keywords": [
-      "t2v",
-      "evaluation",
-      "long video",
-      "text to video",
       "controllable",
-      "simulation",
-      "film",
+      "text to video",
       "trajectory",
+      "video generation",
+      "film",
+      "evaluation",
       "video synthesis",
-      "video generation"
+      "simulation",
+      "long video",
+      "t2v"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11767,8 +11767,8 @@
     "keywords": [
       "benchmark",
       "music video",
-      "temporal consistency",
-      "video generation"
+      "video generation",
+      "temporal consistency"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11795,10 +11795,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "text-to-video",
       "customization",
-      "controllable",
-      "video generation"
+      "text-to-video",
+      "video generation",
+      "controllable"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11826,14 +11826,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "image-to-video",
       "temporal consistency",
-      "text-to-video",
-      "diffusion model",
       "video diffusion",
       "dit",
-      "video generation"
+      "text-to-video",
+      "video generation",
+      "image-to-video",
+      "evaluation",
+      "diffusion model"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11861,14 +11861,14 @@
     ],
     "github_url": "",
     "keywords": [
+      "video diffusion",
+      "flow matching",
       "distillation",
-      "diffusion transformer",
-      "autoregressive",
       "world model",
+      "diffusion transformer",
       "text-to-video",
       "diffusion model",
-      "video diffusion",
-      "flow matching"
+      "autoregressive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11898,13 +11898,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "t2v",
-      "super-resolution",
+      "video restoration",
       "creative",
-      "benchmark",
+      "super-resolution",
       "text-to-video",
       "diffusion model",
-      "video restoration"
+      "t2v",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11937,11 +11937,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "physical",
-      "video editing",
       "dit",
-      "video synthesis",
-      "video generation"
+      "video editing",
+      "physical",
+      "video generation",
+      "video synthesis"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -11972,11 +11972,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "benchmark",
+      "video diffusion",
+      "dit",
       "world model",
       "diffusion model",
-      "video diffusion",
-      "dit"
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12006,12 +12006,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "autoregressive",
-      "physical",
-      "diffusion model",
       "video diffusion",
       "dit",
-      "video generation"
+      "physical",
+      "video generation",
+      "diffusion model",
+      "autoregressive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12046,13 +12046,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "diffusion transformer",
       "controllable",
-      "efficient",
-      "dynamics",
-      "novel view",
       "video diffusion",
-      "identity"
+      "identity",
+      "diffusion transformer",
+      "dynamics",
+      "efficient",
+      "novel view"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12121,11 +12121,11 @@
     "github_url": "",
     "keywords": [
       "layout",
-      "image-to-video",
-      "video editing",
-      "diffusion model",
       "dit",
-      "video generation"
+      "video editing",
+      "video generation",
+      "image-to-video",
+      "diffusion model"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12154,13 +12154,13 @@
     ],
     "github_url": "",
     "keywords": [
+      "flow matching",
+      "video generation",
+      "image-to-video",
       "video interpolation",
       "denoising",
       "autoregressive",
-      "image-to-video",
-      "efficient",
-      "flow matching",
-      "video generation"
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12191,13 +12191,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "audio-driven",
-      "denoising",
-      "autoregressive",
       "temporal consistency",
       "dit",
+      "video generation",
+      "denoising",
+      "autoregressive",
       "avatar",
-      "video generation"
+      "audio-driven"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12224,12 +12224,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "autoregressive",
-      "efficient",
       "temporal consistency",
       "dit",
-      "video generation"
+      "video generation",
+      "evaluation",
+      "autoregressive",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12263,11 +12263,11 @@
     "github_url": "",
     "keywords": [
       "controllable",
-      "autoregressive",
+      "identity",
+      "video generation",
       "film",
       "concept",
-      "identity",
-      "video generation"
+      "autoregressive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12296,13 +12296,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "motion control",
       "distillation",
       "streaming",
-      "image animation",
+      "video generation",
       "denoising",
       "autoregressive",
-      "video generation"
+      "motion control",
+      "image animation"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12331,13 +12331,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "autoregressive",
-      "efficient",
-      "world model",
-      "architecture",
-      "dit",
       "flow matching",
-      "video generation"
+      "dit",
+      "world model",
+      "video generation",
+      "architecture",
+      "autoregressive",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12367,12 +12367,12 @@
     ],
     "github_url": "",
     "keywords": [
+      "interactive",
+      "video diffusion",
+      "diffusion model",
       "denoising",
       "autoregressive",
-      "efficient",
-      "interactive",
-      "diffusion model",
-      "video diffusion"
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12433,15 +12433,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "subject-driven",
       "controllable",
-      "benchmark",
-      "personalization",
-      "diffusion model",
-      "identity",
       "dit",
+      "identity",
+      "video generation",
+      "subject-driven",
       "video synthesis",
-      "video generation"
+      "diffusion model",
+      "personalization",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12475,9 +12475,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "autoregressive",
+      "architecture",
       "text-to-video",
-      "architecture"
+      "autoregressive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12510,16 +12510,16 @@
     ],
     "github_url": "",
     "keywords": [
-      "benchmark",
-      "image-to-video",
       "3d video",
-      "text-to-video",
-      "diffusion model",
-      "novel view",
-      "camera control",
-      "trajectory",
       "dit",
-      "video generation"
+      "text-to-video",
+      "video generation",
+      "image-to-video",
+      "trajectory",
+      "diffusion model",
+      "benchmark",
+      "novel view",
+      "camera control"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12546,12 +12546,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "human motion",
-      "style",
-      "trajectory",
       "dit",
+      "trajectory",
+      "video generation",
       "video synthesis",
-      "video generation"
+      "human motion",
+      "style"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12580,9 +12580,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
       "video editing",
-      "video generation"
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12610,13 +12610,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
       "controllable",
-      "film",
-      "efficient",
-      "camera control",
       "dit",
-      "video generation"
+      "video generation",
+      "film",
+      "evaluation",
+      "efficient",
+      "camera control"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12646,11 +12646,11 @@
     ],
     "github_url": "https://github.com/elainew728/motion-edit/",
     "keywords": [
-      "physical",
-      "benchmark",
-      "identity",
       "dit",
-      "video synthesis"
+      "identity",
+      "physical",
+      "video synthesis",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12686,14 +12686,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "benchmark",
-      "physical",
+      "dit",
       "video editing",
+      "physical",
+      "video generation",
+      "evaluation",
       "architecture",
       "dynamics",
-      "dit",
-      "video generation"
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12723,13 +12723,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "autonomous driving",
-      "physical",
       "world model",
-      "architecture",
-      "dynamics",
+      "physical",
       "trajectory",
-      "video generation"
+      "video generation",
+      "autonomous driving",
+      "architecture",
+      "dynamics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12760,10 +12760,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "concept",
       "evaluation",
-      "dit",
-      "diffusion transformer"
+      "diffusion transformer",
+      "concept",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12792,11 +12792,11 @@
     "github_url": "",
     "keywords": [
       "controllable",
-      "dynamics",
-      "diffusion model",
       "video diffusion",
       "dit",
-      "video generation"
+      "video generation",
+      "diffusion model",
+      "dynamics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12825,9 +12825,9 @@
     "github_url": "https://github.com/ZheLi2020/LabelfreeMCDM",
     "keywords": [
       "sound",
-      "dit",
       "diffusion model",
-      "video generation"
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12857,14 +12857,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "benchmark",
-      "dynamics",
-      "video editing",
-      "diffusion model",
-      "identity",
       "video diffusion",
       "dit",
-      "style"
+      "video editing",
+      "identity",
+      "style",
+      "diffusion model",
+      "dynamics",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12894,12 +12894,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "video translation",
+      "video diffusion",
+      "dit",
       "physical",
       "video-to-video",
       "diffusion model",
-      "video diffusion",
-      "dit"
+      "video translation"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12935,9 +12935,9 @@
     "github_url": "",
     "keywords": [
       "evaluation",
-      "dit",
+      "video generation",
       "efficient",
-      "video generation"
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -12971,11 +12971,11 @@
     ],
     "github_url": "",
     "keywords": [
+      "physical",
+      "video generation",
       "evaluation",
       "sound",
-      "benchmark",
-      "physical",
-      "video generation"
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13003,13 +13003,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "benchmark",
+      "dit",
       "physical",
       "text-to-video",
-      "camera control",
-      "dit",
-      "video generation"
+      "video generation",
+      "evaluation",
+      "benchmark",
+      "camera control"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13042,17 +13042,17 @@
     ],
     "github_url": "",
     "keywords": [
-      "autonomous driving",
+      "interactive",
+      "video prediction",
       "streaming",
+      "world model",
       "diffusion transformer",
+      "video generation",
+      "autonomous driving",
+      "architecture",
       "denoising",
       "autoregressive",
-      "world model",
-      "architecture",
-      "interactive",
-      "camera control",
-      "video prediction",
-      "video generation"
+      "camera control"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13118,17 +13118,17 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "motion control",
       "controllable",
-      "benchmark",
-      "image-to-video",
-      "trajectory",
-      "architecture",
-      "i2v",
+      "motion control",
       "dit",
+      "trajectory",
+      "video generation",
+      "image-to-video",
+      "i2v",
+      "evaluation",
       "video synthesis",
-      "video generation"
+      "architecture",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13188,8 +13188,8 @@
     "github_url": "",
     "keywords": [
       "education",
-      "dit",
-      "video generation"
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13218,9 +13218,9 @@
     ],
     "github_url": "",
     "keywords": [
+      "video synthesis",
       "denoising",
-      "dit",
-      "video synthesis"
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13249,10 +13249,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
-      "video generation",
       "diffusion model",
-      "video diffusion"
+      "video generation",
+      "video diffusion",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13286,11 +13286,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "physical",
-      "physics",
-      "world model",
       "interactive",
-      "dynamics"
+      "world model",
+      "physical",
+      "dynamics",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13320,8 +13320,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "robotics",
-      "gesture"
+      "gesture",
+      "robotics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13355,9 +13355,9 @@
     "github_url": "https://github.com/dvlab-research/UnityVideo",
     "keywords": [
       "multi-modal",
-      "dit",
       "physical",
-      "video generation"
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13387,8 +13387,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "trajectory",
       "world model",
+      "trajectory",
       "video generation"
     ],
     "citations": 0,
@@ -13427,13 +13427,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "long-form",
       "controllable",
-      "autoregressive",
+      "dit",
+      "long-form",
+      "video generation",
       "image-to-video",
       "i2v",
-      "dit",
-      "video generation"
+      "autoregressive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13464,8 +13464,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
-      "controllable"
+      "controllable",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13500,15 +13500,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "autoregressive",
-      "efficient",
-      "dynamics",
-      "diffusion model",
-      "identity",
       "video diffusion",
       "3d-aware",
-      "avatar",
-      "video generation"
+      "identity",
+      "video generation",
+      "diffusion model",
+      "dynamics",
+      "autoregressive",
+      "efficient",
+      "avatar"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13536,9 +13536,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "trajectory",
       "evaluation",
-      "architecture"
+      "architecture",
+      "trajectory"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13571,8 +13571,8 @@
     "github_url": "",
     "keywords": [
       "benchmark",
-      "dit",
-      "evaluation"
+      "evaluation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13601,13 +13601,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "diffusion transformer",
-      "benchmark",
-      "efficient",
-      "architecture",
       "video diffusion",
-      "dit"
+      "dit",
+      "diffusion transformer",
+      "efficient",
+      "evaluation",
+      "architecture",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13636,10 +13636,10 @@
     ],
     "github_url": "https://github.com/knightyxp/VideoCoF",
     "keywords": [
-      "dit",
-      "video editing",
       "diffusion model",
-      "video diffusion"
+      "video diffusion",
+      "video editing",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13666,13 +13666,13 @@
     ],
     "github_url": "https://github.com/ziyang1106/ContextAnyone",
     "keywords": [
-      "t2v",
-      "style",
-      "personalization",
-      "text-to-video",
-      "identity",
       "dit",
-      "video generation"
+      "identity",
+      "text-to-video",
+      "video generation",
+      "personalization",
+      "t2v",
+      "style"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13703,15 +13703,15 @@
     ],
     "github_url": "https://github.com/chengzhag/UCPE",
     "keywords": [
-      "evaluation",
-      "autonomous driving",
-      "diffusion transformer",
+      "video diffusion",
       "controllable",
       "world model",
+      "diffusion transformer",
       "text-to-video",
-      "video diffusion",
-      "camera control",
-      "video generation"
+      "video generation",
+      "autonomous driving",
+      "evaluation",
+      "camera control"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13856,8 +13856,8 @@
     "github_url": "",
     "keywords": [
       "education",
-      "dit",
-      "video generation"
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13887,12 +13887,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
       "distillation",
-      "denoising",
-      "benchmark",
+      "dit",
       "efficient",
-      "dit"
+      "evaluation",
+      "denoising",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13924,11 +13924,11 @@
     "github_url": "",
     "keywords": [
       "creative",
+      "video generation",
       "image-to-video",
-      "architecture",
-      "customization",
       "i2v",
-      "video generation"
+      "architecture",
+      "customization"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -13963,9 +13963,9 @@
     "github_url": "",
     "keywords": [
       "controllable",
-      "physical",
-      "world model",
       "dit",
+      "world model",
+      "physical",
       "video generation"
     ],
     "citations": 0,
@@ -14019,12 +14019,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "autonomous driving",
       "physical",
-      "benchmark",
       "text-to-video",
-      "video generation"
+      "video generation",
+      "autonomous driving",
+      "evaluation",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14054,14 +14054,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "multi-view video",
-      "benchmark",
-      "dynamics",
-      "4d generation",
-      "diffusion model",
       "video diffusion",
       "dit",
-      "video generation"
+      "video generation",
+      "multi-view video",
+      "diffusion model",
+      "4d generation",
+      "dynamics",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14091,15 +14091,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
       "controllable",
-      "physical",
-      "robotics",
-      "world model",
-      "video editing",
       "dit",
-      "video synthesis",
-      "video generation"
+      "video editing",
+      "world model",
+      "physical",
+      "video generation",
+      "robotics",
+      "evaluation",
+      "video synthesis"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14133,12 +14133,12 @@
     "github_url": "https://github.com/JiahuaDong/CCVD",
     "keywords": [
       "controllable",
-      "concept",
-      "text-to-video",
-      "customization",
       "video diffusion",
       "dit",
-      "video generation"
+      "text-to-video",
+      "video generation",
+      "concept",
+      "customization"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14166,13 +14166,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "denoising",
-      "benchmark",
       "acceleration",
+      "video diffusion",
+      "video generation",
       "efficient",
       "diffusion model",
-      "video diffusion",
-      "video generation"
+      "denoising",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14201,16 +14201,16 @@
     ],
     "github_url": "https://github.com/yeobinhong/InverseCrafter",
     "keywords": [
-      "video inpainting",
       "controllable",
-      "efficient",
       "video diffusion",
-      "4d generation",
-      "diffusion model",
-      "novel view",
-      "camera control",
       "dit",
-      "video generation"
+      "video generation",
+      "diffusion model",
+      "4d generation",
+      "efficient",
+      "video inpainting",
+      "novel view",
+      "camera control"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14244,15 +14244,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "world simulator",
-      "benchmark",
-      "simulation",
-      "physical",
-      "physics",
-      "dynamics",
       "dit",
+      "physical",
+      "video generation",
+      "world simulator",
+      "dynamics",
+      "simulation",
       "physics-aware",
-      "video generation"
+      "benchmark",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14282,8 +14282,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
-      "temporal consistency"
+      "temporal consistency",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14312,8 +14312,8 @@
     ],
     "github_url": "https://github.com/zai-org/SSVAE",
     "keywords": [
-      "text-to-video",
       "diffusion model",
+      "text-to-video",
       "video generation"
     ],
     "citations": 0,
@@ -14345,11 +14345,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "autoregressive",
-      "text-to-video",
-      "diffusion model",
       "video diffusion",
-      "robotics"
+      "text-to-video",
+      "robotics",
+      "diffusion model",
+      "autoregressive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14383,12 +14383,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "controllable",
       "temporal consistency",
-      "dynamics",
-      "trajectory",
+      "controllable",
       "dit",
-      "video generation"
+      "trajectory",
+      "video generation",
+      "dynamics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14421,12 +14421,12 @@
     "github_url": "",
     "keywords": [
       "controllable",
-      "simulation",
-      "video-to-video",
-      "efficient",
-      "diffusion model",
       "dit",
-      "video generation"
+      "video generation",
+      "video-to-video",
+      "diffusion model",
+      "simulation",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14471,10 +14471,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "trajectory",
       "architecture",
-      "flow matching",
-      "video generation"
+      "trajectory",
+      "video generation",
+      "flow matching"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14506,13 +14506,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "simulation",
-      "benchmark",
-      "physical",
-      "physics",
       "dit",
+      "physical",
+      "video generation",
+      "simulation",
       "physics-aware",
-      "video generation"
+      "benchmark",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14541,12 +14541,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "streaming",
-      "style",
-      "autoregressive",
       "video diffusion",
+      "streaming",
+      "video generation",
       "long video",
-      "video generation"
+      "autoregressive",
+      "style"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14580,11 +14580,11 @@
     "github_url": "",
     "keywords": [
       "controllable",
-      "dynamics",
-      "diffusion model",
       "video diffusion",
       "dit",
-      "video generation"
+      "video generation",
+      "diffusion model",
+      "dynamics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14613,11 +14613,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "diffusion transformer",
-      "denoising",
       "video diffusion",
       "dit",
-      "video generation"
+      "diffusion transformer",
+      "video generation",
+      "denoising"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14652,16 +14652,16 @@
     ],
     "github_url": "",
     "keywords": [
-      "distillation",
-      "streaming",
-      "benchmark",
-      "efficient",
-      "dynamics",
-      "diffusion model",
       "interactive",
       "video diffusion",
+      "distillation",
+      "streaming",
       "dit",
-      "video generation"
+      "video generation",
+      "efficient",
+      "diffusion model",
+      "dynamics",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14695,20 +14695,20 @@
     ],
     "github_url": "",
     "keywords": [
-      "long-form",
+      "temporal consistency",
       "distillation",
       "streaming",
-      "audio-driven",
+      "dit",
+      "identity",
+      "long-form",
+      "video generation",
+      "video synthesis",
+      "diffusion model",
       "denoising",
       "autoregressive",
-      "temporal consistency",
       "efficient",
-      "diffusion model",
-      "identity",
-      "dit",
-      "video synthesis",
       "avatar",
-      "video generation"
+      "audio-driven"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14737,15 +14737,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "diffusion transformer",
-      "sound",
-      "benchmark",
-      "autoregressive",
-      "efficient",
-      "architecture",
       "dit",
-      "video generation"
+      "diffusion transformer",
+      "video generation",
+      "efficient",
+      "evaluation",
+      "architecture",
+      "sound",
+      "autoregressive",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14773,12 +14773,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "diffusion transformer",
-      "denoising",
-      "benchmark",
-      "diffusion model",
       "video diffusion",
-      "dit"
+      "dit",
+      "diffusion transformer",
+      "diffusion model",
+      "denoising",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14805,11 +14805,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "video-to-video",
-      "body motion",
-      "world model",
+      "dit",
       "video editing",
-      "dit"
+      "world model",
+      "video-to-video",
+      "body motion"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14838,12 +14838,12 @@
     ],
     "github_url": "https://github.com/fishZe233/Refacade",
     "keywords": [
-      "evaluation",
       "layout",
       "controllable",
+      "dit",
       "video editing",
-      "diffusion model",
-      "dit"
+      "evaluation",
+      "diffusion model"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14878,15 +14878,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "streaming",
-      "benchmark",
-      "autoregressive",
-      "temporal consistency",
       "interactive",
+      "temporal consistency",
+      "streaming",
+      "video generation",
+      "video synthesis",
       "dynamics",
       "long video",
-      "video synthesis",
-      "video generation"
+      "autoregressive",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14918,15 +14918,15 @@
     ],
     "github_url": "https://github.com/AIGeeksGroup/EgoLCD",
     "keywords": [
-      "benchmark",
-      "autoregressive",
       "temporal consistency",
       "world model",
-      "efficient",
       "identity",
-      "long video",
+      "video generation",
+      "efficient",
       "video synthesis",
-      "video generation"
+      "long video",
+      "autoregressive",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -14958,10 +14958,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "autoregressive",
       "dynamics",
-      "dit",
-      "video generation"
+      "video generation",
+      "autoregressive",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -15034,16 +15034,16 @@
     ],
     "github_url": "",
     "keywords": [
-      "t2v",
-      "evaluation",
-      "benchmark",
-      "physical",
-      "physics",
-      "text-to-video",
-      "trajectory",
       "dit",
+      "physical",
+      "text-to-video",
+      "video generation",
+      "trajectory",
+      "evaluation",
       "video synthesis",
-      "video generation"
+      "t2v",
+      "benchmark",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -15108,12 +15108,12 @@
     ],
     "github_url": "",
     "keywords": [
+      "interactive",
       "distillation",
       "streaming",
-      "autoregressive",
       "world model",
-      "efficient",
-      "interactive"
+      "autoregressive",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -15141,12 +15141,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "video translation",
-      "video-to-video",
       "temporal consistency",
+      "dit",
       "video editing",
+      "video-to-video",
       "diffusion model",
-      "dit"
+      "video translation"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -15179,10 +15179,10 @@
     "github_url": "",
     "keywords": [
       "controllable",
-      "camera control",
-      "trajectory",
       "dit",
-      "video generation"
+      "trajectory",
+      "video generation",
+      "camera control"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -15211,12 +15211,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "motion control",
       "layout",
       "controllable",
-      "dynamics",
       "dit",
-      "video generation"
+      "video generation",
+      "dynamics",
+      "motion control"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -15245,9 +15245,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
       "frame interpolation",
-      "video interpolation"
+      "video interpolation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -15307,13 +15307,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "distillation",
-      "benchmark",
-      "efficient",
       "multi-modal",
+      "distillation",
       "flow matching",
-      "video generation"
+      "video generation",
+      "efficient",
+      "evaluation",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -15342,9 +15342,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "physical",
       "diffusion model",
       "diffusion transformer",
+      "physical",
       "video generation"
     ],
     "citations": 0,
@@ -15374,17 +15374,17 @@
     ],
     "github_url": "",
     "keywords": [
-      "diffusion transformer",
       "creative",
-      "simulation",
-      "benchmark",
-      "physical",
       "physical simulation",
-      "efficient",
-      "architecture",
-      "diffusion model",
       "dit",
-      "video generation"
+      "diffusion transformer",
+      "physical",
+      "video generation",
+      "efficient",
+      "diffusion model",
+      "simulation",
+      "architecture",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -15413,10 +15413,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "physical",
-      "dit",
+      "dynamics",
       "video editing",
-      "dynamics"
+      "physical",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -15487,9 +15487,9 @@
     "github_url": "",
     "keywords": [
       "motion control",
+      "video generation",
       "controllable",
-      "dit",
-      "video generation"
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -15522,10 +15522,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
-      "video generation",
       "diffusion model",
-      "video diffusion"
+      "video generation",
+      "video diffusion",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -15554,12 +15554,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "image-to-video",
-      "video editing",
-      "diffusion model",
-      "identity",
       "video diffusion",
-      "dit"
+      "dit",
+      "video editing",
+      "identity",
+      "image-to-video",
+      "diffusion model"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -15593,15 +15593,15 @@
     ],
     "github_url": "https://github.com/hao-ai-lab/VideoScience",
     "keywords": [
-      "t2v",
-      "evaluation",
-      "benchmark",
-      "physical",
-      "concept",
-      "physics",
-      "i2v",
       "dit",
-      "video generation"
+      "physical",
+      "video generation",
+      "i2v",
+      "evaluation",
+      "concept",
+      "t2v",
+      "benchmark",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -15632,13 +15632,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "video translation",
-      "video inpainting",
-      "image-to-video",
       "temporal consistency",
+      "dit",
       "video editing",
-      "dit"
+      "image-to-video",
+      "video inpainting",
+      "evaluation",
+      "video translation"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -15669,12 +15669,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "dynamics",
       "video diffusion",
-      "diffusion model",
-      "camera control",
       "trajectory",
-      "video generation"
+      "video generation",
+      "diffusion model",
+      "dynamics",
+      "camera control"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -15742,12 +15742,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "benchmark",
-      "image-to-video",
       "temporal consistency",
       "text-to-video",
-      "video generation"
+      "video generation",
+      "image-to-video",
+      "evaluation",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -15773,9 +15773,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "trajectory",
       "diffusion model",
       "gesture",
+      "trajectory",
       "video generation"
     ],
     "citations": 0,
@@ -15808,12 +15808,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "super-resolution",
-      "controllable",
-      "benchmark",
       "multi-modal",
+      "controllable",
+      "super-resolution",
       "identity",
-      "video generation"
+      "video generation",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -15843,16 +15843,16 @@
     "github_url": "",
     "keywords": [
       "motion control",
-      "audio-driven",
-      "diffusion transformer",
-      "denoising",
-      "benchmark",
-      "architecture",
-      "diffusion model",
-      "music video",
       "identity",
+      "diffusion transformer",
+      "video generation",
+      "diffusion model",
+      "denoising",
+      "architecture",
+      "music video",
+      "benchmark",
       "avatar",
-      "video generation"
+      "audio-driven"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -15884,17 +15884,17 @@
     ],
     "github_url": "",
     "keywords": [
-      "t2v",
+      "dit",
+      "world model",
+      "physical",
+      "text-to-video",
+      "video generation",
+      "architecture",
       "denoising",
       "sound",
-      "physical",
-      "world model",
-      "efficient",
-      "text-to-video",
-      "architecture",
       "dynamics",
-      "dit",
-      "video generation"
+      "t2v",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -15924,9 +15924,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "denoising",
       "benchmark",
       "diffusion model",
+      "denoising",
       "video diffusion"
     ],
     "citations": 0,
@@ -15989,10 +15989,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "super-resolution",
       "multi-modal",
-      "text-to-video",
       "dit",
+      "super-resolution",
+      "text-to-video",
       "video generation"
     ],
     "citations": 0,
@@ -16020,9 +16020,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "physical",
+      "world model",
       "acceleration",
-      "world model"
+      "physical"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16054,12 +16054,12 @@
     "github_url": "",
     "keywords": [
       "creative",
-      "video-to-video",
-      "image-to-video",
-      "video editing",
-      "i2v",
       "dit",
-      "video generation"
+      "video editing",
+      "video generation",
+      "image-to-video",
+      "video-to-video",
+      "i2v"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16108,8 +16108,8 @@
     "github_url": "",
     "keywords": [
       "benchmark",
-      "dit",
-      "video generation"
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16137,12 +16137,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "benchmark",
-      "physical",
       "multi-modal",
-      "dynamics",
       "dit",
-      "video generation"
+      "physical",
+      "video generation",
+      "dynamics",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16174,13 +16174,13 @@
     "github_url": "",
     "keywords": [
       "streaming",
+      "physical",
+      "video generation",
+      "architecture",
       "simulation",
       "autoregressive",
-      "physical",
       "physics",
-      "gesture",
-      "architecture",
-      "video generation"
+      "gesture"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16234,11 +16234,11 @@
     ],
     "github_url": "https://github.com/Zeqing-Wang/PhyDetEx",
     "keywords": [
+      "physical",
+      "text-to-video",
       "t2v",
       "benchmark",
-      "physical",
-      "physics",
-      "text-to-video"
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16267,11 +16267,11 @@
     ],
     "github_url": "",
     "keywords": [
+      "video generation",
       "evaluation",
-      "human motion",
-      "benchmark",
       "dynamics",
-      "video generation"
+      "human motion",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16351,12 +16351,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
       "layout",
       "controllable",
-      "identity",
       "video diffusion",
       "dit",
+      "identity",
+      "evaluation",
       "style"
     ],
     "citations": 0,
@@ -16392,9 +16392,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "physical",
       "video synthesis",
       "physics",
+      "physical",
       "video generation"
     ],
     "citations": 0,
@@ -16424,9 +16424,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "multi-view video",
       "diffusion model",
-      "video generation"
+      "video generation",
+      "multi-view video"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16457,11 +16457,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "denoising",
+      "dit",
+      "video generation",
       "image-to-video",
       "i2v",
-      "dit",
-      "video generation"
+      "denoising"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16558,8 +16558,8 @@
     "keywords": [
       "motion control",
       "video editing",
-      "dit",
-      "video generation"
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16591,10 +16591,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "physical",
-      "dit",
       "physics",
-      "video generation"
+      "physical",
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16620,10 +16620,10 @@
     ],
     "github_url": "https://github.com/pangye202264690373/Image-Generation-as-a-Visua",
     "keywords": [
-      "trajectory",
-      "dit",
       "diffusion model",
-      "video diffusion"
+      "trajectory",
+      "video diffusion",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16651,15 +16651,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "benchmark",
-      "physical",
       "acceleration",
-      "physics",
-      "dynamics",
-      "diffusion model",
       "video diffusion",
+      "physical",
+      "video generation",
+      "diffusion model",
+      "dynamics",
       "physics-aware",
-      "video generation"
+      "benchmark",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16689,9 +16689,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
       "diffusion model",
-      "video diffusion"
+      "video diffusion",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16718,8 +16718,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "survey",
-      "efficient"
+      "efficient",
+      "survey"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16757,11 +16757,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "audio-driven",
-      "diffusion transformer",
-      "architecture",
       "identity",
-      "video generation"
+      "diffusion transformer",
+      "video generation",
+      "architecture",
+      "audio-driven"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16794,13 +16794,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "simulation",
-      "benchmark",
-      "image-to-video",
-      "world model",
-      "concept",
       "interactive",
-      "dynamics"
+      "world model",
+      "image-to-video",
+      "concept",
+      "dynamics",
+      "simulation",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16830,13 +16830,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "t2v",
-      "benchmark",
-      "image-to-video",
-      "text-to-video",
+      "dit",
       "identity",
+      "text-to-video",
+      "image-to-video",
       "i2v",
-      "dit"
+      "t2v",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16866,12 +16866,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "video translation",
-      "efficient",
-      "architecture",
-      "diffusion model",
+      "dit",
       "trajectory",
-      "dit"
+      "diffusion model",
+      "architecture",
+      "efficient",
+      "video translation"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16904,8 +16904,8 @@
     "github_url": "",
     "keywords": [
       "trajectory",
-      "dit",
-      "video generation"
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16934,10 +16934,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "denoising",
       "dit",
-      "temporal consistency",
-      "video generation"
+      "denoising",
+      "video generation",
+      "temporal consistency"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -16966,14 +16966,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "benchmark",
-      "efficient",
-      "text-to-video",
-      "diffusion model",
       "video diffusion",
       "dit",
-      "video generation"
+      "text-to-video",
+      "video generation",
+      "efficient",
+      "evaluation",
+      "diffusion model",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -17005,10 +17005,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "denoising",
-      "dit",
       "diffusion model",
-      "video generation"
+      "denoising",
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -17038,10 +17038,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "t2v",
       "dynamics",
       "text-to-video",
-      "video generation"
+      "video generation",
+      "t2v"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -17071,12 +17071,12 @@
     ],
     "github_url": "https://github.com/alibaba-damo-academy/Inferix",
     "keywords": [
-      "benchmark",
-      "autoregressive",
       "temporal consistency",
       "world model",
+      "video generation",
       "long video",
-      "video generation"
+      "autoregressive",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -17138,10 +17138,10 @@
     "github_url": "https://github.com/ssj9596/One-to-All-Animation",
     "keywords": [
       "layout",
-      "diffusion model",
-      "outpainting",
       "identity",
-      "video generation"
+      "video generation",
+      "diffusion model",
+      "outpainting"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -17172,12 +17172,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "denoising",
-      "benchmark",
-      "autoregressive",
+      "video generation",
       "efficient",
       "architecture",
-      "video generation"
+      "denoising",
+      "autoregressive",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -17208,13 +17208,13 @@
     ],
     "github_url": "",
     "keywords": [
+      "interactive",
       "layout",
       "controllable",
-      "benchmark",
-      "interactive",
-      "trajectory",
       "dit",
-      "video generation"
+      "trajectory",
+      "video generation",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -17280,9 +17280,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "denoising",
       "acceleration",
       "diffusion model",
+      "denoising",
       "video generation"
     ],
     "citations": 0,
@@ -17312,8 +17312,8 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
-      "architecture"
+      "architecture",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -17341,15 +17341,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "video translation",
-      "diffusion transformer",
-      "benchmark",
-      "film",
-      "world model",
-      "efficient",
-      "diffusion model",
       "video diffusion",
-      "video generation"
+      "world model",
+      "diffusion transformer",
+      "video generation",
+      "efficient",
+      "film",
+      "diffusion model",
+      "benchmark",
+      "video translation"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -17473,8 +17473,8 @@
     "github_url": "",
     "keywords": [
       "benchmark",
-      "architecture",
-      "evaluation"
+      "evaluation",
+      "architecture"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -17504,15 +17504,15 @@
     ],
     "github_url": "",
     "keywords": [
-      "t2v",
-      "denoising",
-      "benchmark",
       "temporal consistency",
-      "dynamics",
-      "diffusion model",
       "video diffusion",
       "dit",
-      "video generation"
+      "video generation",
+      "diffusion model",
+      "denoising",
+      "dynamics",
+      "t2v",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -17545,11 +17545,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "audio-driven",
-      "efficient",
       "dit",
       "video generation",
-      "style"
+      "style",
+      "efficient",
+      "audio-driven"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -17584,9 +17584,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "denoising",
-      "dynamics",
       "efficient",
+      "dynamics",
+      "denoising",
       "video generation"
     ],
     "citations": 0,
@@ -17621,12 +17621,12 @@
     "github_url": "https://github.com/hustvl/MobileI2V",
     "keywords": [
       "distillation",
-      "image-to-video",
-      "architecture",
-      "diffusion model",
-      "i2v",
       "dit",
-      "video generation"
+      "video generation",
+      "image-to-video",
+      "i2v",
+      "diffusion model",
+      "architecture"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -17662,13 +17662,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "t2v",
+      "dit",
       "diffusion transformer",
       "text-to-video",
-      "architecture",
+      "video generation",
       "diffusion model",
-      "dit",
-      "video generation"
+      "architecture",
+      "t2v"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -17700,11 +17700,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "t2v",
-      "evaluation",
       "text-to-video",
+      "video generation",
+      "evaluation",
       "dynamics",
-      "video generation"
+      "t2v"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -17735,10 +17735,10 @@
     ],
     "github_url": "",
     "keywords": [
-      "dit",
-      "diffusion model",
       "efficient",
-      "video generation"
+      "diffusion model",
+      "video generation",
+      "dit"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -17775,13 +17775,13 @@
     "keywords": [
       "layout",
       "controllable",
-      "benchmark",
-      "physical",
-      "temporal consistency",
-      "diffusion model",
       "video diffusion",
+      "temporal consistency",
       "dit",
-      "video generation"
+      "physical",
+      "video generation",
+      "diffusion model",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -17810,11 +17810,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
-      "benchmark",
       "identity",
+      "video generation",
+      "evaluation",
       "dynamics",
-      "video generation"
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -17843,12 +17843,12 @@
     ],
     "github_url": "",
     "keywords": [
-      "long-form",
       "controllable",
-      "autoregressive",
-      "diffusion model",
       "video diffusion",
-      "video generation"
+      "long-form",
+      "video generation",
+      "diffusion model",
+      "autoregressive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -17874,11 +17874,11 @@
     ],
     "github_url": "",
     "keywords": [
-      "t2v",
-      "benchmark",
       "text-to-video",
+      "video generation",
       "diffusion model",
-      "video generation"
+      "t2v",
+      "benchmark"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -17911,14 +17911,14 @@
     ],
     "github_url": "",
     "keywords": [
-      "motion control",
-      "image animation",
-      "text-to-video",
-      "video editing",
-      "architecture",
       "video diffusion",
       "dit",
-      "video generation"
+      "video editing",
+      "text-to-video",
+      "video generation",
+      "architecture",
+      "motion control",
+      "image animation"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -18019,9 +18019,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "diffusion transformer",
       "controllable",
       "dit",
+      "diffusion transformer",
       "video generation",
       "style"
     ],
@@ -18054,13 +18054,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "evaluation",
       "controllable",
-      "simulation",
-      "physical",
-      "physics",
       "dit",
-      "video generation"
+      "physical",
+      "video generation",
+      "evaluation",
+      "simulation",
+      "physics"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -18093,16 +18093,16 @@
     ],
     "github_url": "https://github.com/apple/ml-starflow",
     "keywords": [
-      "autoregressive",
-      "video-to-video",
-      "image-to-video",
       "temporal consistency",
+      "dit",
       "world model",
       "text-to-video",
-      "architecture",
+      "video generation",
+      "image-to-video",
+      "video-to-video",
       "diffusion model",
-      "dit",
-      "video generation"
+      "architecture",
+      "autoregressive"
     ],
     "citations": 0,
     "semantic_url": "",
@@ -18133,9 +18133,9 @@
     ],
     "github_url": "",
     "keywords": [
-      "acceleration",
       "evaluation",
       "interactive",
+      "acceleration",
       "video generation"
     ],
     "citations": 0,
@@ -18166,13 +18166,13 @@
     ],
     "github_url": "",
     "keywords": [
-      "denoising",
-      "efficient",
       "rectified flow",
-      "diffusion model",
-      "identity",
       "dit",
-      "video synthesis"
+      "identity",
+      "video synthesis",
+      "denoising",
+      "diffusion model",
+      "efficient"
     ],
     "citations": 0,
     "semantic_url": "",
