@@ -1,0 +1,42 @@
+{
+  "search": {
+    "keywords": {
+      "both_abstract_and_title": [
+        "video diffusion",
+        "video generation",
+        "text-to-video",
+        "text to video",
+        "image-to-video",
+        "video synthesis",
+        "video diffusion model"
+      ],
+      "abstract_only": [
+        "diffusion model video generation",
+        "video generative model",
+        "video prediction diffusion"
+      ],
+      "title_only": [
+        "video generation",
+        "video diffusion",
+        "text-to-video"
+      ]
+    },
+    "domains": ["cs.CV", "cs.AI", "cs.MM", "cs.LG"],
+    "time_range": {
+      "mode": "relative",
+      "relative": "1y",
+      "start_date": null,
+      "end_date": null
+    },
+    "max_results": 500
+  },
+  "categories": {
+    "description": "Custom category keywords (merged with data/keywords.json). Leave empty to use defaults only.",
+    "custom_categories": {}
+  },
+  "api_keys": {
+    "openai_api_key": "",
+    "openai_base_url": "https://api.openai.com/v1",
+    "openai_model": "gpt-4o-mini"
+  }
+}

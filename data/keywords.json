@@ -1,0 +1,80 @@
+{
+    "common_keywords": {
+        "description": "Common keywords that appear frequently across video diffusion papers",
+        "keywords": [
+            "video diffusion",
+            "video generation",
+            "text-to-video",
+            "video synthesis",
+            "diffusion model",
+            "diffusion transformer",
+            "video prediction"
+        ]
+    },
+    "categories": {
+        "Surveys & Benchmarks": {
+            "keywords": ["survey", "benchmark", "evaluation"],
+            "description": "Survey papers, benchmarks, and evaluation metrics for video generation"
+        },
+        "Text-to-Video Generation": {
+            "keywords": ["text-to-video", "text to video", "t2v", "text-driven video"],
+            "description": "Foundation models and methods for generating videos from text prompts"
+        },
+        "Image-to-Video Generation": {
+            "keywords": ["image-to-video", "image to video", "i2v", "image animation", "image-driven"],
+            "description": "Methods for animating still images into videos"
+        },
+        "Video Editing": {
+            "keywords": ["video editing", "video manipulation", "video-to-video", "video style transfer", "video translation"],
+            "description": "Diffusion-based video editing, style transfer, and manipulation"
+        },
+        "Controllable Generation": {
+            "keywords": ["controllable", "motion control", "camera control", "pose-guided", "depth-guided", "trajectory", "layout"],
+            "description": "Controllable video generation with motion, camera, pose, or layout guidance"
+        },
+        "Long Video Generation": {
+            "keywords": ["long video", "long-form", "autoregressive", "temporal consistency", "streaming"],
+            "description": "Generating temporally consistent long-form videos beyond short clips"
+        },
+        "Human & Character Animation": {
+            "keywords": ["talking head", "dance generation", "human animation", "virtual try-on", "avatar", "human motion", "face animation", "body motion", "gesture"],
+            "description": "Human-centric video generation including talking heads, dance, and character animation"
+        },
+        "World Models & Simulation": {
+            "keywords": ["world model", "world simulator", "interactive", "game generation", "simulation", "action-conditioned"],
+            "description": "Video generation as world simulators and interactive environment generation"
+        },
+        "Video Super-Resolution & Enhancement": {
+            "keywords": ["super-resolution", "upscaling", "video restoration", "video enhancement", "denoising", "frame interpolation"],
+            "description": "Video quality improvement, upscaling, restoration, and frame interpolation"
+        },
+        "Architecture & Efficiency": {
+            "keywords": ["efficient", "acceleration", "dit", "flow matching", "rectified flow", "latent video", "architecture", "distillation", "fast inference"],
+            "description": "Architectural innovations (DiT, UNet), flow matching, and training/inference efficiency"
+        },
+        "3D-aware Video Generation": {
+            "keywords": ["3d-aware", "multi-view video", "4d generation", "3d consistent", "novel view", "3d video"],
+            "description": "Video generation with 3D awareness, multi-view consistency, and 4D content creation"
+        },
+        "Audio & Multi-modal": {
+            "keywords": ["audio-driven", "music video", "audio-to-video", "multi-modal", "sound", "speech-driven"],
+            "description": "Audio-driven and multi-modal conditioned video generation"
+        },
+        "Personalization & Customization": {
+            "keywords": ["personalization", "customization", "subject-driven", "identity", "concept", "style"],
+            "description": "Personalized video generation with custom subjects, identities, or styles"
+        },
+        "Physical Understanding": {
+            "keywords": ["physics", "physical", "dynamics", "physical simulation", "physics-aware"],
+            "description": "Physics-aware video generation and dynamics modeling"
+        },
+        "Video Inpainting & Completion": {
+            "keywords": ["video inpainting", "video completion", "outpainting", "video interpolation", "video prediction"],
+            "description": "Video inpainting, completion, outpainting, and temporal prediction"
+        },
+        "Applications": {
+            "keywords": ["medical", "robotics", "autonomous driving", "creative", "film", "advertising", "education"],
+            "description": "Domain-specific applications of video diffusion models"
+        }
+    }
+}

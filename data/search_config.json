@@ -1,0 +1,29 @@
+{
+  "search_config": {
+    "description": "arXiv搜索配置 - 定义在摘要和/或题目中搜索的关键词",
+    "both_abstract_and_title": [
+      "video diffusion",
+      "video generation",
+      "text-to-video",
+      "text to video",
+      "image-to-video",
+      "video synthesis",
+      "video diffusion model"
+    ],
+    "abstract_only": [
+      "diffusion model video generation",
+      "video generative model",
+      "video prediction diffusion"
+    ],
+    "title_only": [
+      "video generation",
+      "video diffusion",
+      "text-to-video"
+    ],
+    "notes": {
+      "both_abstract_and_title": "这些关键词将在摘要(abs)和题目(ti)中搜索",
+      "abstract_only": "这些关键词只在摘要(abs)中搜索",
+      "title_only": "这些关键词只在题目(ti)中搜索"
+    }
+  }
+}
