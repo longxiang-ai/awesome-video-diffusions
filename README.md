@@ -2,7 +2,7 @@
 
 A curated list of latest research papers, projects and resources related to Video Diffusion Models and Video Generation. Content is automatically updated daily.
 
-> Last Update: 2026-03-05 02:07:49
+> Last Update: 2026-03-07 01:59:31
 
 ## 📰 Latest Updates
 
@@ -23,22 +23,22 @@ A curated list of latest research papers, projects and resources related to Vide
 
 ## Categories
 
-- [3D-aware Video Generation](#3d-aware-video-generation) (26 papers) - Video generation with 3D awareness, multi-view consistency, and 4D content creation
-- [Applications](#applications) (53 papers) - Domain-specific applications of video diffusion models
-- [Architecture & Efficiency](#architecture-&-efficiency) (362 papers) - Architectural innovations (DiT, UNet), flow matching, and training/inference efficiency
-- [Audio & Multi-modal](#audio-&-multi-modal) (34 papers) - Audio-driven and multi-modal conditioned video generation
+- [3D-aware Video Generation](#3d-aware-video-generation) (27 papers) - Video generation with 3D awareness, multi-view consistency, and 4D content creation
+- [Applications](#applications) (52 papers) - Domain-specific applications of video diffusion models
+- [Architecture & Efficiency](#architecture-&-efficiency) (360 papers) - Architectural innovations (DiT, UNet), flow matching, and training/inference efficiency
+- [Audio & Multi-modal](#audio-&-multi-modal) (33 papers) - Audio-driven and multi-modal conditioned video generation
 - [Controllable Generation](#controllable-generation) (113 papers) - Controllable video generation with motion, camera, pose, or layout guidance
 - [Human & Character Animation](#human-&-character-animation) (35 papers) - Human-centric video generation including talking heads, dance, and character animation
-- [Image-to-Video Generation](#image-to-video-generation) (43 papers) - Methods for animating still images into videos
-- [Long Video Generation](#long-video-generation) (128 papers) - Generating temporally consistent long-form videos beyond short clips
-- [Personalization & Customization](#personalization-&-customization) (95 papers) - Personalized video generation with custom subjects, identities, or styles
-- [Physical Understanding](#physical-understanding) (124 papers) - Physics-aware video generation and dynamics modeling
-- [Surveys & Benchmarks](#surveys-&-benchmarks) (195 papers) - Survey papers, benchmarks, and evaluation metrics for video generation
-- [Text-to-Video Generation](#text-to-video-generation) (75 papers) - Foundation models and methods for generating videos from text prompts
-- [Video Editing](#video-editing) (36 papers) - Diffusion-based video editing, style transfer, and manipulation
-- [Video Inpainting & Completion](#video-inpainting-&-completion) (6 papers) - Video inpainting, completion, outpainting, and temporal prediction
+- [Image-to-Video Generation](#image-to-video-generation) (41 papers) - Methods for animating still images into videos
+- [Long Video Generation](#long-video-generation) (126 papers) - Generating temporally consistent long-form videos beyond short clips
+- [Personalization & Customization](#personalization-&-customization) (94 papers) - Personalized video generation with custom subjects, identities, or styles
+- [Physical Understanding](#physical-understanding) (125 papers) - Physics-aware video generation and dynamics modeling
+- [Surveys & Benchmarks](#surveys-&-benchmarks) (194 papers) - Survey papers, benchmarks, and evaluation metrics for video generation
+- [Text-to-Video Generation](#text-to-video-generation) (77 papers) - Foundation models and methods for generating videos from text prompts
+- [Video Editing](#video-editing) (35 papers) - Diffusion-based video editing, style transfer, and manipulation
+- [Video Inpainting & Completion](#video-inpainting-&-completion) (5 papers) - Video inpainting, completion, outpainting, and temporal prediction
 - [Video Super-Resolution & Enhancement](#video-super-resolution-&-enhancement) (57 papers) - Video quality improvement, upscaling, restoration, and frame interpolation
-- [World Models & Simulation](#world-models-&-simulation) (102 papers) - Video generation as world simulators and interactive environment generation
+- [World Models & Simulation](#world-models-&-simulation) (101 papers) - Video generation as world simulators and interactive environment generation
 
 
 
@@ -58,376 +58,380 @@ A curated list of latest research papers, projects and resources related to Vide
 
 ### 3D-aware Video Generation
 
+- **[Transformer-Based Inpainting for Real-Time 3D Streaming in Sparse Multi-Camera Setups](https://arxiv.org/abs/2603.05507v1)**  
+  Authors: Leif Van Holland, Domenic Zingsheim, Mana Takhsha, Hannah Dröge, Patrick Stotko, Markus Plack, Reinhard Klein  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.05507v1.pdf)  
+  Keywords: architecture, dit, novel view, streaming  
+- **[Orthogonal Spatial-temporal Distributional Transfer for 4D Generation](https://arxiv.org/abs/2603.05081v1)**  
+  Authors: Wei Liu, Shengqiong Wu, Bobo Li, Haoyu Zhao, Hao Fei, Mong-Li Lee, Wynne Hsu  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.05081v1.pdf)  
+  Keywords: temporal consistency, video diffusion, diffusion model, 4d generation  
 - **[ShareVerse: Multi-Agent Consistent Video Generation for Shared World Modeling](https://arxiv.org/abs/2603.02697v1)**  
   Authors: Jiayi Zhu, Jianing Zhang, Yiying Yang, Wei Cheng, Xiaoyun Yuan  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02697v1.pdf)  
-  Keywords: interactive, world model, multi-view video, dit, video generation, simulation  
+  Keywords: multi-view video, video generation, dit, simulation, interactive, world model  
 - **[HumanOrbit: 3D Human Reconstruction as 360° Orbit Generation](https://arxiv.org/abs/2602.24148v1)**  
   Authors: Keito Suzuki, Kunyao Chen, Lei Wang, Bang Du, Runfa Blark Li, Peng Liu, Ning Bi, Truong Nguyen  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.24148v1.pdf)  
-  Keywords: identity, novel view, diffusion model, video diffusion  
+  Keywords: video diffusion, novel view, diffusion model, identity  
 - **[BetterScene: 3D Scene Synthesis with Representation-Aligned Generative Model](https://arxiv.org/abs/2602.22596v1)**  
   Authors: Yuci Han, Charles Toth, John E. Anderson, William J. Shuart, Alper Yilmaz  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.22596v1.pdf)  
-  Keywords: dit, novel view, diffusion model, video diffusion  
+  Keywords: dit, video diffusion, novel view, diffusion model  
 - **[Geometry-as-context: Modulating Explicit 3D in Scene-consistent Video Generation to Geometry Context](https://arxiv.org/abs/2602.21929v1)**  
   Authors: JiaKui Hu, Jialun Liu, Liying Yang, Xinliang Zhang, Kaiwen Li, Shuang Zeng, Yuanwei Li, Haibin Huang, Chi Zhang, Yanye Lu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.21929v1.pdf)  
-  Keywords: trajectory, camera control, novel view, video generation, autoregressive  
+  Keywords: trajectory, autoregressive, video generation, novel view, camera control  
 - **[RAYNOVA: Scale-Temporal Autoregressive World Modeling in Ray Space](https://arxiv.org/abs/2602.20685v2)**  
   Authors: Yichen Xie, Chensheng Peng, Mazen Abdelfattah, Yihan Hu, Jiezhi Yang, Eric Higgins, Ryan Brigden, Masayoshi Tomizuka, Wei Zhan  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.20685v2.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://raynova-ai.github.io)  
-  Keywords: world model, novel view, multi-view video, dit, video generation, physical, autoregressive  
+  Keywords: autoregressive, multi-view video, video generation, novel view, dit, physical, world model  
 - **[A Single Image and Multimodality Is All You Need for Novel View Synthesis](https://arxiv.org/abs/2602.17909v1)**  
   Authors: Amirhosein Javadi, Chi-Shiang Gau, Konstantinos D. Polyzos, Tara Javidi  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.17909v1.pdf)  
-  Keywords: video generation, dit, efficient, novel view  
+  Keywords: video generation, dit, novel view, efficient  
 - **[VideoNeuMat: Neural Material Extraction from Generative Video Models](https://arxiv.org/abs/2602.07272v1)**  
   Authors: Bowen Xue, Saeed Hadadan, Zheng Zeng, Fabrice Rousselle, Zahra Montazeri, Milos Hasan  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.07272v1.pdf)  
-  Keywords: dit, novel view, diffusion model, video diffusion  
+  Keywords: dit, video diffusion, novel view, diffusion model  
 - **[CineScene: Implicit 3D as Effective Scene Representation for Cinematic Video Generation](https://arxiv.org/abs/2602.06959v1)**  
   Authors: Kaiyi Huang, Yukun Huang, Yu Li, Jianhong Bai, Xintao Wang, Zinan Lin, Xuefei Ning, Jiwen Yu, Pengfei Wan, Yu Wang, Xihui Liu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.06959v1.pdf)  
-  Keywords: trajectory, video synthesis, dit, 3d-aware, video generation, physical, text-to-video  
-- **[SkeletonGaussian: Editable 4D Generation through Gaussian Skeletonization](https://arxiv.org/abs/2602.04271v1)**  
-  Authors: Lifan Wu, Ruijie Zhu, Yubo Ai, Tianzhu Zhang  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.04271v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://wusar.github.io/projects/skeletongaussian)  
-  Keywords: 4d generation, dit  
-- **[3D-Aware Implicit Motion Control for View-Adaptive Human Video Generation](https://arxiv.org/abs/2602.03796v2)**  
-  Authors: Zhixue Fang, Xu He, Songlin Tang, Haoxian Zhang, Qingfeng Li, Xiaoqiang Liu, Pengfei Wan, Kun Gai  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.03796v2.pdf)  
-  Keywords: dynamics, motion control, camera control, dit, 3d-aware, video generation, human motion  
+  Keywords: trajectory, video synthesis, video generation, text-to-video, dit, physical, 3d-aware  
 
 ### Applications
 
-*Showing the latest 50 out of 53 papers*
+*Showing the latest 50 out of 52 papers*
 
 - **[EduVQA: Benchmarking AI-Generated Video Quality Assessment for Education](https://arxiv.org/abs/2603.03066v1)**  
   Authors: Baoliang Chen, Xinlong Bu, Lingyu Zhu, Hanwei Zhu, Xiangjie Sui  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.03066v1.pdf)  
-  Keywords: evaluation, t2v, benchmark, concept, education, text-to-video  
+  Keywords: education, t2v, concept, text-to-video, evaluation, benchmark  
 - **[MicroVerse: A Preliminary Exploration Toward a Micro-World Simulation](https://arxiv.org/abs/2603.00585v1)**  
   Authors: Rongsheng Wang, Minghao Wu, Hongru Zhou, Zhihan Yu, Zhenyang Cai, Junying Chen, Benyou Wang  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.00585v1.pdf) | [![GitHub](https://img.shields.io/github/stars/FreedomIntelligence/MicroVerse?style=social)](https://github.com/FreedomIntelligence/MicroVerse)  
-  Keywords: interactive, evaluation, dynamics, benchmark, medical, concept, education, video generation, simulation, physical  
+  Keywords: education, video generation, concept, evaluation, physical, benchmark, dynamics, medical, simulation, interactive  
 - **[HorizonForge: Driving Scene Editing with Any Trajectories and Any Vehicles](https://arxiv.org/abs/2602.21333v2)**  
   Authors: Yifan Wang, Francesco Pittaluga, Zaid Tasneem, Chenyu You, Manmohan Chandraker, Ziyu Jiang  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.21333v2.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://horizonforge.github.io)  
-  Keywords: trajectory, evaluation, benchmark, dit, autonomous driving, video diffusion, simulation, controllable, temporal consistency  
+  Keywords: trajectory, controllable, dit, temporal consistency, evaluation, benchmark, simulation, autonomous driving, video diffusion  
 - **[GA-Drive: Geometry-Appearance Decoupled Modeling for Free-viewpoint Driving Scene Generatio](https://arxiv.org/abs/2602.20673v1)**  
   Authors: Hao Zhang, Lue Fan, Qitai Wang, Wenbo Li, Zehuan Wu, Lewei Lu, Zhaoxiang Zhang, Hongsheng Li  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.20673v1.pdf)  
-  Keywords: video-to-video, trajectory, video editing, dit, autonomous driving, video diffusion, simulation, diffusion model  
+  Keywords: trajectory, video-to-video, dit, simulation, autonomous driving, video diffusion, diffusion model, video editing  
 - **[3DSPA: A 3D Semantic Point Autoencoder for Evaluating Video Realism](https://arxiv.org/abs/2602.20354v1)**  
   Authors: Bhavik Chandna, Kelsey R. Allen  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.20354v1.pdf) | [![GitHub](https://img.shields.io/github/stars/TheProParadox/3dspa_code?style=social)](https://github.com/TheProParadox/3dspa_code)  
-  Keywords: trajectory, evaluation, benchmark, robotics, film, video generation, physical, temporal consistency  
+  Keywords: trajectory, robotics, video generation, film, temporal consistency, evaluation, physical, benchmark  
 - **[PedaCo-Gen: Scaffolding Pedagogical Agency in Human-AI Collaborative Video Authoring](https://arxiv.org/abs/2602.19623v1)**  
   Authors: Injun Baek, Yearim Kim, Nojun Kwak  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.19623v1.pdf)  
-  Keywords: interactive, t2v, dit, education, text-to-video  
+  Keywords: education, t2v, dit, text-to-video, interactive  
 - **[VideoSketcher: Video Models Prior Enable Versatile Sequential Sketch Generation](https://arxiv.org/abs/2602.15819v1)**  
   Authors: Hui Ren, Yuval Alaluf, Omer Bar Tal, Alexander Schwing, Antonio Torralba, Yael Vinker  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.15819v1.pdf)  
-  Keywords: interactive, diffusion model, dit, video diffusion, style, creative, efficient, autoregressive, text-to-video  
+  Keywords: autoregressive, efficient, text-to-video, dit, creative, style, video diffusion, interactive, diffusion model  
 - **[Beyond End-to-End Video Models: An LLM-Based Multi-Agent System for Educational Video Generation](https://arxiv.org/abs/2602.11790v1)**  
   Authors: Lingyong Yan, Jiulong Wu, Dong Xie, Weixian Shi, Deguo Xia, Jizhou Huang  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.11790v1.pdf)  
-  Keywords: video generation, dit, education  
+  Keywords: education, video generation, dit  
 - **[Ctrl&Shift: High-Quality Geometry-Aware Object Manipulation in Visual Generation](https://arxiv.org/abs/2602.11440v1)**  
   Authors: Penghui Ruan, Bojia Zi, Xianbiao Qi, Youze Huang, Rong Xiao, Pichao Wang, Jiannong Cao, Yuhui Shi  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.11440v1.pdf)  
-  Keywords: dit, film, identity, creative, controllable  
+  Keywords: controllable, film, dit, creative, identity  
 - **[VideoWorld 2: Learning Transferable Knowledge from Real-world Videos](https://arxiv.org/abs/2602.10102v1)**  
   Authors: Zhongwei Ren, Yunchao Wei, Xiao Yu, Guixun Luo, Yao Zhao, Bingyi Kang, Jiashi Feng, Xiaojie Jin  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.10102v1.pdf)  
-  Keywords: dynamics, robotics, video diffusion, autoregressive, video generation, diffusion model  
+  Keywords: autoregressive, robotics, video generation, dynamics, video diffusion, diffusion model  
 
 ### Architecture & Efficiency
 
-*Showing the latest 50 out of 362 papers*
+*Showing the latest 50 out of 360 papers*
 
+- **[Transformer-Based Inpainting for Real-Time 3D Streaming in Sparse Multi-Camera Setups](https://arxiv.org/abs/2603.05507v1)**  
+  Authors: Leif Van Holland, Domenic Zingsheim, Mana Takhsha, Hannah Dröge, Patrick Stotko, Markus Plack, Reinhard Klein  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.05507v1.pdf)  
+  Keywords: architecture, dit, novel view, streaming  
+- **[FaceCam: Portrait Video Camera Control via Scale-Aware Conditioning](https://arxiv.org/abs/2603.05506v1)**  
+  Authors: Weijie Lyu, Ming-Hsuan Yang, Zhixin Shu  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.05506v1.pdf)  
+  Keywords: camera control, video generation, dit, identity  
+- **[Accelerating Text-to-Video Generation with Calibrated Sparse Attention](https://arxiv.org/abs/2603.05503v1)**  
+  Authors: Shai Yehezkel, Shahar Yadin, Noam Elata, Yaron Ostrovsky-Berman, Bahjat Kawar  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.05503v1.pdf)  
+  Keywords: video generation, text-to-video, diffusion model, efficient  
+- **[RealWonder: Real-Time Physical Action-Conditioned Video Generation](https://arxiv.org/abs/2603.05449v1)**  
+  Authors: Wei Liu, Ziyu Chen, Zizhang Li, Yue Wang, Hong-Xing Yu, Jiajun Wu  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.05449v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://liuwei283.github.io/RealWonder)  
+  Keywords: video generation, physics, action-conditioned, dit, camera control, physical, simulation, interactive  
+- **[Frequency-Aware Error-Bounded Caching for Accelerating Diffusion Transformers](https://arxiv.org/abs/2603.05315v1)**  
+  Authors: Guandong Li  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.05315v1.pdf)  
+  Keywords: trajectory, video generation, architecture, dit, diffusion transformer, dynamics, denoising  
+- **[UniM: A Unified Any-to-Any Interleaved Multimodal Benchmark](https://arxiv.org/abs/2603.05075v1)**  
+  Authors: Yanlin Li, Minghui Guo, Kaiwen Zhang, Shize Zhang, Yiran Zhao, Haodong Li, Congyue Zhou, Weijie Zheng, Yushen Yan, Shengqiong Wu, Wei Ji, Lei Cui, Furu Wei, Hao Fei, Mong-Li Lee, Wynne Hsu  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.05075v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://any2any-mllm.github.io/unim)  
+  Keywords: benchmark, dit, evaluation  
+- **[Helios: Real Real-Time Long Video Generation Model](https://arxiv.org/abs/2603.04379v1)**  
+  Authors: Shenghai Yuan, Yuanyang Yin, Zongjian Li, Xinwei Huang, Xiao Yang, Li Yuan  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.04379v1.pdf)  
+  Keywords: t2v, autoregressive, video generation, acceleration, long video, i2v, diffusion model  
+- **[ArtHOI: Articulated Human-Object Interaction Synthesis by 4D Reconstruction from Video Priors](https://arxiv.org/abs/2603.04338v1)**  
+  Authors: Zihao Huang, Tianqi Liu, Zhaoxi Chen, Shaocong Xu, Saining Zhang, Lixing Xiao, Zhiguo Cao, Wei Li, Hao Zhao, Ziwei Liu  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.04338v1.pdf)  
+  Keywords: human motion, dit, physical, video diffusion, diffusion model  
 - **[EvoPrune: Early-Stage Visual Token Pruning for Efficient MLLMs](https://arxiv.org/abs/2603.03681v1)**  
   Authors: Yuhao Chen, Bin Shan, Xin Ye, Cheng Chen  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.03681v1.pdf)  
-  Keywords: efficient, benchmark  
+  Keywords: benchmark, efficient  
 - **[PhyPrompt: RL-based Prompt Refinement for Physically Plausible Text-to-Video Generation](https://arxiv.org/abs/2603.03505v1)**  
   Authors: Shang Wu, Chenwei Xu, Zhuofan Xia, Weijian Li, Lie Lu, Pranav Maneriker, Fan Du, Manling Li, Han Liu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.03505v1.pdf)  
-  Keywords: t2v, physics-aware, text-to-video, video generation, physical, physics, architecture  
-- **[TC-Padé: Trajectory-Consistent Padé Approximation for Diffusion Acceleration](https://arxiv.org/abs/2603.02943v1)**  
-  Authors: Benlei Cui, Shaoxuan He, Bukun Huang, Zhizeng Ye, Yunyun Sun, Longtao Huang, Hui Xue, Yang Yang, Jingqun Tang, Zhou Zhao, Haiwen Hong  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02943v1.pdf)  
-  Keywords: denoising, trajectory, dynamics, acceleration, dit, video generation, efficient, diffusion model  
-- **[Interpretable Motion-Attentive Maps: Spatio-Temporally Localizing Concepts in Video Diffusion Transformers](https://arxiv.org/abs/2603.02919v1)**  
-  Authors: Youngjun Jun, Seil Kang, Woojung Han, Seong Jae Hwang  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02919v1.pdf)  
-  Keywords: dit, diffusion transformer, concept, video diffusion  
-- **[SemanticDialect: Semantic-Aware Mixed-Format Quantization for Video Diffusion Transformers](https://arxiv.org/abs/2603.02883v1)**  
-  Authors: Wonsuk Jang, Thierry Tambe  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02883v1.pdf)  
-  Keywords: diffusion transformer, dit, video diffusion, video generation, efficient  
-- **[ShareVerse: Multi-Agent Consistent Video Generation for Shared World Modeling](https://arxiv.org/abs/2603.02697v1)**  
-  Authors: Jiayi Zhu, Jianing Zhang, Yiying Yang, Wei Cheng, Xiaoyun Yuan  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02697v1.pdf)  
-  Keywords: interactive, world model, multi-view video, dit, video generation, simulation  
-- **[Direct Reward Fine-Tuning on Poses for Single Image to 3D Human in the Wild](https://arxiv.org/abs/2603.02619v1)**  
-  Authors: Seunguk Do, Minwoo Huh, Joonghyuk Shin, Jaesik Park  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02619v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://seunguk-do.github.io/drpose)  
-  Keywords: evaluation, benchmark, dit, human motion, diffusion model  
-- **[Deep Learning Based Wildfire Detection for Peatland Fires Using Transfer Learning](https://arxiv.org/abs/2603.02465v1)**  
-  Authors: Emadeldeen Hamdan, Ahmad Faiz Tharima, Mohd Zahirasri Mohd Tohir, Dayang Nur Sakinah Musa, Erdem Koyuncu, Adam J. Watts, Ahmet Enis Cetin  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02465v1.pdf)  
-  Keywords: dit, physical  
-- **[LiftAvatar: Kinematic-Space Completion for Expression-Controlled 3D Gaussian Avatar Animation](https://arxiv.org/abs/2603.02129v1)**  
-  Authors: Hualiang Wei, Shunran Jia, Jialun Liu, Wenhui Li  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02129v1.pdf)  
-  Keywords: diffusion transformer, avatar, dit, distillation, video diffusion, efficient, controllable  
-- **[Non-verbal Real-time Human-AI Interaction in Constrained Robotic Environments](https://arxiv.org/abs/2603.01804v1)**  
-  Authors: Dragos Costea, Alina Marcu, Cristina Lazar, Marius Leordeanu  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01804v1.pdf)  
-  Keywords: architecture, body motion, text-to-video  
+  Keywords: t2v, video generation, architecture, text-to-video, physical, physics-aware, physics  
 
 ### Audio & Multi-modal
 
 - **[UniTalking: A Unified Audio-Video Framework for Talking Portrait Generation](https://arxiv.org/abs/2603.01418v1)**  
   Authors: Hebeizi Li, Zihao Liang, Benyuan Sun, Zihao Yin, Xiao Sha, Chenliang Wang, Yi Yang  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01418v1.pdf)  
-  Keywords: multi-modal, style, video generation, efficient, architecture  
+  Keywords: video generation, architecture, efficient, style, multi-modal  
 - **[FlowPortrait: Reinforcement Learning for Audio-Driven Portrait Video Generation](https://arxiv.org/abs/2603.00159v1)**  
   Authors: Weiting Tan, Andy T. Liu, Ming Tu, Xinghua Qu, Philipp Koehn, Lu Lu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.00159v1.pdf)  
-  Keywords: evaluation, audio-to-video, audio-driven, video generation, autoregressive, temporal consistency  
+  Keywords: autoregressive, video generation, audio-driven, temporal consistency, evaluation, audio-to-video  
 - **[SkyReels-V4: Multi-modal Video-Audio Generation, Inpainting and Editing model](https://arxiv.org/abs/2602.21818v2)**  
   Authors: Guibin Chen, Dixuan Lin, Jiangping Yang, Youqiang Zhang, Zhengcong Fei, Debang Li, Sheng Chen, Chaofeng Ao, Nuo Pang, Yiming Wang, Yikun Dou, Zheng Chen, Mingyuan Fan, Tuanhui Li, Mingshan Chang, Hao Zhang, Xiaopeng Sun, Jingtao Xu, Yuqiang Xie, Jiahua Wang, Zhiheng Xu, Weiming Xiong, Yuzhe Jin, Baoxuan Gu, Binjie Mao, Yunjie Yu, Jujie He, Yuhao Feng, Shiwen Tu, Chaojie Wang, Rui Yan, Wei Shen, Jingchen Wu, Peng Zhao, Xuanyue Zhong, Zhuangzhuang Liu, Kaifei Wang, Fuxiang Zhang, Weikai Xu, Wenyan Liu, Binglu Zhang, Yu Shen, Tianhui Xiong, Bin Peng, Liang Zeng, Xuchen Song, Haoxiang Guo, Peiyu Wang, Max W. Y. Lam, Chien-Hung Liu, Yahui Zhou  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.21818v2.pdf)  
-  Keywords: sound, image to video, frame interpolation, diffusion transformer, video editing, super-resolution, dit, multi-modal, style, video generation, architecture  
+  Keywords: video generation, frame interpolation, architecture, image to video, multi-modal, dit, diffusion transformer, sound, super-resolution, style, video editing  
 - **[JavisDiT++: Unified Modeling and Optimization for Joint Audio-Video Generation](https://arxiv.org/abs/2602.19163v1)**  
   Authors: Kai Liu, Yanhao Zheng, Kai Wang, Shengqiong Wu, Rongjunchen Zhang, Jiebo Luo, Dimitrios Hatzinakos, Ziwei Liu, Hao Fei, Tat-Seng Chua  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.19163v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://JavisVerse.github.io/JavisDiT2-page)  
-  Keywords: evaluation, t2v, sound, dit, video generation  
+  Keywords: t2v, video generation, dit, evaluation, sound  
 - **[EchoTorrent: Towards Swift, Sustained, and Streaming Multi-Modal Video Generation](https://arxiv.org/abs/2602.13669v2)**  
   Authors: Rang Meng, Yingjie Yin, Yuming Li, Chenguang Ma  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.13669v2.pdf)  
-  Keywords: streaming, multi-modal, identity, temporal consistency, video generation, autoregressive, architecture  
+  Keywords: autoregressive, video generation, architecture, multi-modal, temporal consistency, identity, streaming  
 - **[DreamID-Omni: Unified Framework for Controllable Human-Centric Audio-Video Generation](https://arxiv.org/abs/2602.12160v1)**  
   Authors: Xu Guo, Fulong Ye, Qichao Sun, Liyang Chen, Bingchuan Li, Pengze Zhang, Jiawei Liu, Songtao Zhao, Qian He, Xiangwang Hou  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.12160v1.pdf)  
-  Keywords: diffusion transformer, video editing, dit, identity, audio-driven, video generation, controllable  
+  Keywords: video generation, controllable, audio-driven, dit, diffusion transformer, identity, video editing  
 - **[TiFRe: Text-guided Video Frame Reduction for Efficient Video Multi-modal Large Language Models](https://arxiv.org/abs/2602.08861v1)**  
   Authors: Xiangtian Zheng, Zishuo Wang, Yuxin Peng  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.08861v1.pdf)  
-  Keywords: efficient, multi-modal, style  
+  Keywords: efficient, style, multi-modal  
 - **[VideoVeritas: AI-Generated Video Detection via Perception Pretext Reinforcement Learning](https://arxiv.org/abs/2602.08828v1)**  
   Authors: Hao Tan, Jun Lan, Senyuan Shi, Zichang Tan, Zijian Yu, Huijia Zhu, Weiqiang Wang, Jun Wan, Zhen Lei  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.08828v1.pdf)  
-  Keywords: video generation, multi-modal, evaluation, benchmark  
+  Keywords: benchmark, multi-modal, video generation, evaluation  
 - **[MOVA: Towards Scalable and Synchronized Video-Audio Generation](https://arxiv.org/abs/2602.08794v2)**  
   Authors: SII-OpenMOSS Team, :, Donghua Yu, Mingshu Chen, Qi Chen, Qi Luo, Qianyi Wu, Qinyuan Cheng, Ruixiao Li, Tianyi Liang, Wenbo Zhang, Wenming Tu, Xiangyu Peng, Yang Gao, Yanru Huo, Ying Zhu, Yinze Luo, Yiyang Zhang, Yuerong Song, Zhe Xu, Zhiyu Zhang, Chenchen Yang, Cheng Chang, Chushu Zhou, Hanfu Chen, Hongnan Ma, Jiaxi Li, Jingqi Tong, Junxi Liu, Ke Chen, Shimin Li, Shiqi Jiang, Songlin Wang, Wei Jiang, Zhaoye Fei, Zhiyuan Ning, Chunguo Li, Chenhui Li, Ziwei He, Zengfeng Huang, Xie Chen, Xipeng Qiu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.08794v2.pdf)  
-  Keywords: t2v, sound, efficient, text to video, architecture  
+  Keywords: t2v, architecture, efficient, sound, text to video  
 - **[T2VTree: User-Centered Visual Analytics for Agent-Assisted Thought-to-Video Authoring](https://arxiv.org/abs/2602.08368v1)**  
   Authors: Zhuoyun Zheng, Yu Dong, Gaorong Liang, Guan Li, Guihua Shan, Shiyu Cheng, Dong Tian, Jianlong Zhou, Jie Liang  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.08368v1.pdf) | [![GitHub](https://img.shields.io/github/stars/tezuka0210/T2VTree?style=social)](https://github.com/tezuka0210/T2VTree)  
-  Keywords: video generation, dit, multi-modal, t2v  
+  Keywords: t2v, video generation, dit, multi-modal  
 
 ### Controllable Generation
 
 *Showing the latest 50 out of 113 papers*
 
+- **[FaceCam: Portrait Video Camera Control via Scale-Aware Conditioning](https://arxiv.org/abs/2603.05506v1)**  
+  Authors: Weijie Lyu, Ming-Hsuan Yang, Zhixin Shu  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.05506v1.pdf)  
+  Keywords: camera control, video generation, dit, identity  
+- **[RealWonder: Real-Time Physical Action-Conditioned Video Generation](https://arxiv.org/abs/2603.05449v1)**  
+  Authors: Wei Liu, Ziyu Chen, Zizhang Li, Yue Wang, Hong-Xing Yu, Jiajun Wu  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.05449v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://liuwei283.github.io/RealWonder)  
+  Keywords: video generation, physics, action-conditioned, dit, camera control, physical, simulation, interactive  
+- **[Frequency-Aware Error-Bounded Caching for Accelerating Diffusion Transformers](https://arxiv.org/abs/2603.05315v1)**  
+  Authors: Guandong Li  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.05315v1.pdf)  
+  Keywords: trajectory, video generation, architecture, dit, diffusion transformer, dynamics, denoising  
+- **[FC-VFI: Faithful and Consistent Video Frame Interpolation for High-FPS Slow Motion Video Generation](https://arxiv.org/abs/2603.04899v1)**  
+  Authors: Ganggui Ding, Hao Chen, Xiaogang Xu  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.04899v1.pdf)  
+  Keywords: video generation, frame interpolation, temporal consistency, motion control, video diffusion, diffusion model  
 - **[TC-Padé: Trajectory-Consistent Padé Approximation for Diffusion Acceleration](https://arxiv.org/abs/2603.02943v1)**  
   Authors: Benlei Cui, Shaoxuan He, Bukun Huang, Zhizeng Ye, Yunyun Sun, Longtao Huang, Hui Xue, Yang Yang, Jingqun Tang, Zhou Zhao, Haiwen Hong  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02943v1.pdf)  
-  Keywords: denoising, trajectory, dynamics, acceleration, dit, video generation, efficient, diffusion model  
+  Keywords: trajectory, video generation, efficient, dit, acceleration, dynamics, denoising, diffusion model  
 - **[LiftAvatar: Kinematic-Space Completion for Expression-Controlled 3D Gaussian Avatar Animation](https://arxiv.org/abs/2603.02129v1)**  
   Authors: Hualiang Wei, Shunran Jia, Jialun Liu, Wenhui Li  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02129v1.pdf)  
-  Keywords: diffusion transformer, avatar, dit, distillation, video diffusion, efficient, controllable  
+  Keywords: controllable, efficient, dit, diffusion transformer, distillation, avatar, video diffusion  
 - **[WorldStereo: Bridging Camera-Guided Video Generation and Scene Reconstruction via 3D Geometric Memories](https://arxiv.org/abs/2603.02049v1)**  
   Authors: Yisu Zhang, Chenjie Cao, Tengfei Wang, Xuhui Zuo, Junta Wu, Jianke Zhu, Chunchao Guo  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02049v1.pdf)  
-  Keywords: camera control, world model, benchmark, video diffusion, video generation, diffusion model  
+  Keywords: video generation, camera control, benchmark, video diffusion, diffusion model, world model  
 - **[StepVAR: Structure-Texture Guided Pruning for Visual Autoregressive Models](https://arxiv.org/abs/2603.01757v1)**  
   Authors: Keli Liu, Zhendong Wang, Wengang Zhou, Houqiang Li  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01757v1.pdf)  
-  Keywords: architecture, evaluation, acceleration, layout, efficient, autoregressive, text-to-video  
+  Keywords: autoregressive, architecture, efficient, text-to-video, acceleration, evaluation, layout  
 - **[FREE-Edit: Using Editing-aware Injection in Rectified Flow Models for Zero-shot Image-Driven Video Editing](https://arxiv.org/abs/2603.01164v1)**  
   Authors: Maomao Li, Yunfei Liu, Yu Li  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01164v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://free-edit.github.io/page)  
-  Keywords: denoising, image-to-video, video editing, layout, dit, rectified flow, image-driven, i2v  
+  Keywords: image-to-video, image-driven, dit, rectified flow, i2v, denoising, layout, video editing  
 - **[Let Your Image Move with Your Motion! -- Implicit Multi-Object Multi-Motion Transfer](https://arxiv.org/abs/2603.01000v1)**  
   Authors: Yuze Li, Dong Gong, Xiao Cao, Junchao Yuan, Dongsheng Li, Lei Zhou, Yun Sing Koh, Cheng Yan, Xinyu Zhang  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01000v1.pdf)  
-  Keywords: image-to-video, video generation, efficient, controllable, i2v  
-- **[COMBAT: Conditional World Models for Behavioral Agent Training](https://arxiv.org/abs/2603.00825v1)**  
-  Authors: Anmol Agarwal, Pranay Meshram, Sumer Singh, Saurav Suman, Andrew Lapp, Shahbuland Matiana, Louis Castricato, Spencer Frazier  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.00825v1.pdf)  
-  Keywords: interactive, evaluation, diffusion transformer, world model, benchmark, dit, distillation, video generation, controllable, diffusion model  
-- **[CamDirector: Towards Long-Term Coherent Video Trajectory Editing](https://arxiv.org/abs/2603.02256v1)**  
-  Authors: Zhihao Shi, Kejia Yin, Weilin Wan, Yuhongze Zhou, Yuanhao Yu, Xinxin Zuo, Qiang Sun, Juwei Lu  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02256v1.pdf)  
-  Keywords: trajectory, style, benchmark, dit, video diffusion, autoregressive, camera control, diffusion model  
-- **[ColoDiff: Integrating Dynamic Consistency With Content Awareness for Colonoscopy Video Generation](https://arxiv.org/abs/2602.23203v1)**  
-  Authors: Junhu Fu, Shuyu Liang, Wutong Li, Chen Ma, Peng Huang, Kehao Wang, Ke Chen, Shengli Lin, Pinghong Zhou, Zeju Li, Yuanyuan Wang, Yi Guo  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.23203v1.pdf)  
-  Keywords: dynamics, dit, video generation, controllable, diffusion model, temporal consistency  
-- **[The Trinity of Consistency as a Defining Principle for General World Models](https://arxiv.org/abs/2602.23152v1)**  
-  Authors: Jingxuan Wei, Siyuan Li, Yuhang Xu, Zheng Sun, Junjie Jiang, Hexuan Jin, Caijun Jia, Honghao He, Xinglong Xu, Xi bai, Chang Yu, Yumou Liu, Junnan Zhu, Xuanhe Zhou, Jintao Chen, Xiaobin Hu, Shancheng Pang, Bihui Yu, Ran He, Zhen Lei, Stan Z. Li, Conghui He, Shuicheng Yan, Cheng Tan  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.23152v1.pdf)  
-  Keywords: architecture, trajectory, evaluation, dynamics, world model, benchmark, world simulator, concept, video generation, physical, temporal consistency  
+  Keywords: image-to-video, video generation, controllable, efficient, i2v  
 
 ### Human & Character Animation
 
+- **[ArtHOI: Articulated Human-Object Interaction Synthesis by 4D Reconstruction from Video Priors](https://arxiv.org/abs/2603.04338v1)**  
+  Authors: Zihao Huang, Tianqi Liu, Zhaoxi Chen, Shaocong Xu, Saining Zhang, Lixing Xiao, Zhiguo Cao, Wei Li, Hao Zhao, Ziwei Liu  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.04338v1.pdf)  
+  Keywords: human motion, dit, physical, video diffusion, diffusion model  
 - **[Direct Reward Fine-Tuning on Poses for Single Image to 3D Human in the Wild](https://arxiv.org/abs/2603.02619v1)**  
   Authors: Seunguk Do, Minwoo Huh, Joonghyuk Shin, Jaesik Park  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02619v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://seunguk-do.github.io/drpose)  
-  Keywords: evaluation, benchmark, dit, human motion, diffusion model  
+  Keywords: human motion, dit, evaluation, benchmark, diffusion model  
 - **[LiftAvatar: Kinematic-Space Completion for Expression-Controlled 3D Gaussian Avatar Animation](https://arxiv.org/abs/2603.02129v1)**  
   Authors: Hualiang Wei, Shunran Jia, Jialun Liu, Wenhui Li  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02129v1.pdf)  
-  Keywords: diffusion transformer, avatar, dit, distillation, video diffusion, efficient, controllable  
+  Keywords: controllable, efficient, dit, diffusion transformer, distillation, avatar, video diffusion  
 - **[Non-verbal Real-time Human-AI Interaction in Constrained Robotic Environments](https://arxiv.org/abs/2603.01804v1)**  
   Authors: Dragos Costea, Alina Marcu, Cristina Lazar, Marius Leordeanu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01804v1.pdf)  
-  Keywords: architecture, body motion, text-to-video  
+  Keywords: body motion, text-to-video, architecture  
 - **[GeoDiff4D: Geometry-Aware Diffusion for 4D Head Avatar Reconstruction](https://arxiv.org/abs/2602.24161v1)**  
   Authors: Chao Xu, Xiaochen Zhao, Xiang Deng, Jingxiang Sun, Zhuo Su, Donglin Di, Yebin Liu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.24161v1.pdf)  
-  Keywords: video generation, identity, avatar, diffusion model  
+  Keywords: video generation, identity, diffusion model, avatar  
 - **[Spatio-Temporal Garment Reconstruction Using Diffusion Mapping via Pattern Coordinates](https://arxiv.org/abs/2602.24043v1)**  
   Authors: Yingxuan You, Ren Li, Corentin Dumery, Cong Cao, Hao Li, Pascal Fua  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.24043v1.pdf)  
-  Keywords: diffusion model, avatar, dit, virtual try-on, temporal consistency  
+  Keywords: dit, virtual try-on, temporal consistency, avatar, diffusion model  
 - **[BigMaQ: A Big Macaque Motion and Animation Dataset Bridging Image and 3D Pose Representations](https://arxiv.org/abs/2602.19874v1)**  
   Authors: Lucas Martini, Alexander Lappe, Anna Bognár, Rufin Vogels, Martin A. Giese  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.19874v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://martinivis.github.io/BigMaQ)  
-  Keywords: dynamics, avatar, benchmark  
+  Keywords: benchmark, dynamics, avatar  
 - **[Ani3DHuman: Photorealistic 3D Human Animation with Self-guided Stochastic Sampling](https://arxiv.org/abs/2602.19089v1)**  
   Authors: Qi Sun, Can Wang, Jiaxiang Shang, Yingchun Liu, Jing Liao  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.19089v1.pdf) | [![GitHub](https://img.shields.io/github/stars/qiisun/ani3dhuman?style=social)](https://github.com/qiisun/ani3dhuman)  
-  Keywords: human animation, dynamics, identity, video diffusion, diffusion model  
+  Keywords: human animation, identity, dynamics, video diffusion, diffusion model  
 - **[HairWeaver: Few-Shot Photorealistic Hair Motion Synthesis with Sim-to-Real Guided Video Diffusion](https://arxiv.org/abs/2602.11117v1)**  
   Authors: Di Chang, Ji Hou, Aljaz Bozic, Assaf Neuberger, Felix Juefei-Xu, Olivier Maury, Gene Wei-Chin Lin, Tuur Stuyck, Doug Roble, Mohammad Soleymani, Stephane Grabli  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.11117v1.pdf)  
-  Keywords: evaluation, dynamics, dit, video diffusion, human motion  
+  Keywords: human motion, dit, evaluation, dynamics, video diffusion  
 - **[Hand2World: Autoregressive Egocentric Interaction Generation via Free-Space Hand Gestures](https://arxiv.org/abs/2602.09600v2)**  
   Authors: Yuxi Wang, Wenqi Ouyang, Tianyi Wei, Yi Dong, Zhiqi Shen, Xingang Pan  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.09600v2.pdf)  
-  Keywords: interactive, dynamics, diffusion model, camera control, world model, gesture, benchmark, dit, video generation, autoregressive  
-- **[AUHead: Realistic Emotional Talking Head Generation via Action Units Control](https://arxiv.org/abs/2602.09534v1)**  
-  Authors: Jiayi Lyu, Leigang Qu, Wenjing Zhang, Hanyu Jiang, Kai Liu, Zhenglin Zhou, Xiaobo Xia, Jian Xue, Tat-Seng Chua  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.09534v1.pdf) | [![GitHub](https://img.shields.io/github/stars/laura990501/AUHead_ICLR?style=social)](https://github.com/laura990501/AUHead_ICLR)  
-  Keywords: interactive, motion control, benchmark, avatar, dit, film, identity, video generation, controllable, diffusion model, talking head  
+  Keywords: autoregressive, video generation, dit, camera control, benchmark, dynamics, gesture, interactive, diffusion model, world model  
 
 ### Image-to-Video Generation
 
+- **[Helios: Real Real-Time Long Video Generation Model](https://arxiv.org/abs/2603.04379v1)**  
+  Authors: Shenghai Yuan, Yuanyang Yin, Zongjian Li, Xinwei Huang, Xiao Yang, Li Yuan  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.04379v1.pdf)  
+  Keywords: t2v, autoregressive, video generation, acceleration, long video, i2v, diffusion model  
 - **[FastLightGen: Fast and Light Video Generation with Fewer Steps and Parameters](https://arxiv.org/abs/2603.01685v1)**  
   Authors: Shao Shitong, Gu Yufei, Xie Zeke  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01685v1.pdf)  
-  Keywords: video generation, efficient, distillation, i2v  
+  Keywords: i2v, video generation, distillation, efficient  
 - **[FREE-Edit: Using Editing-aware Injection in Rectified Flow Models for Zero-shot Image-Driven Video Editing](https://arxiv.org/abs/2603.01164v1)**  
   Authors: Maomao Li, Yunfei Liu, Yu Li  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01164v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://free-edit.github.io/page)  
-  Keywords: denoising, image-to-video, video editing, layout, dit, rectified flow, image-driven, i2v  
+  Keywords: image-to-video, image-driven, dit, rectified flow, i2v, denoising, layout, video editing  
 - **[Let Your Image Move with Your Motion! -- Implicit Multi-Object Multi-Motion Transfer](https://arxiv.org/abs/2603.01000v1)**  
   Authors: Yuze Li, Dong Gong, Xiao Cao, Junchao Yuan, Dongsheng Li, Lei Zhou, Yun Sing Koh, Cheng Yan, Xinyu Zhang  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01000v1.pdf)  
-  Keywords: image-to-video, video generation, efficient, controllable, i2v  
+  Keywords: image-to-video, video generation, controllable, efficient, i2v  
 - **[SkyReels-V4: Multi-modal Video-Audio Generation, Inpainting and Editing model](https://arxiv.org/abs/2602.21818v2)**  
   Authors: Guibin Chen, Dixuan Lin, Jiangping Yang, Youqiang Zhang, Zhengcong Fei, Debang Li, Sheng Chen, Chaofeng Ao, Nuo Pang, Yiming Wang, Yikun Dou, Zheng Chen, Mingyuan Fan, Tuanhui Li, Mingshan Chang, Hao Zhang, Xiaopeng Sun, Jingtao Xu, Yuqiang Xie, Jiahua Wang, Zhiheng Xu, Weiming Xiong, Yuzhe Jin, Baoxuan Gu, Binjie Mao, Yunjie Yu, Jujie He, Yuhao Feng, Shiwen Tu, Chaojie Wang, Rui Yan, Wei Shen, Jingchen Wu, Peng Zhao, Xuanyue Zhong, Zhuangzhuang Liu, Kaifei Wang, Fuxiang Zhang, Weikai Xu, Wenyan Liu, Binglu Zhang, Yu Shen, Tianhui Xiong, Bin Peng, Liang Zeng, Xuchen Song, Haoxiang Guo, Peiyu Wang, Max W. Y. Lam, Chien-Hung Liu, Yahui Zhou  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.21818v2.pdf)  
-  Keywords: sound, image to video, frame interpolation, diffusion transformer, video editing, super-resolution, dit, multi-modal, style, video generation, architecture  
+  Keywords: video generation, frame interpolation, architecture, image to video, multi-modal, dit, diffusion transformer, sound, super-resolution, style, video editing  
 - **[MultiAnimate: Pose-Guided Image Animation Made Extensible](https://arxiv.org/abs/2602.21581v1)**  
   Authors: Yingcheng Hu, Haowen Gong, Chuanguang Yang, Zhulin An, Yongjun Xu, Songhua Liu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.21581v1.pdf)  
-  Keywords: image animation, diffusion transformer, dit, identity, pose-guided, video generation  
+  Keywords: video generation, dit, diffusion transformer, pose-guided, image animation, identity  
 - **[Human Video Generation from a Single Image with 3D Pose and View Control](https://arxiv.org/abs/2602.21188v1)**  
   Authors: Tiantian Wang, Chun-Han Yao, Tao Hu, Mallikarjun Byrasandra Ramalinga Reddy, Ming-Hsuan Yang, Varun Jampani  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.21188v1.pdf)  
-  Keywords: image-to-video, latent video, video synthesis, video diffusion, video generation, diffusion model  
+  Keywords: video synthesis, image-to-video, video generation, latent video, video diffusion, diffusion model  
 - **[VII: Visual Instruction Injection for Jailbreaking Image-to-Video Generation Models](https://arxiv.org/abs/2602.20999v2)**  
   Authors: Bowen Zheng, Yongli Xiang, Ziming Hong, Zerong Lin, Chaojian Yu, Tongliang Liu, Xinge You  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.20999v2.pdf)  
-  Keywords: video generation, dit, image-to-video, i2v  
+  Keywords: i2v, image-to-video, video generation, dit  
 - **[AnimeAgent: Is the Multi-Agent via Image-to-Video models a Good Disney Storytelling Artist?](https://arxiv.org/abs/2602.20664v1)**  
   Authors: Hailong Yan, Shice Liu, Tao Wang, Xiangtao Zhang, Yijie Zhong, Jinwei Chen, Le Zhang, Bo Li  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.20664v1.pdf)  
-  Keywords: benchmark, image-to-video, diffusion model, i2v  
+  Keywords: i2v, image-to-video, benchmark, diffusion model  
 - **[Frame2Freq: Spectral Adapters for Fine-Grained Video Understanding](https://arxiv.org/abs/2602.18977v1)**  
   Authors: Thinesh Thiyakesan Ponbagavathi, Constantin Seibold, Alina Roitberg  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.18977v1.pdf) | [![GitHub](https://img.shields.io/github/stars/th-nesh/Frame2Freq?style=social)](https://github.com/th-nesh/Frame2Freq)  
   Keywords: image-to-video, dynamics  
-- **[FlexAM: Flexible Appearance-Motion Decomposition for Versatile Video Generation Control](https://arxiv.org/abs/2602.13185v1)**  
-  Authors: Mingzhi Sheng, Zekai Gu, Peng Li, Cheng Lin, Hao-Xiang Guo, Ying-Cong Chen, Yuan Liu  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.13185v1.pdf)  
-  Keywords: dynamics, camera control, dit, video generation, i2v  
 
 ### Long Video Generation
 
-*Showing the latest 50 out of 128 papers*
+*Showing the latest 50 out of 126 papers*
 
+- **[Transformer-Based Inpainting for Real-Time 3D Streaming in Sparse Multi-Camera Setups](https://arxiv.org/abs/2603.05507v1)**  
+  Authors: Leif Van Holland, Domenic Zingsheim, Mana Takhsha, Hannah Dröge, Patrick Stotko, Markus Plack, Reinhard Klein  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.05507v1.pdf)  
+  Keywords: architecture, dit, novel view, streaming  
+- **[Orthogonal Spatial-temporal Distributional Transfer for 4D Generation](https://arxiv.org/abs/2603.05081v1)**  
+  Authors: Wei Liu, Shengqiong Wu, Bobo Li, Haoyu Zhao, Hao Fei, Mong-Li Lee, Wynne Hsu  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.05081v1.pdf)  
+  Keywords: temporal consistency, video diffusion, diffusion model, 4d generation  
+- **[FC-VFI: Faithful and Consistent Video Frame Interpolation for High-FPS Slow Motion Video Generation](https://arxiv.org/abs/2603.04899v1)**  
+  Authors: Ganggui Ding, Hao Chen, Xiaogang Xu  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.04899v1.pdf)  
+  Keywords: video generation, frame interpolation, temporal consistency, motion control, video diffusion, diffusion model  
+- **[Helios: Real Real-Time Long Video Generation Model](https://arxiv.org/abs/2603.04379v1)**  
+  Authors: Shenghai Yuan, Yuanyang Yin, Zongjian Li, Xinwei Huang, Xiao Yang, Li Yuan  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.04379v1.pdf)  
+  Keywords: t2v, autoregressive, video generation, acceleration, long video, i2v, diffusion model  
+- **[CubeComposer: Spatio-Temporal Autoregressive 4K 360° Video Generation from Perspective Video](https://arxiv.org/abs/2603.04291v1)**  
+  Authors: Lingen Li, Guangzhi Wang, Xiaoyu Li, Zhaoyang Zhang, Qi Dou, Jinwei Gu, Tianfan Xue, Ying Shan  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.04291v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://lg-li.github.io/project/cubecomposer)  
+  Keywords: autoregressive, video generation, benchmark, super-resolution, diffusion model  
 - **[InfinityStory: Unlimited Video Generation with World Consistency and Character-Aware Shot Transitions](https://arxiv.org/abs/2603.03646v1)**  
   Authors: Mohamed Elmoghany, Liangbing Zhao, Xiaoqian Shen, Subhojyoti Mukherjee, Yang Zhou, Gang Wu, Viet Dac Lai, Seunghyun Yoon, Ryan Rossi, Abdullah Rashwan, Puneet Mathur, Varun Manjunatha, Daksh Dangi, Chien Nguyen, Nedim Lipka, Trung Bui, Krishna Kumar Singh, Ruiyi Zhang, Xiaolei Huang, Jaemin Cho, Yu Wang, Namyong Park, Zhengzhong Tu, Hongjie Chen, Hoda Eldardiry, Nesreen Ahmed, Thien Nguyen, Dinesh Manocha, Mohamed Elhoseiny, Franck Dernoncourt  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.03646v1.pdf)  
-  Keywords: video generation, identity, long-form, video synthesis  
+  Keywords: long-form, video synthesis, video generation, identity  
 - **[StepVAR: Structure-Texture Guided Pruning for Visual Autoregressive Models](https://arxiv.org/abs/2603.01757v1)**  
   Authors: Keli Liu, Zhendong Wang, Wengang Zhou, Houqiang Li  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01757v1.pdf)  
-  Keywords: architecture, evaluation, acceleration, layout, efficient, autoregressive, text-to-video  
+  Keywords: autoregressive, architecture, efficient, text-to-video, acceleration, evaluation, layout  
 - **[EraseAnything++: Enabling Concept Erasure in Rectified Flow Transformers Leveraging Multi-Object Optimization](https://arxiv.org/abs/2603.00978v1)**  
   Authors: Zhaoxin Fan, Nanxiang Jiang, Daiheng Gao, Shiji Zhou, Wenjun Wu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.00978v1.pdf)  
-  Keywords: architecture, t2v, benchmark, rectified flow, concept, video diffusion, temporal consistency, video generation, efficient, diffusion model, text-to-video  
+  Keywords: t2v, video generation, architecture, efficient, text-to-video, rectified flow, temporal consistency, concept, benchmark, video diffusion, diffusion model  
 - **[DreamWorld: Unified World Modeling in Video Generation](https://arxiv.org/abs/2603.00466v1)**  
   Authors: Boming Tan, Xiangdong Zhang, Ning Liao, Yuqing Zhang, Shaofeng Zhang, Xue Yang, Qi Fan, Yanyong Zhang  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.00466v1.pdf) | [![GitHub](https://img.shields.io/github/stars/ABU121111/DreamWorld?style=social)](https://github.com/ABU121111/DreamWorld)  
-  Keywords: evaluation, dynamics, world model, dit, video generation, physical, temporal consistency  
+  Keywords: video generation, dit, temporal consistency, evaluation, physical, dynamics, world model  
 - **[CamDirector: Towards Long-Term Coherent Video Trajectory Editing](https://arxiv.org/abs/2603.02256v1)**  
   Authors: Zhihao Shi, Kejia Yin, Weilin Wan, Yuhongze Zhou, Yuanhao Yu, Xinxin Zuo, Qiang Sun, Juwei Lu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02256v1.pdf)  
-  Keywords: trajectory, style, benchmark, dit, video diffusion, autoregressive, camera control, diffusion model  
-- **[Mode Seeking meets Mean Seeking for Fast Long Video Generation](https://arxiv.org/abs/2602.24289v1)**  
-  Authors: Shengqu Cai, Weili Nie, Chao Liu, Julius Berner, Lvmin Zhang, Nanye Ma, Hansheng Chen, Maneesh Agrawala, Leonidas Guibas, Gordon Wetzstein, Arash Vahdat  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.24289v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://primecai.github.io/mmm)  
-  Keywords: evaluation, long-form, diffusion transformer, long video, flow matching, video generation  
-- **[Spatio-Temporal Garment Reconstruction Using Diffusion Mapping via Pattern Coordinates](https://arxiv.org/abs/2602.24043v1)**  
-  Authors: Yingxuan You, Ren Li, Corentin Dumery, Cong Cao, Hao Li, Pascal Fua  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.24043v1.pdf)  
-  Keywords: diffusion model, avatar, dit, virtual try-on, temporal consistency  
-- **[MSVBench: Towards Human-Level Evaluation of Multi-Shot Video Generation](https://arxiv.org/abs/2602.23969v1)**  
-  Authors: Haoyuan Shi, Yunxin Li, Nanhao Deng, Zhenran Xu, Xinyu Chen, Longyue Wang, Baotian Hu, Min Zhang  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.23969v1.pdf)  
-  Keywords: evaluation, long-form, world model, benchmark, video generation  
-- **[SwitchCraft: Training-Free Multi-Event Video Generation with Attention Controls](https://arxiv.org/abs/2602.23956v1)**  
-  Authors: Qianxun Xu, Chenxi Song, Yujun Cai, Chi Zhang  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.23956v1.pdf)  
-  Keywords: text-to-video, video diffusion, video generation, diffusion model, temporal consistency  
-- **[ColoDiff: Integrating Dynamic Consistency With Content Awareness for Colonoscopy Video Generation](https://arxiv.org/abs/2602.23203v1)**  
-  Authors: Junhu Fu, Shuyu Liang, Wutong Li, Chen Ma, Peng Huang, Kehao Wang, Ke Chen, Shengli Lin, Pinghong Zhou, Zeju Li, Yuanyuan Wang, Yi Guo  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.23203v1.pdf)  
-  Keywords: dynamics, dit, video generation, controllable, diffusion model, temporal consistency  
+  Keywords: trajectory, autoregressive, dit, camera control, benchmark, style, video diffusion, diffusion model  
 
 ### Personalization & Customization
 
-*Showing the latest 50 out of 95 papers*
+*Showing the latest 50 out of 94 papers*
 
+- **[FaceCam: Portrait Video Camera Control via Scale-Aware Conditioning](https://arxiv.org/abs/2603.05506v1)**  
+  Authors: Weijie Lyu, Ming-Hsuan Yang, Zhixin Shu  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.05506v1.pdf)  
+  Keywords: camera control, video generation, dit, identity  
 - **[InfinityStory: Unlimited Video Generation with World Consistency and Character-Aware Shot Transitions](https://arxiv.org/abs/2603.03646v1)**  
   Authors: Mohamed Elmoghany, Liangbing Zhao, Xiaoqian Shen, Subhojyoti Mukherjee, Yang Zhou, Gang Wu, Viet Dac Lai, Seunghyun Yoon, Ryan Rossi, Abdullah Rashwan, Puneet Mathur, Varun Manjunatha, Daksh Dangi, Chien Nguyen, Nedim Lipka, Trung Bui, Krishna Kumar Singh, Ruiyi Zhang, Xiaolei Huang, Jaemin Cho, Yu Wang, Namyong Park, Zhengzhong Tu, Hongjie Chen, Hoda Eldardiry, Nesreen Ahmed, Thien Nguyen, Dinesh Manocha, Mohamed Elhoseiny, Franck Dernoncourt  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.03646v1.pdf)  
-  Keywords: video generation, identity, long-form, video synthesis  
+  Keywords: long-form, video synthesis, video generation, identity  
 - **[EduVQA: Benchmarking AI-Generated Video Quality Assessment for Education](https://arxiv.org/abs/2603.03066v1)**  
   Authors: Baoliang Chen, Xinlong Bu, Lingyu Zhu, Hanwei Zhu, Xiangjie Sui  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.03066v1.pdf)  
-  Keywords: evaluation, t2v, benchmark, concept, education, text-to-video  
+  Keywords: education, t2v, concept, text-to-video, evaluation, benchmark  
 - **[Interpretable Motion-Attentive Maps: Spatio-Temporally Localizing Concepts in Video Diffusion Transformers](https://arxiv.org/abs/2603.02919v1)**  
   Authors: Youngjun Jun, Seil Kang, Woojung Han, Seong Jae Hwang  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02919v1.pdf)  
-  Keywords: dit, diffusion transformer, concept, video diffusion  
+  Keywords: diffusion transformer, concept, video diffusion, dit  
 - **[UniTalking: A Unified Audio-Video Framework for Talking Portrait Generation](https://arxiv.org/abs/2603.01418v1)**  
   Authors: Hebeizi Li, Zihao Liang, Benyuan Sun, Zihao Yin, Xiao Sha, Chenliang Wang, Yi Yang  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01418v1.pdf)  
-  Keywords: multi-modal, style, video generation, efficient, architecture  
+  Keywords: video generation, architecture, efficient, style, multi-modal  
 - **[Unified Vision-Language Modeling via Concept Space Alignment](https://arxiv.org/abs/2603.01096v1)**  
   Authors: Yifu Qiu, Paul-Ambroise Duquenne, Holger Schwenk  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01096v1.pdf)  
@@ -435,7 +439,7 @@ A curated list of latest research papers, projects and resources related to Vide
 - **[EraseAnything++: Enabling Concept Erasure in Rectified Flow Transformers Leveraging Multi-Object Optimization](https://arxiv.org/abs/2603.00978v1)**  
   Authors: Zhaoxin Fan, Nanxiang Jiang, Daiheng Gao, Shiji Zhou, Wenjun Wu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.00978v1.pdf)  
-  Keywords: architecture, t2v, benchmark, rectified flow, concept, video diffusion, temporal consistency, video generation, efficient, diffusion model, text-to-video  
+  Keywords: t2v, video generation, architecture, efficient, text-to-video, rectified flow, temporal consistency, concept, benchmark, video diffusion, diffusion model  
 - **[WildActor: Unconstrained Identity-Preserving Video Generation](https://arxiv.org/abs/2603.00586v1)**  
   Authors: Qin Guo, Tianyu Yang, Xuanhua He, Fei Shen, Yong Zhang, Zhuoliang Kang, Xiaoming Wei, Dan Xu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.00586v1.pdf)  
@@ -443,85 +447,89 @@ A curated list of latest research papers, projects and resources related to Vide
 - **[MicroVerse: A Preliminary Exploration Toward a Micro-World Simulation](https://arxiv.org/abs/2603.00585v1)**  
   Authors: Rongsheng Wang, Minghao Wu, Hongru Zhou, Zhihan Yu, Zhenyang Cai, Junying Chen, Benyou Wang  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.00585v1.pdf) | [![GitHub](https://img.shields.io/github/stars/FreedomIntelligence/MicroVerse?style=social)](https://github.com/FreedomIntelligence/MicroVerse)  
-  Keywords: interactive, evaluation, dynamics, benchmark, medical, concept, education, video generation, simulation, physical  
+  Keywords: education, video generation, concept, evaluation, physical, benchmark, dynamics, medical, simulation, interactive  
 - **[CamDirector: Towards Long-Term Coherent Video Trajectory Editing](https://arxiv.org/abs/2603.02256v1)**  
   Authors: Zhihao Shi, Kejia Yin, Weilin Wan, Yuhongze Zhou, Yuanhao Yu, Xinxin Zuo, Qiang Sun, Juwei Lu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02256v1.pdf)  
-  Keywords: trajectory, style, benchmark, dit, video diffusion, autoregressive, camera control, diffusion model  
-- **[GeoDiff4D: Geometry-Aware Diffusion for 4D Head Avatar Reconstruction](https://arxiv.org/abs/2602.24161v1)**  
-  Authors: Chao Xu, Xiaochen Zhao, Xiang Deng, Jingxiang Sun, Zhuo Su, Donglin Di, Yebin Liu  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.24161v1.pdf)  
-  Keywords: video generation, identity, avatar, diffusion model  
+  Keywords: trajectory, autoregressive, dit, camera control, benchmark, style, video diffusion, diffusion model  
 
 ### Physical Understanding
 
-*Showing the latest 50 out of 124 papers*
+*Showing the latest 50 out of 125 papers*
 
+- **[RealWonder: Real-Time Physical Action-Conditioned Video Generation](https://arxiv.org/abs/2603.05449v1)**  
+  Authors: Wei Liu, Ziyu Chen, Zizhang Li, Yue Wang, Hong-Xing Yu, Jiajun Wu  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.05449v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://liuwei283.github.io/RealWonder)  
+  Keywords: video generation, physics, action-conditioned, dit, camera control, physical, simulation, interactive  
+- **[Frequency-Aware Error-Bounded Caching for Accelerating Diffusion Transformers](https://arxiv.org/abs/2603.05315v1)**  
+  Authors: Guandong Li  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.05315v1.pdf)  
+  Keywords: trajectory, video generation, architecture, dit, diffusion transformer, dynamics, denoising  
+- **[ArtHOI: Articulated Human-Object Interaction Synthesis by 4D Reconstruction from Video Priors](https://arxiv.org/abs/2603.04338v1)**  
+  Authors: Zihao Huang, Tianqi Liu, Zhaoxi Chen, Shaocong Xu, Saining Zhang, Lixing Xiao, Zhiguo Cao, Wei Li, Hao Zhao, Ziwei Liu  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.04338v1.pdf)  
+  Keywords: human motion, dit, physical, video diffusion, diffusion model  
 - **[PhyPrompt: RL-based Prompt Refinement for Physically Plausible Text-to-Video Generation](https://arxiv.org/abs/2603.03505v1)**  
   Authors: Shang Wu, Chenwei Xu, Zhuofan Xia, Weijian Li, Lie Lu, Pranav Maneriker, Fan Du, Manling Li, Han Liu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.03505v1.pdf)  
-  Keywords: t2v, physics-aware, text-to-video, video generation, physical, physics, architecture  
+  Keywords: t2v, video generation, architecture, text-to-video, physical, physics-aware, physics  
 - **[Phys4D: Fine-Grained Physics-Consistent 4D Modeling from Video Diffusion](https://arxiv.org/abs/2603.03485v1)**  
   Authors: Haoran Lu, Shang Wu, Jianshu Zhang, Maojiang Su, Guo Ye, Chenwei Xu, Lie Lu, Pranav Maneriker, Fan Du, Manling Li, Zhaoran Wang, Han Liu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.03485v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://sensational-brioche-7657e7.netlify.app/) | [![Demo](https://img.shields.io/badge/-Demo-brightgreen)](https://sensational-brioche-7657e7.netlify.app)  
-  Keywords: evaluation, dynamics, world model, video diffusion, simulation, physical, diffusion model, physics  
+  Keywords: video diffusion, evaluation, physical, dynamics, simulation, physics, diffusion model, world model  
 - **[TC-Padé: Trajectory-Consistent Padé Approximation for Diffusion Acceleration](https://arxiv.org/abs/2603.02943v1)**  
   Authors: Benlei Cui, Shaoxuan He, Bukun Huang, Zhizeng Ye, Yunyun Sun, Longtao Huang, Hui Xue, Yang Yang, Jingqun Tang, Zhou Zhao, Haiwen Hong  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02943v1.pdf)  
-  Keywords: denoising, trajectory, dynamics, acceleration, dit, video generation, efficient, diffusion model  
+  Keywords: trajectory, video generation, efficient, dit, acceleration, dynamics, denoising, diffusion model  
 - **[Deep Learning Based Wildfire Detection for Peatland Fires Using Transfer Learning](https://arxiv.org/abs/2603.02465v1)**  
   Authors: Emadeldeen Hamdan, Ahmad Faiz Tharima, Mohd Zahirasri Mohd Tohir, Dayang Nur Sakinah Musa, Erdem Koyuncu, Adam J. Watts, Ahmet Enis Cetin  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02465v1.pdf)  
-  Keywords: dit, physical  
+  Keywords: physical, dit  
 - **[MicroVerse: A Preliminary Exploration Toward a Micro-World Simulation](https://arxiv.org/abs/2603.00585v1)**  
   Authors: Rongsheng Wang, Minghao Wu, Hongru Zhou, Zhihan Yu, Zhenyang Cai, Junying Chen, Benyou Wang  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.00585v1.pdf) | [![GitHub](https://img.shields.io/github/stars/FreedomIntelligence/MicroVerse?style=social)](https://github.com/FreedomIntelligence/MicroVerse)  
-  Keywords: interactive, evaluation, dynamics, benchmark, medical, concept, education, video generation, simulation, physical  
+  Keywords: education, video generation, concept, evaluation, physical, benchmark, dynamics, medical, simulation, interactive  
 - **[DreamWorld: Unified World Modeling in Video Generation](https://arxiv.org/abs/2603.00466v1)**  
   Authors: Boming Tan, Xiangdong Zhang, Ning Liao, Yuqing Zhang, Shaofeng Zhang, Xue Yang, Qi Fan, Yanyong Zhang  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.00466v1.pdf) | [![GitHub](https://img.shields.io/github/stars/ABU121111/DreamWorld?style=social)](https://github.com/ABU121111/DreamWorld)  
-  Keywords: evaluation, dynamics, world model, dit, video generation, physical, temporal consistency  
+  Keywords: video generation, dit, temporal consistency, evaluation, physical, dynamics, world model  
 - **[ColoDiff: Integrating Dynamic Consistency With Content Awareness for Colonoscopy Video Generation](https://arxiv.org/abs/2602.23203v1)**  
   Authors: Junhu Fu, Shuyu Liang, Wutong Li, Chen Ma, Peng Huang, Kehao Wang, Ke Chen, Shengli Lin, Pinghong Zhou, Zeju Li, Yuanyuan Wang, Yi Guo  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.23203v1.pdf)  
-  Keywords: dynamics, dit, video generation, controllable, diffusion model, temporal consistency  
-- **[Uni-Animator: Towards Unified Visual Colorization](https://arxiv.org/abs/2602.23191v2)**  
-  Authors: Xinyuan Chen, Yao Xu, Shaowen Wang, Pengjie Song, Bowen Deng  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.23191v2.pdf)  
-  Keywords: dit, diffusion transformer, physical, temporal consistency  
-- **[The Trinity of Consistency as a Defining Principle for General World Models](https://arxiv.org/abs/2602.23152v1)**  
-  Authors: Jingxuan Wei, Siyuan Li, Yuhang Xu, Zheng Sun, Junjie Jiang, Hexuan Jin, Caijun Jia, Honghao He, Xinglong Xu, Xi bai, Chang Yu, Yumou Liu, Junnan Zhu, Xuanhe Zhou, Jintao Chen, Xiaobin Hu, Shancheng Pang, Bihui Yu, Ran He, Zhen Lei, Stan Z. Li, Conghui He, Shuicheng Yan, Cheng Tan  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.23152v1.pdf)  
-  Keywords: architecture, trajectory, evaluation, dynamics, world model, benchmark, world simulator, concept, video generation, physical, temporal consistency  
-- **[Hierarchic-EEG2Text: Assessing EEG-To-Text Decoding across Hierarchical Abstraction Levels](https://arxiv.org/abs/2602.20932v1)**  
-  Authors: Anupam Sharma, Harish Katti, Prajwal Singh, Shanmuganathan Raman, Krishna Miyapuram  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.20932v1.pdf)  
-  Keywords: concept, dynamics, architecture  
+  Keywords: video generation, controllable, dit, temporal consistency, dynamics, diffusion model  
 
 ### Surveys & Benchmarks
 
-*Showing the latest 50 out of 195 papers*
+*Showing the latest 50 out of 194 papers*
 
+- **[UniM: A Unified Any-to-Any Interleaved Multimodal Benchmark](https://arxiv.org/abs/2603.05075v1)**  
+  Authors: Yanlin Li, Minghui Guo, Kaiwen Zhang, Shize Zhang, Yiran Zhao, Haodong Li, Congyue Zhou, Weijie Zheng, Yushen Yan, Shengqiong Wu, Wei Ji, Lei Cui, Furu Wei, Hao Fei, Mong-Li Lee, Wynne Hsu  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.05075v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://any2any-mllm.github.io/unim)  
+  Keywords: benchmark, dit, evaluation  
+- **[CubeComposer: Spatio-Temporal Autoregressive 4K 360° Video Generation from Perspective Video](https://arxiv.org/abs/2603.04291v1)**  
+  Authors: Lingen Li, Guangzhi Wang, Xiaoyu Li, Zhaoyang Zhang, Qi Dou, Jinwei Gu, Tianfan Xue, Ying Shan  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.04291v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://lg-li.github.io/project/cubecomposer)  
+  Keywords: autoregressive, video generation, benchmark, super-resolution, diffusion model  
 - **[EvoPrune: Early-Stage Visual Token Pruning for Efficient MLLMs](https://arxiv.org/abs/2603.03681v1)**  
   Authors: Yuhao Chen, Bin Shan, Xin Ye, Cheng Chen  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.03681v1.pdf)  
-  Keywords: efficient, benchmark  
+  Keywords: benchmark, efficient  
 - **[Phys4D: Fine-Grained Physics-Consistent 4D Modeling from Video Diffusion](https://arxiv.org/abs/2603.03485v1)**  
   Authors: Haoran Lu, Shang Wu, Jianshu Zhang, Maojiang Su, Guo Ye, Chenwei Xu, Lie Lu, Pranav Maneriker, Fan Du, Manling Li, Zhaoran Wang, Han Liu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.03485v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://sensational-brioche-7657e7.netlify.app/) | [![Demo](https://img.shields.io/badge/-Demo-brightgreen)](https://sensational-brioche-7657e7.netlify.app)  
-  Keywords: evaluation, dynamics, world model, video diffusion, simulation, physical, diffusion model, physics  
+  Keywords: video diffusion, evaluation, physical, dynamics, simulation, physics, diffusion model, world model  
 - **[EduVQA: Benchmarking AI-Generated Video Quality Assessment for Education](https://arxiv.org/abs/2603.03066v1)**  
   Authors: Baoliang Chen, Xinlong Bu, Lingyu Zhu, Hanwei Zhu, Xiangjie Sui  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.03066v1.pdf)  
-  Keywords: evaluation, t2v, benchmark, concept, education, text-to-video  
+  Keywords: education, t2v, concept, text-to-video, evaluation, benchmark  
 - **[BrandFusion: A Multi-Agent Framework for Seamless Brand Integration in Text-to-Video Generation](https://arxiv.org/abs/2603.02816v1)**  
   Authors: Zihao Zhu, Ruotong Wang, Siwei Lyu, Min Zhang, Baoyuan Wu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02816v1.pdf)  
-  Keywords: video generation, evaluation, t2v, text-to-video  
+  Keywords: t2v, video generation, text-to-video, evaluation  
 - **[Direct Reward Fine-Tuning on Poses for Single Image to 3D Human in the Wild](https://arxiv.org/abs/2603.02619v1)**  
   Authors: Seunguk Do, Minwoo Huh, Joonghyuk Shin, Jaesik Park  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02619v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://seunguk-do.github.io/drpose)  
-  Keywords: evaluation, benchmark, dit, human motion, diffusion model  
+  Keywords: human motion, dit, evaluation, benchmark, diffusion model  
 - **[MUSE: A Run-Centric Platform for Multimodal Unified Safety Evaluation of Large Language Models](https://arxiv.org/abs/2603.02482v1)**  
   Authors: Zhongxi Wang, Yueqian Lin, Jingyang Zhang, Hai Helen Li, Yiran Chen  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02482v1.pdf)  
@@ -533,44 +541,44 @@ A curated list of latest research papers, projects and resources related to Vide
 - **[WorldStereo: Bridging Camera-Guided Video Generation and Scene Reconstruction via 3D Geometric Memories](https://arxiv.org/abs/2603.02049v1)**  
   Authors: Yisu Zhang, Chenjie Cao, Tengfei Wang, Xuhui Zuo, Junta Wu, Jianke Zhu, Chunchao Guo  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02049v1.pdf)  
-  Keywords: camera control, world model, benchmark, video diffusion, video generation, diffusion model  
-- **[StepVAR: Structure-Texture Guided Pruning for Visual Autoregressive Models](https://arxiv.org/abs/2603.01757v1)**  
-  Authors: Keli Liu, Zhendong Wang, Wengang Zhou, Houqiang Li  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01757v1.pdf)  
-  Keywords: architecture, evaluation, acceleration, layout, efficient, autoregressive, text-to-video  
-- **[Adaptive Spectral Feature Forecasting for Diffusion Sampling Acceleration](https://arxiv.org/abs/2603.01623v1)**  
-  Authors: Jiaqi Han, Juntong Shi, Puheng Li, Haotian Ye, Qiushan Guo, Stefano Ermon  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01623v1.pdf)  
-  Keywords: evaluation, acceleration, diffusion transformer, video diffusion, video generation, efficient, diffusion model  
+  Keywords: video generation, camera control, benchmark, video diffusion, diffusion model, world model  
 
 ### Text-to-Video Generation
 
-*Showing the latest 50 out of 75 papers*
+*Showing the latest 50 out of 77 papers*
 
+- **[Accelerating Text-to-Video Generation with Calibrated Sparse Attention](https://arxiv.org/abs/2603.05503v1)**  
+  Authors: Shai Yehezkel, Shahar Yadin, Noam Elata, Yaron Ostrovsky-Berman, Bahjat Kawar  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.05503v1.pdf)  
+  Keywords: video generation, text-to-video, diffusion model, efficient  
+- **[Helios: Real Real-Time Long Video Generation Model](https://arxiv.org/abs/2603.04379v1)**  
+  Authors: Shenghai Yuan, Yuanyang Yin, Zongjian Li, Xinwei Huang, Xiao Yang, Li Yuan  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.04379v1.pdf)  
+  Keywords: t2v, autoregressive, video generation, acceleration, long video, i2v, diffusion model  
 - **[PhyPrompt: RL-based Prompt Refinement for Physically Plausible Text-to-Video Generation](https://arxiv.org/abs/2603.03505v1)**  
   Authors: Shang Wu, Chenwei Xu, Zhuofan Xia, Weijian Li, Lie Lu, Pranav Maneriker, Fan Du, Manling Li, Han Liu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.03505v1.pdf)  
-  Keywords: t2v, physics-aware, text-to-video, video generation, physical, physics, architecture  
+  Keywords: t2v, video generation, architecture, text-to-video, physical, physics-aware, physics  
 - **[EduVQA: Benchmarking AI-Generated Video Quality Assessment for Education](https://arxiv.org/abs/2603.03066v1)**  
   Authors: Baoliang Chen, Xinlong Bu, Lingyu Zhu, Hanwei Zhu, Xiangjie Sui  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.03066v1.pdf)  
-  Keywords: evaluation, t2v, benchmark, concept, education, text-to-video  
+  Keywords: education, t2v, concept, text-to-video, evaluation, benchmark  
 - **[BrandFusion: A Multi-Agent Framework for Seamless Brand Integration in Text-to-Video Generation](https://arxiv.org/abs/2603.02816v1)**  
   Authors: Zihao Zhu, Ruotong Wang, Siwei Lyu, Min Zhang, Baoyuan Wu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02816v1.pdf)  
-  Keywords: video generation, evaluation, t2v, text-to-video  
+  Keywords: t2v, video generation, text-to-video, evaluation  
 - **[Non-verbal Real-time Human-AI Interaction in Constrained Robotic Environments](https://arxiv.org/abs/2603.01804v1)**  
   Authors: Dragos Costea, Alina Marcu, Cristina Lazar, Marius Leordeanu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01804v1.pdf)  
-  Keywords: architecture, body motion, text-to-video  
+  Keywords: body motion, text-to-video, architecture  
 - **[StepVAR: Structure-Texture Guided Pruning for Visual Autoregressive Models](https://arxiv.org/abs/2603.01757v1)**  
   Authors: Keli Liu, Zhendong Wang, Wengang Zhou, Houqiang Li  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01757v1.pdf)  
-  Keywords: architecture, evaluation, acceleration, layout, efficient, autoregressive, text-to-video  
+  Keywords: autoregressive, architecture, efficient, text-to-video, acceleration, evaluation, layout  
 - **[Retrieval, Refinement, and Ranking for Text-to-Video Generation via Prompt Optimization and Test-Time Scaling](https://arxiv.org/abs/2603.01509v1)**  
   Authors: Zillur Rahman, Alex Sheng, Cristian Meo  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01509v1.pdf)  
-  Keywords: t2v, frame interpolation, dit, video generation, efficient, diffusion model, text-to-video  
+  Keywords: t2v, video generation, frame interpolation, efficient, text-to-video, dit, diffusion model  
 - **[Unified Vision-Language Modeling via Concept Space Alignment](https://arxiv.org/abs/2603.01096v1)**  
   Authors: Yifu Qiu, Paul-Ambroise Duquenne, Holger Schwenk  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01096v1.pdf)  
@@ -578,73 +586,65 @@ A curated list of latest research papers, projects and resources related to Vide
 - **[EraseAnything++: Enabling Concept Erasure in Rectified Flow Transformers Leveraging Multi-Object Optimization](https://arxiv.org/abs/2603.00978v1)**  
   Authors: Zhaoxin Fan, Nanxiang Jiang, Daiheng Gao, Shiji Zhou, Wenjun Wu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.00978v1.pdf)  
-  Keywords: architecture, t2v, benchmark, rectified flow, concept, video diffusion, temporal consistency, video generation, efficient, diffusion model, text-to-video  
-- **[SwitchCraft: Training-Free Multi-Event Video Generation with Attention Controls](https://arxiv.org/abs/2602.23956v1)**  
-  Authors: Qianxun Xu, Chenxi Song, Yujun Cai, Chi Zhang  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.23956v1.pdf)  
-  Keywords: text-to-video, video diffusion, video generation, diffusion model, temporal consistency  
-- **[SKeDA: A Generative Watermarking Framework for Text-to-video Diffusion Models](https://arxiv.org/abs/2603.00194v1)**  
-  Authors: Yang Yang, Xinze Zou, Zehua Ma, Han Fang, Weiming Zhang  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.00194v1.pdf)  
-  Keywords: video generation, diffusion model, video diffusion, text-to-video  
+  Keywords: t2v, video generation, architecture, efficient, text-to-video, rectified flow, temporal consistency, concept, benchmark, video diffusion, diffusion model  
 
 ### Video Editing
 
 - **[FREE-Edit: Using Editing-aware Injection in Rectified Flow Models for Zero-shot Image-Driven Video Editing](https://arxiv.org/abs/2603.01164v1)**  
   Authors: Maomao Li, Yunfei Liu, Yu Li  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01164v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://free-edit.github.io/page)  
-  Keywords: denoising, image-to-video, video editing, layout, dit, rectified flow, image-driven, i2v  
+  Keywords: image-to-video, image-driven, dit, rectified flow, i2v, denoising, layout, video editing  
 - **[UniVBench: Towards Unified Evaluation for Video Foundation Models](https://arxiv.org/abs/2602.21835v1)**  
   Authors: Jianhui Wei, Xiaotian Zhang, Yichen Li, Yuan Wang, Yan Zhang, Ziyi Chen, Zhihang Tang, Wei Xu, Zuozhu Liu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.21835v1.pdf)  
-  Keywords: evaluation, video editing, benchmark, dit, video generation  
+  Keywords: video generation, dit, evaluation, benchmark, video editing  
 - **[SkyReels-V4: Multi-modal Video-Audio Generation, Inpainting and Editing model](https://arxiv.org/abs/2602.21818v2)**  
   Authors: Guibin Chen, Dixuan Lin, Jiangping Yang, Youqiang Zhang, Zhengcong Fei, Debang Li, Sheng Chen, Chaofeng Ao, Nuo Pang, Yiming Wang, Yikun Dou, Zheng Chen, Mingyuan Fan, Tuanhui Li, Mingshan Chang, Hao Zhang, Xiaopeng Sun, Jingtao Xu, Yuqiang Xie, Jiahua Wang, Zhiheng Xu, Weiming Xiong, Yuzhe Jin, Baoxuan Gu, Binjie Mao, Yunjie Yu, Jujie He, Yuhao Feng, Shiwen Tu, Chaojie Wang, Rui Yan, Wei Shen, Jingchen Wu, Peng Zhao, Xuanyue Zhong, Zhuangzhuang Liu, Kaifei Wang, Fuxiang Zhang, Weikai Xu, Wenyan Liu, Binglu Zhang, Yu Shen, Tianhui Xiong, Bin Peng, Liang Zeng, Xuchen Song, Haoxiang Guo, Peiyu Wang, Max W. Y. Lam, Chien-Hung Liu, Yahui Zhou  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.21818v2.pdf)  
-  Keywords: sound, image to video, frame interpolation, diffusion transformer, video editing, super-resolution, dit, multi-modal, style, video generation, architecture  
+  Keywords: video generation, frame interpolation, architecture, image to video, multi-modal, dit, diffusion transformer, sound, super-resolution, style, video editing  
 - **[GA-Drive: Geometry-Appearance Decoupled Modeling for Free-viewpoint Driving Scene Generatio](https://arxiv.org/abs/2602.20673v1)**  
   Authors: Hao Zhang, Lue Fan, Qitai Wang, Wenbo Li, Zehuan Wu, Lewei Lu, Zhaoxiang Zhang, Hongsheng Li  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.20673v1.pdf)  
-  Keywords: video-to-video, trajectory, video editing, dit, autonomous driving, video diffusion, simulation, diffusion model  
+  Keywords: trajectory, video-to-video, dit, simulation, autonomous driving, video diffusion, diffusion model, video editing  
 - **[PropFly: Learning to Propagate via On-the-Fly Supervision from Pre-trained Video Diffusion Models](https://arxiv.org/abs/2602.20583v1)**  
   Authors: Wonyong Seo, Jaeho Moon, Jaehyup Lee, Soo Ye Kim, Munchurl Kim  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.20583v1.pdf)  
-  Keywords: video editing, dit, video diffusion, flow matching, diffusion model  
+  Keywords: dit, flow matching, video diffusion, diffusion model, video editing  
 - **[RoboCurate: Harnessing Diversity with Action-Verified Neural Trajectory for Robot Learning](https://arxiv.org/abs/2602.18742v1)**  
   Authors: Seungku Kim, Suhyeok Jang, Byungjun Yoon, Dongyoung Kim, John Won, Jinwoo Shin  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.18742v1.pdf)  
-  Keywords: video-to-video, trajectory, dit, simulation, physical  
+  Keywords: trajectory, video-to-video, dit, physical, simulation  
 - **[When Test-Time Guidance Is Enough: Fast Image and Video Editing with Diffusion Guidance](https://arxiv.org/abs/2602.14157v1)**  
   Authors: Ahmed Ghorbel, Badr Moufad, Navid Bagheri Shouraki, Alain Oliviero Durmus, Thomas Hirtz, Eric Moulines, Jimmy Olsson, Yazid Janati  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.14157v1.pdf)  
-  Keywords: video editing, dit, evaluation, benchmark  
+  Keywords: video editing, benchmark, dit, evaluation  
 - **[DreamID-Omni: Unified Framework for Controllable Human-Centric Audio-Video Generation](https://arxiv.org/abs/2602.12160v1)**  
   Authors: Xu Guo, Fulong Ye, Qichao Sun, Liyang Chen, Bingchuan Li, Pengze Zhang, Jiawei Liu, Songtao Zhao, Qian He, Xiangwang Hou  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.12160v1.pdf)  
-  Keywords: diffusion transformer, video editing, dit, identity, audio-driven, video generation, controllable  
+  Keywords: video generation, controllable, audio-driven, dit, diffusion transformer, identity, video editing  
 - **[Tele-Omni: a Unified Multimodal Framework for Video Generation and Editing](https://arxiv.org/abs/2602.09609v2)**  
   Authors: Jialun Liu, Tian Li, Xiao Cao, Yukuo Ma, Gonghu Shang, Haibin Huang, Chi Zhang, Xiangzhen Chang, Zhiyong Huang, Jiakui Hu, Zuoxin Li, Yuanzhi Liang, Cong Liu, Junqi Liu, Robby T. Tan, Haitong Tang, Qizhen Weng, Yifan Xu, Liying Yang, Xiaoyan Yang, Peng Yu, Shiwen Zhang, Xuelong Li  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.09609v2.pdf)  
-  Keywords: image-to-video, video editing, video synthesis, dit, video generation, text-to-video  
+  Keywords: video synthesis, image-to-video, video generation, text-to-video, dit, video editing  
 - **[Omni-Video 2: Scaling MLLM-Conditioned Diffusion for Unified Video Generation and Editing](https://arxiv.org/abs/2602.08820v1)**  
   Authors: Hao Yang, Zhiyu Tan, Jia Gong, Luozheng Qin, Hesen Chen, Xiaomeng Yang, Yuqing Sun, Yuetan Lin, Mengping Yang, Hao Li  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.08820v1.pdf)  
-  Keywords: video editing, benchmark, dit, video diffusion, video generation, efficient, diffusion model, text-to-video  
+  Keywords: video generation, efficient, text-to-video, dit, benchmark, video diffusion, diffusion model, video editing  
 
 ### Video Inpainting & Completion
 
 - **[Learning Physics-Grounded 4D Dynamics with Neural Gaussian Force Fields](https://arxiv.org/abs/2602.00148v2)**  
   Authors: Shiqian Li, Ruihong Shen, Junfeng Ni, Chang Pan, Chi Zhang, Yixin Zhu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.00148v2.pdf)  
-  Keywords: interactive, evaluation, dynamics, video prediction, world model, video generation, simulation, physical, physics  
+  Keywords: video generation, physics, evaluation, video prediction, physical, dynamics, simulation, interactive, world model  
 - **[DriveLaW:Unifying Planning and Video Generation in a Latent Driving World](https://arxiv.org/abs/2512.23421v2)**  
   Authors: Tianze Xia, Yongkang Li, Lijun Zhou, Jingfeng Yao, Kaixin Xiong, Haiyang Sun, Bing Wang, Kun Ma, Guang Chen, Hangjun Ye, Wenyu Liu, Xinggang Wang  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2512.23421v2.pdf)  
-  Keywords: trajectory, video prediction, world model, benchmark, autonomous driving, video generation, architecture  
+  Keywords: trajectory, video generation, architecture, video prediction, benchmark, autonomous driving, world model  
 - **[Autoregressive Flow Matching for Motion Prediction](https://arxiv.org/abs/2512.22688v1)**  
   Authors: Johnathan Xie, Stefan Stojanov, Cristobal Eyzaguirre, Daniel L. K. Yamins, Jiajun Wu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2512.22688v1.pdf) | [![GitHub](https://img.shields.io/github/stars/Johnathan-Xie/arfm-motion-prediction?style=social)](https://github.com/Johnathan-Xie/arfm-motion-prediction)  
-  Keywords: video prediction, benchmark, robotics, dit, flow matching, video generation, human motion, autoregressive  
+  Keywords: autoregressive, human motion, video generation, robotics, dit, video prediction, benchmark, flow matching  
 - **[Over++: Generative Video Compositing for Layer Interaction Effects](https://arxiv.org/abs/2512.19661v1)**  
   Authors: Luchao Qi, Jiaye Wu, Jun Myeong Choi, Cary Phillips, Roni Sengupta, Dan B Goldman  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2512.19661v1.pdf)  
@@ -652,101 +652,97 @@ A curated list of latest research papers, projects and resources related to Vide
 - **[Vidarc: Embodied Video Diffusion Model for Closed-loop Control](https://arxiv.org/abs/2512.17661v1)**  
   Authors: Yao Feng, Chendong Xiang, Xinyi Mao, Hengkai Tan, Zuyue Zhang, Shuhe Huang, Kaiwen Zheng, Haitian Liu, Hang Su, Jun Zhu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2512.17661v1.pdf)  
-  Keywords: dynamics, video prediction, video diffusion, autoregressive, physical, diffusion model  
-- **[Flowception: Temporally Expansive Flow Matching for Video Generation](https://arxiv.org/abs/2512.11438v1)**  
-  Authors: Tariq Berrada Ifriqi, John Nguyen, Karteek Alahari, Jakob Verbeek, Ricky T. Q. Chen  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2512.11438v1.pdf)  
-  Keywords: denoising, video interpolation, image-to-video, flow matching, video generation, efficient, autoregressive  
+  Keywords: autoregressive, video prediction, physical, dynamics, video diffusion, diffusion model  
 
 ### Video Super-Resolution & Enhancement
 
 *Showing the latest 50 out of 57 papers*
 
+- **[Frequency-Aware Error-Bounded Caching for Accelerating Diffusion Transformers](https://arxiv.org/abs/2603.05315v1)**  
+  Authors: Guandong Li  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.05315v1.pdf)  
+  Keywords: trajectory, video generation, architecture, dit, diffusion transformer, dynamics, denoising  
+- **[FC-VFI: Faithful and Consistent Video Frame Interpolation for High-FPS Slow Motion Video Generation](https://arxiv.org/abs/2603.04899v1)**  
+  Authors: Ganggui Ding, Hao Chen, Xiaogang Xu  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.04899v1.pdf)  
+  Keywords: video generation, frame interpolation, temporal consistency, motion control, video diffusion, diffusion model  
+- **[CubeComposer: Spatio-Temporal Autoregressive 4K 360° Video Generation from Perspective Video](https://arxiv.org/abs/2603.04291v1)**  
+  Authors: Lingen Li, Guangzhi Wang, Xiaoyu Li, Zhaoyang Zhang, Qi Dou, Jinwei Gu, Tianfan Xue, Ying Shan  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.04291v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://lg-li.github.io/project/cubecomposer)  
+  Keywords: autoregressive, video generation, benchmark, super-resolution, diffusion model  
 - **[TC-Padé: Trajectory-Consistent Padé Approximation for Diffusion Acceleration](https://arxiv.org/abs/2603.02943v1)**  
   Authors: Benlei Cui, Shaoxuan He, Bukun Huang, Zhizeng Ye, Yunyun Sun, Longtao Huang, Hui Xue, Yang Yang, Jingqun Tang, Zhou Zhao, Haiwen Hong  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02943v1.pdf)  
-  Keywords: denoising, trajectory, dynamics, acceleration, dit, video generation, efficient, diffusion model  
+  Keywords: trajectory, video generation, efficient, dit, acceleration, dynamics, denoising, diffusion model  
 - **[Retrieval, Refinement, and Ranking for Text-to-Video Generation via Prompt Optimization and Test-Time Scaling](https://arxiv.org/abs/2603.01509v1)**  
   Authors: Zillur Rahman, Alex Sheng, Cristian Meo  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01509v1.pdf)  
-  Keywords: t2v, frame interpolation, dit, video generation, efficient, diffusion model, text-to-video  
+  Keywords: t2v, video generation, frame interpolation, efficient, text-to-video, dit, diffusion model  
 - **[FREE-Edit: Using Editing-aware Injection in Rectified Flow Models for Zero-shot Image-Driven Video Editing](https://arxiv.org/abs/2603.01164v1)**  
   Authors: Maomao Li, Yunfei Liu, Yu Li  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.01164v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://free-edit.github.io/page)  
-  Keywords: denoising, image-to-video, video editing, layout, dit, rectified flow, image-driven, i2v  
+  Keywords: image-to-video, image-driven, dit, rectified flow, i2v, denoising, layout, video editing  
 - **[SenCache: Accelerating Diffusion Model Inference via Sensitivity-Aware Caching](https://arxiv.org/abs/2602.24208v1)**  
   Authors: Yasaman Haghighi, Alexandre Alahi  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.24208v1.pdf)  
-  Keywords: video generation, denoising, diffusion model, acceleration  
+  Keywords: denoising, video generation, acceleration, diffusion model  
 - **[Denoising as Path Planning: Training-Free Acceleration of Diffusion Models with DPCache](https://arxiv.org/abs/2602.22654v1)**  
   Authors: Bowen Cui, Yuanbin Wang, Huajiang Xu, Biaolong Chen, Aixi Zhang, Hao Jiang, Zhengzheng Jin, Xu Liu, Pipei Huang  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.22654v1.pdf) | [![GitHub](https://img.shields.io/github/stars/argsss/DPCache?style=social)](https://github.com/argsss/DPCache)  
-  Keywords: denoising, trajectory, acceleration, dit, video generation, efficient, diffusion model  
+  Keywords: trajectory, video generation, efficient, dit, acceleration, denoising, diffusion model  
 - **[SkyReels-V4: Multi-modal Video-Audio Generation, Inpainting and Editing model](https://arxiv.org/abs/2602.21818v2)**  
   Authors: Guibin Chen, Dixuan Lin, Jiangping Yang, Youqiang Zhang, Zhengcong Fei, Debang Li, Sheng Chen, Chaofeng Ao, Nuo Pang, Yiming Wang, Yikun Dou, Zheng Chen, Mingyuan Fan, Tuanhui Li, Mingshan Chang, Hao Zhang, Xiaopeng Sun, Jingtao Xu, Yuqiang Xie, Jiahua Wang, Zhiheng Xu, Weiming Xiong, Yuzhe Jin, Baoxuan Gu, Binjie Mao, Yunjie Yu, Jujie He, Yuhao Feng, Shiwen Tu, Chaojie Wang, Rui Yan, Wei Shen, Jingchen Wu, Peng Zhao, Xuanyue Zhong, Zhuangzhuang Liu, Kaifei Wang, Fuxiang Zhang, Weikai Xu, Wenyan Liu, Binglu Zhang, Yu Shen, Tianhui Xiong, Bin Peng, Liang Zeng, Xuchen Song, Haoxiang Guo, Peiyu Wang, Max W. Y. Lam, Chien-Hung Liu, Yahui Zhou  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.21818v2.pdf)  
-  Keywords: sound, image to video, frame interpolation, diffusion transformer, video editing, super-resolution, dit, multi-modal, style, video generation, architecture  
+  Keywords: video generation, frame interpolation, architecture, image to video, multi-modal, dit, diffusion transformer, sound, super-resolution, style, video editing  
 - **[LESA: Learnable Stage-Aware Predictors for Diffusion Model Acceleration](https://arxiv.org/abs/2602.20497v1)**  
   Authors: Peiliang Cai, Jiacheng Liu, Haowen Xu, Xinyu Wang, Chang Zou, Linfeng Zhang  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.20497v1.pdf)  
-  Keywords: denoising, architecture, dynamics, acceleration, diffusion transformer, video synthesis, dit, video generation, diffusion model, text-to-video  
-- **[UniE2F: A Unified Diffusion Framework for Event-to-Frame Reconstruction with Video Foundation Models](https://arxiv.org/abs/2602.19202v1)**  
-  Authors: Gang Xu, Zhiyu Zhu, Junhui Hou  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.19202v1.pdf) | [![GitHub](https://img.shields.io/github/stars/CS-GangXu/UniE2F?style=social)](https://github.com/CS-GangXu/UniE2F)  
-  Keywords: frame interpolation, dit, video diffusion, physical, diffusion model  
-- **[Predict to Skip: Linear Multistep Feature Forecasting for Efficient Diffusion Transformers](https://arxiv.org/abs/2602.18093v1)**  
-  Authors: Hanshuai Cui, Zhiqing Tang, Qianli Ma, Zhi Yao, Weijia Jia  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.18093v1.pdf)  
-  Keywords: denoising, trajectory, dynamics, acceleration, diffusion transformer, dit, video generation, efficient  
-- **[DDiT: Dynamic Patch Scheduling for Efficient Diffusion Transformers](https://arxiv.org/abs/2602.16968v1)**  
-  Authors: Dahye Kim, Deepti Ghadiyaram, Raghudeep Gadde  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.16968v1.pdf)  
-  Keywords: denoising, diffusion transformer, dit, video generation, efficient  
+  Keywords: video synthesis, video generation, architecture, text-to-video, dit, acceleration, diffusion transformer, dynamics, denoising, diffusion model  
 
 ### World Models & Simulation
 
-*Showing the latest 50 out of 102 papers*
+*Showing the latest 50 out of 101 papers*
 
+- **[RealWonder: Real-Time Physical Action-Conditioned Video Generation](https://arxiv.org/abs/2603.05449v1)**  
+  Authors: Wei Liu, Ziyu Chen, Zizhang Li, Yue Wang, Hong-Xing Yu, Jiajun Wu  
+  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.05449v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://liuwei283.github.io/RealWonder)  
+  Keywords: video generation, physics, action-conditioned, dit, camera control, physical, simulation, interactive  
 - **[Phys4D: Fine-Grained Physics-Consistent 4D Modeling from Video Diffusion](https://arxiv.org/abs/2603.03485v1)**  
   Authors: Haoran Lu, Shang Wu, Jianshu Zhang, Maojiang Su, Guo Ye, Chenwei Xu, Lie Lu, Pranav Maneriker, Fan Du, Manling Li, Zhaoran Wang, Han Liu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.03485v1.pdf) | [![Project](https://img.shields.io/badge/-Project-blue)](https://sensational-brioche-7657e7.netlify.app/) | [![Demo](https://img.shields.io/badge/-Demo-brightgreen)](https://sensational-brioche-7657e7.netlify.app)  
-  Keywords: evaluation, dynamics, world model, video diffusion, simulation, physical, diffusion model, physics  
+  Keywords: video diffusion, evaluation, physical, dynamics, simulation, physics, diffusion model, world model  
 - **[ShareVerse: Multi-Agent Consistent Video Generation for Shared World Modeling](https://arxiv.org/abs/2603.02697v1)**  
   Authors: Jiayi Zhu, Jianing Zhang, Yiying Yang, Wei Cheng, Xiaoyun Yuan  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02697v1.pdf)  
-  Keywords: interactive, world model, multi-view video, dit, video generation, simulation  
+  Keywords: multi-view video, video generation, dit, simulation, interactive, world model  
 - **[WorldStereo: Bridging Camera-Guided Video Generation and Scene Reconstruction via 3D Geometric Memories](https://arxiv.org/abs/2603.02049v1)**  
   Authors: Yisu Zhang, Chenjie Cao, Tengfei Wang, Xuhui Zuo, Junta Wu, Jianke Zhu, Chunchao Guo  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.02049v1.pdf)  
-  Keywords: camera control, world model, benchmark, video diffusion, video generation, diffusion model  
+  Keywords: video generation, camera control, benchmark, video diffusion, diffusion model, world model  
 - **[COMBAT: Conditional World Models for Behavioral Agent Training](https://arxiv.org/abs/2603.00825v1)**  
   Authors: Anmol Agarwal, Pranay Meshram, Sumer Singh, Saurav Suman, Andrew Lapp, Shahbuland Matiana, Louis Castricato, Spencer Frazier  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.00825v1.pdf)  
-  Keywords: interactive, evaluation, diffusion transformer, world model, benchmark, dit, distillation, video generation, controllable, diffusion model  
+  Keywords: video generation, controllable, dit, evaluation, diffusion transformer, benchmark, distillation, interactive, diffusion model, world model  
 - **[MicroVerse: A Preliminary Exploration Toward a Micro-World Simulation](https://arxiv.org/abs/2603.00585v1)**  
   Authors: Rongsheng Wang, Minghao Wu, Hongru Zhou, Zhihan Yu, Zhenyang Cai, Junying Chen, Benyou Wang  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.00585v1.pdf) | [![GitHub](https://img.shields.io/github/stars/FreedomIntelligence/MicroVerse?style=social)](https://github.com/FreedomIntelligence/MicroVerse)  
-  Keywords: interactive, evaluation, dynamics, benchmark, medical, concept, education, video generation, simulation, physical  
+  Keywords: education, video generation, concept, evaluation, physical, benchmark, dynamics, medical, simulation, interactive  
 - **[DreamWorld: Unified World Modeling in Video Generation](https://arxiv.org/abs/2603.00466v1)**  
   Authors: Boming Tan, Xiangdong Zhang, Ning Liao, Yuqing Zhang, Shaofeng Zhang, Xue Yang, Qi Fan, Yanyong Zhang  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2603.00466v1.pdf) | [![GitHub](https://img.shields.io/github/stars/ABU121111/DreamWorld?style=social)](https://github.com/ABU121111/DreamWorld)  
-  Keywords: evaluation, dynamics, world model, dit, video generation, physical, temporal consistency  
+  Keywords: video generation, dit, temporal consistency, evaluation, physical, dynamics, world model  
 - **[MSVBench: Towards Human-Level Evaluation of Multi-Shot Video Generation](https://arxiv.org/abs/2602.23969v1)**  
   Authors: Haoyuan Shi, Yunxin Li, Nanhao Deng, Zhenran Xu, Xinyu Chen, Longyue Wang, Baotian Hu, Min Zhang  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.23969v1.pdf)  
-  Keywords: evaluation, long-form, world model, benchmark, video generation  
+  Keywords: video generation, evaluation, long-form, benchmark, world model  
 - **[U-Mind: A Unified Framework for Real-Time Multimodal Interaction with Audiovisual Generation](https://arxiv.org/abs/2602.23739v1)**  
   Authors: Xiang Deng, Feng Gao, Yong Zhang, Youxin Pang, Xu Xiaoming, Zhuoliang Kang, Xiaoming Wei, Yebin Liu  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.23739v1.pdf)  
-  Keywords: video synthesis, interactive, dit  
+  Keywords: video synthesis, dit, interactive  
 - **[The Trinity of Consistency as a Defining Principle for General World Models](https://arxiv.org/abs/2602.23152v1)**  
   Authors: Jingxuan Wei, Siyuan Li, Yuhang Xu, Zheng Sun, Junjie Jiang, Hexuan Jin, Caijun Jia, Honghao He, Xinglong Xu, Xi bai, Chang Yu, Yumou Liu, Junnan Zhu, Xuanhe Zhou, Jintao Chen, Xiaobin Hu, Shancheng Pang, Bihui Yu, Ran He, Zhen Lei, Stan Z. Li, Conghui He, Shuicheng Yan, Cheng Tan  
   Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.23152v1.pdf)  
-  Keywords: architecture, trajectory, evaluation, dynamics, world model, benchmark, world simulator, concept, video generation, physical, temporal consistency  
-- **[UCM: Unifying Camera Control and Memory with Time-aware Positional Encoding Warping for World Models](https://arxiv.org/abs/2602.22960v1)**  
-  Authors: Tianxing Xu, Zixuan Wang, Guangyuan Wang, Li Hu, Zhongyi Zhang, Peng Zhang, Bang Zhang, Song-Hai Zhang  
-  Links: [![PDF](https://img.shields.io/badge/PDF-arXiv-b31b1b.svg)](https://arxiv.org/pdf/2602.22960v1.pdf)  
-  Keywords: interactive, camera control, diffusion transformer, world model, benchmark, video generation, efficient  
+  Keywords: trajectory, video generation, world simulator, architecture, concept, temporal consistency, evaluation, physical, benchmark, dynamics, world model  
 
 
 
