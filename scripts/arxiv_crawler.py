@@ -9,7 +9,7 @@ import time
 import requests
 import argparse
 import xml.etree.ElementTree as ET
-from typing import Callable, List, Dict, Optional, Tuple
+from typing import Any, Callable, Dict, List, Optional, Sequence, Tuple
 from dataclasses import dataclass, asdict, field
 from pathlib import Path
 from utils.logger import setup_logger
@@ -501,7 +501,7 @@ class ArxivCrawler:
                 if keyword.lower() in text:
                     keywords.add(keyword)
 
-        return list(keywords)
+        return sorted(keywords, key=str.casefold)
 
     # ------------------------------------------------------------------ #
     #  BibTeX
@@ -616,7 +616,11 @@ class ArxivCrawler:
         )
 
     def _parse_arxiv_page(
-        self, content: bytes, start: int, page_size: int
+        self,
+        content: bytes,
+        start: int,
+        page_size: int,
+        allow_empty: bool = False,
     ) -> Tuple[List[Paper], int]:
         root = ET.fromstring(content)
         namespaces = {
@@ -632,7 +636,9 @@ class ArxivCrawler:
             raise ArxivFetchError(
                 f"Invalid arXiv totalResults value: {total_text}"
             ) from exc
-        if total_results <= 0:
+        if total_results < 0:
+            raise ArxivFetchError(f"Invalid arXiv totalResults value: {total_results}")
+        if total_results == 0 and not allow_empty:
             raise ArxivFetchError("arXiv returned no matching papers")
 
         entries = root.findall("atom:entry", namespaces)
@@ -644,14 +650,19 @@ class ArxivCrawler:
             )
 
         papers = [self._parse_arxiv_entry(entry) for entry in entries]
-        validate_papers(papers)
+        if papers:
+            validate_papers(papers)
         return papers, total_results
 
     def _request_arxiv_page(
-        self, start: int, page_size: int
+        self,
+        start: int,
+        page_size: int,
+        search_query: Optional[str] = None,
+        allow_empty: bool = False,
     ) -> Tuple[List[Paper], int]:
         params = {
-            "search_query": self.search_query,
+            "search_query": search_query or self.search_query,
             "start": start,
             "max_results": page_size,
             "sortBy": "submittedDate",
@@ -682,7 +693,12 @@ class ArxivCrawler:
                     raise ArxivFetchError(
                         f"Non-retryable arXiv HTTP status: {response.status_code}"
                     )
-                return self._parse_arxiv_page(response.content, start, page_size)
+                return self._parse_arxiv_page(
+                    response.content,
+                    start,
+                    page_size,
+                    allow_empty=allow_empty,
+                )
             except (
                 requests.Timeout,
                 requests.ConnectionError,
@@ -712,6 +728,56 @@ class ArxivCrawler:
             f"Unable to fetch a complete arXiv page at offset {start}: {last_error}"
         ) from last_error
 
+    def _collect_papers(
+        self,
+        search_query: str,
+        max_results: Optional[int],
+        allow_empty: bool = False,
+    ) -> List[Paper]:
+        papers: List[Paper] = []
+        total_available: Optional[int] = None
+        expected_count: Optional[int] = max_results
+        start = 0
+
+        while expected_count is None or start < expected_count:
+            page_size = (
+                ARXIV_PAGE_SIZE
+                if expected_count is None
+                else min(ARXIV_PAGE_SIZE, expected_count - start)
+            )
+            page, page_total = self._request_arxiv_page(
+                start,
+                page_size,
+                search_query=search_query,
+                allow_empty=allow_empty,
+            )
+            if total_available is None:
+                total_available = page_total
+                expected_count = (
+                    total_available
+                    if max_results is None
+                    else min(max_results, total_available)
+                )
+            elif page_total != total_available:
+                raise ArxivFetchError(
+                    f"arXiv totalResults changed from {total_available} to {page_total}"
+                )
+
+            papers.extend(page)
+            start += len(page)
+            if expected_count == 0:
+                break
+            if start < expected_count:
+                self.sleep_fn(3.0)
+
+        if len(papers) != expected_count:
+            raise ArxivFetchError(
+                f"Incomplete arXiv result: expected {expected_count}, received {len(papers)}"
+            )
+        if papers:
+            validate_papers(papers)
+        return papers
+
     def search_papers(self, max_results: int = None) -> List[Paper]:
         """Search papers on arXiv.
 
@@ -724,32 +790,7 @@ class ArxivCrawler:
         if not isinstance(max_results, int) or max_results <= 0:
             raise ArxivFetchError(f"max_results must be positive, got {max_results}")
 
-        papers: List[Paper] = []
-        total_available: Optional[int] = None
-        expected_count = max_results
-        start = 0
-
-        while start < expected_count:
-            page_size = min(ARXIV_PAGE_SIZE, expected_count - start)
-            page, page_total = self._request_arxiv_page(start, page_size)
-            if total_available is None:
-                total_available = page_total
-                expected_count = min(max_results, total_available)
-            elif page_total != total_available:
-                raise ArxivFetchError(
-                    f"arXiv totalResults changed from {total_available} to {page_total}"
-                )
-
-            papers.extend(page)
-            start += len(page)
-            if start < expected_count:
-                self.sleep_fn(3.0)
-
-        if len(papers) != expected_count:
-            raise ArxivFetchError(
-                f"Incomplete arXiv result: expected {expected_count}, received {len(papers)}"
-            )
-
+        papers = self._collect_papers(self.search_query, max_results=max_results)
         papers = self._filter_by_date(papers)
         if not papers:
             raise ArxivFetchError("No papers remain after applying the date filter")
@@ -757,8 +798,41 @@ class ArxivCrawler:
         self.logger.info("Total papers collected: %s", len(papers))
         return papers
 
+    def search_papers_between(
+        self,
+        date_from: datetime.date,
+        date_to: datetime.date,
+    ) -> List[Paper]:
+        """Fetch every matching submission in an inclusive UTC date range."""
+        if not isinstance(date_from, datetime.date) or not isinstance(
+            date_to, datetime.date
+        ):
+            raise ArxivFetchError("Catch-up dates must be datetime.date values")
+        if date_from > date_to:
+            raise ArxivFetchError(
+                f"Catch-up start date {date_from} is after end date {date_to}"
+            )
+
+        range_query = (
+            f"({self.search_query}) AND submittedDate:"
+            f"[{date_from.strftime('%Y%m%d')}0000 TO "
+            f"{date_to.strftime('%Y%m%d')}2359]"
+        )
+        papers = self._collect_papers(
+            range_query,
+            max_results=None,
+            allow_empty=True,
+        )
+        self.logger.info(
+            "Collected %s catch-up papers from %s through %s",
+            len(papers),
+            date_from,
+            date_to,
+        )
+        return papers
+
     def save_papers(
-        self, papers: List[Paper], output_file: Optional[Path] = None
+        self, papers: Sequence[Any], output_file: Optional[Path] = None
     ) -> Path:
         """Validate and atomically save paper data."""
         papers_dict = validate_papers(papers)

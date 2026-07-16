@@ -16,6 +16,7 @@ from arxiv_crawler import ArxivFetchError  # noqa: E402
 from paper_data import (  # noqa: E402
     PaperValidationError,
     find_latest_valid_snapshot,
+    normalized_arxiv_id,
     validate_papers,
 )
 from update_pipeline import UpdatePipeline  # noqa: E402
@@ -24,11 +25,11 @@ from update_pipeline import UpdatePipeline  # noqa: E402
 UTC = datetime.timezone.utc
 
 
-def make_papers(count, published_date=None):
+def make_papers(count, published_date=None, start_index=0):
     if published_date is None:
         published_date = datetime.datetime.now(UTC).date().isoformat()
     papers = []
-    for index in range(count):
+    for index in range(start_index, start_index + count):
         arxiv_id = f"2607.{index:05d}"
         papers.append({
             "title": f"Video generation paper {index}",
@@ -49,9 +50,18 @@ def make_papers(count, published_date=None):
 
 
 class FakeCrawler:
-    def __init__(self, papers=None, error=None):
+    def __init__(
+        self,
+        papers=None,
+        error=None,
+        catchup_papers=None,
+        catchup_error=None,
+    ):
         self.papers = papers
         self.error = error
+        self.catchup_papers = catchup_papers or []
+        self.catchup_error = catchup_error
+        self.catchup_ranges = []
 
     def search_papers(self, max_results=None):
         if self.error is not None:
@@ -59,6 +69,12 @@ class FakeCrawler:
         if max_results is None:
             return self.papers
         return self.papers[:max_results]
+
+    def search_papers_between(self, date_from, date_to):
+        self.catchup_ranges.append((date_from, date_to))
+        if self.catchup_error is not None:
+            raise self.catchup_error
+        return self.catchup_papers
 
     def save_papers(self, papers, output_file=None):
         paper_dicts = validate_papers(papers)
@@ -131,18 +147,77 @@ class UpdatePipelineTests(unittest.TestCase):
     def tracked_state(self):
         paths = [self.project_root / "README.md"]
         paths.extend(sorted((self.project_root / "data").glob("papers_*.json")))
+        archive_path = self.project_root / "data" / "paper_archive.json"
+        if archive_path.exists():
+            paths.append(archive_path)
         return {path.relative_to(self.project_root): path.read_bytes() for path in paths}
 
     def test_successfully_publishes_500_papers_and_readme(self):
         report = self.run_pipeline(FakeCrawler(papers=make_papers(500)))
 
         data_path = self.project_root / "data" / "papers_2026-07-15.json"
+        archive_path = self.project_root / "data" / "paper_archive.json"
         self.assertEqual("updated", report.status)
         self.assertEqual(500, report.paper_count)
         self.assertEqual(500, len(json.loads(data_path.read_text(encoding="utf-8"))))
-        self.assertIn("Video generation paper 0", (
+        self.assertEqual(
+            500,
+            len(json.loads(archive_path.read_text(encoding="utf-8"))),
+        )
+        self.assertIn("Video generation paper 499", (
             self.project_root / "README.md"
         ).read_text(encoding="utf-8"))
+
+    def test_bootstraps_archive_and_persists_every_catchup_paper(self):
+        snapshot_date = self.now.date() - datetime.timedelta(days=5)
+        historical = make_papers(
+            1,
+            published_date=snapshot_date.isoformat(),
+            start_index=900,
+        )
+        self.write_snapshot(snapshot_date, papers=historical)
+        crawler = FakeCrawler(
+            papers=make_papers(2, start_index=0),
+            catchup_papers=make_papers(
+                1,
+                published_date=(self.now.date() - datetime.timedelta(days=2)).isoformat(),
+                start_index=500,
+            ),
+        )
+
+        report = self.run_pipeline(crawler)
+
+        archive_path = self.project_root / "data" / "paper_archive.json"
+        archive = json.loads(archive_path.read_text(encoding="utf-8"))
+        archive_ids = {
+            normalized_arxiv_id(paper["arxiv_url"])
+            for paper in archive
+        }
+        self.assertEqual("updated", report.status)
+        self.assertEqual(
+            {"2607.00000", "2607.00001", "2607.00500", "2607.00900"},
+            archive_ids,
+        )
+        self.assertEqual([(snapshot_date, self.now.date())], crawler.catchup_ranges)
+        self.assertIn(
+            "Video generation paper 500",
+            (self.project_root / "README.md").read_text(encoding="utf-8"),
+        )
+
+    def test_catchup_failure_preserves_existing_files(self):
+        snapshot_date = self.now.date() - datetime.timedelta(days=1)
+        self.write_snapshot(snapshot_date)
+        before = self.tracked_state()
+
+        report = self.run_pipeline(
+            FakeCrawler(
+                papers=make_papers(2),
+                catchup_error=ArxivFetchError("catch-up unavailable"),
+            )
+        )
+
+        self.assertEqual("degraded", report.status)
+        self.assertEqual(before, self.tracked_state())
 
     def test_three_day_old_snapshot_degrades_without_modifying_files(self):
         self.write_snapshot(self.now.date() - datetime.timedelta(days=3))

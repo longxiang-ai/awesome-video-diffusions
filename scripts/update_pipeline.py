@@ -4,13 +4,16 @@ import os
 import tempfile
 from dataclasses import asdict, dataclass
 from pathlib import Path
-from typing import Callable, Optional
+from typing import Any, Callable, Dict, List, Optional, Sequence, Tuple
 
 from arxiv_crawler import ArxivCrawler, ArxivFetchError
 from paper_data import (
     PaperValidationError,
+    build_archive_from_snapshots,
     find_latest_valid_snapshot,
     load_papers_file,
+    merge_paper_collections,
+    normalized_arxiv_id,
     validate_papers,
 )
 from readme_generator import ReadmeGenerator
@@ -44,6 +47,7 @@ class UpdatePipeline:
         self.project_root = Path(project_root).resolve()
         self.data_dir = self.project_root / "data"
         self.readme_path = self.project_root / "README.md"
+        self.archive_path = self.data_dir / "paper_archive.json"
         self.crawler_factory = crawler_factory
         self.readme_factory = readme_factory
         self.now_fn = now_fn
@@ -72,17 +76,25 @@ class UpdatePipeline:
         else:
             path.write_bytes(content)
 
-    def _publish(self, temporary_data: Path, data_path: Path,
-                 temporary_readme: Path) -> None:
-        previous_data = data_path.read_bytes() if data_path.exists() else None
-        previous_readme = self.readme_path.read_bytes() if self.readme_path.exists() else None
+    def _publish(
+        self, replacements: Sequence[Tuple[Path, Path]]
+    ) -> None:
+        previous_contents = {
+            target: target.read_bytes() if target.exists() else None
+            for _, target in replacements
+        }
         try:
-            os.replace(temporary_data, data_path)
-            os.replace(temporary_readme, self.readme_path)
+            for temporary_path, target_path in replacements:
+                os.replace(temporary_path, target_path)
         except Exception:
-            self._restore_file(data_path, previous_data)
-            self._restore_file(self.readme_path, previous_readme)
+            for target_path, content in previous_contents.items():
+                self._restore_file(target_path, content)
             raise
+
+    def _load_archive(self) -> List[Dict[str, Any]]:
+        if self.archive_path.exists():
+            return load_papers_file(self.archive_path)
+        return build_archive_from_snapshots(self.data_dir)
 
     def _fallback_report(
         self, today: datetime.date, error: BaseException
@@ -140,9 +152,36 @@ class UpdatePipeline:
         today = now.date()
 
         try:
+            latest_snapshot = find_latest_valid_snapshot(self.data_dir)
             crawler = self.crawler_factory()
             papers = crawler.search_papers(max_results=max_results)
             paper_dicts = validate_papers(papers)
+
+            catchup_papers = []
+            if latest_snapshot is not None:
+                if latest_snapshot.date > today:
+                    raise ArxivFetchError(
+                        f"Latest snapshot date {latest_snapshot.date} is in the future"
+                    )
+                catchup_papers = crawler.search_papers_between(
+                    latest_snapshot.date,
+                    today,
+                )
+
+            existing_archive = self._load_archive()
+            existing_ids = {
+                normalized_arxiv_id(paper["arxiv_url"])
+                for paper in existing_archive
+            }
+            archive_papers = merge_paper_collections(
+                existing_archive,
+                catchup_papers,
+                paper_dicts,
+            )
+            added_to_archive = sum(
+                normalized_arxiv_id(paper["arxiv_url"]) not in existing_ids
+                for paper in archive_papers
+            )
             data_path = self.data_dir / f"papers_{today.isoformat()}.json"
 
             with tempfile.TemporaryDirectory(
@@ -150,19 +189,28 @@ class UpdatePipeline:
             ) as temporary_dir:
                 temporary_dir_path = Path(temporary_dir)
                 temporary_data = temporary_dir_path / data_path.name
+                temporary_archive = temporary_dir_path / self.archive_path.name
                 temporary_readme = temporary_dir_path / "README.md"
 
                 crawler.save_papers(papers, output_file=temporary_data)
                 load_papers_file(temporary_data)
+                crawler.save_papers(archive_papers, output_file=temporary_archive)
+                load_papers_file(temporary_archive)
                 generator = self._readme_generator()
                 generator.generate_readme(
-                    input_path=temporary_data,
+                    input_path=temporary_archive,
                     output_path=temporary_readme,
                     updated_at=now.replace(tzinfo=None),
                 )
                 if temporary_readme.stat().st_size == 0:
                     raise RuntimeError("Rendered README is empty")
-                self._publish(temporary_data, data_path, temporary_readme)
+                self._publish(
+                    [
+                        (temporary_data, data_path),
+                        (temporary_archive, self.archive_path),
+                        (temporary_readme, self.readme_path),
+                    ]
+                )
 
             report = UpdateReport(
                 status="updated",
@@ -170,7 +218,12 @@ class UpdatePipeline:
                 data_file=self._relative_path(data_path),
                 latest_data_date=today.isoformat(),
                 stale_days=0,
-                message=f"Published {len(paper_dicts)} papers from arXiv",
+                message=(
+                    f"Published {len(paper_dicts)} latest papers; "
+                    f"archive contains {len(archive_papers)} papers "
+                    f"({added_to_archive} newly archived, "
+                    f"{len(catchup_papers)} checked in catch-up range)"
+                ),
             )
         except (ArxivFetchError, PaperValidationError) as exc:
             report = self._fallback_report(today, exc)

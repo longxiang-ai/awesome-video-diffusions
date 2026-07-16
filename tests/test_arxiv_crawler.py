@@ -91,6 +91,10 @@ class ArxivCrawlerTests(unittest.TestCase):
         self.assertEqual((10, 45), self.session.calls[0][1]["timeout"])
         self.assertEqual(ARXIV_USER_AGENT, self.session.headers["User-Agent"])
         self.assertEqual([], self.sleeps)
+        self.assertEqual(
+            sorted(papers[0].keywords, key=str.casefold),
+            papers[0].keywords,
+        )
 
     def test_retries_two_503_responses_then_succeeds(self):
         crawler = self.make_crawler([
@@ -125,6 +129,35 @@ class ArxivCrawlerTests(unittest.TestCase):
         self.assertEqual(501, len(papers))
         self.assertEqual([3.0], self.sleeps)
         self.assertEqual(500, self.session.calls[1][1]["params"]["start"])
+
+    def test_catchup_query_fetches_every_result_in_inclusive_date_range(self):
+        crawler = self.make_crawler([
+            FakeResponse(content=make_feed(501, 0, 500)),
+            FakeResponse(content=make_feed(501, 500, 1)),
+        ])
+
+        papers = crawler.search_papers_between(
+            datetime.date(2026, 7, 10),
+            datetime.date(2026, 7, 15),
+        )
+
+        self.assertEqual(501, len(papers))
+        query = self.session.calls[0][1]["params"]["search_query"]
+        self.assertIn("submittedDate:[202607100000 TO 202607152359]", query)
+        self.assertEqual([3.0], self.sleeps)
+
+    def test_catchup_query_accepts_a_valid_empty_result(self):
+        crawler = self.make_crawler(
+            [FakeResponse(content=make_feed(0, 0, 0))]
+        )
+
+        papers = crawler.search_papers_between(
+            datetime.date(2026, 7, 15),
+            datetime.date(2026, 7, 15),
+        )
+
+        self.assertEqual([], papers)
+        self.assertEqual([], self.sleeps)
 
     def test_timeout_invalid_xml_and_empty_feed_never_return_empty_list(self):
         cases = [

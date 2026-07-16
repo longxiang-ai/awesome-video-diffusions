@@ -3,7 +3,7 @@ import json
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Optional
+from typing import Any, Dict, Iterable, List, Optional, Sequence
 
 
 SNAPSHOT_PATTERN = re.compile(r"papers_(\d{4}-\d{2}-\d{2})\.json$")
@@ -27,6 +27,12 @@ def _paper_dict(paper: Any) -> Dict[str, Any]:
     if callable(to_dict):
         return to_dict()
     raise PaperValidationError(f"Unsupported paper type: {type(paper).__name__}")
+
+
+def normalized_arxiv_id(arxiv_url: str) -> str:
+    """Return an arXiv ID without its version suffix."""
+    arxiv_id = arxiv_url.rstrip("/").split("/")[-1]
+    return re.sub(r"v\d+$", "", arxiv_id)
 
 
 def validate_papers(papers: Iterable[Any]) -> List[Dict[str, Any]]:
@@ -67,8 +73,7 @@ def validate_papers(papers: Iterable[Any]) -> List[Dict[str, Any]]:
                     f"Paper {index} field '{field_name}' must be a list"
                 )
 
-        arxiv_id = arxiv_url.rstrip("/").split("/")[-1]
-        normalized_id = re.sub(r"v\d+$", "", arxiv_id)
+        normalized_id = normalized_arxiv_id(arxiv_url)
         if not normalized_id:
             raise PaperValidationError(f"Paper {index} has an invalid arXiv URL")
         if normalized_id in seen_ids:
@@ -76,6 +81,31 @@ def validate_papers(papers: Iterable[Any]) -> List[Dict[str, Any]]:
         seen_ids.add(normalized_id)
 
     return paper_dicts
+
+
+def merge_paper_collections(
+    *collections: Sequence[Any],
+) -> List[Dict[str, Any]]:
+    """Merge validated paper collections, preferring later metadata."""
+    papers_by_id: Dict[str, Dict[str, Any]] = {}
+    for collection in collections:
+        if not collection:
+            continue
+        for paper in validate_papers(collection):
+            papers_by_id[normalized_arxiv_id(paper["arxiv_url"])] = paper
+
+    if not papers_by_id:
+        return []
+
+    merged = sorted(
+        papers_by_id.values(),
+        key=lambda paper: (
+            paper["published_date"],
+            normalized_arxiv_id(paper["arxiv_url"]),
+        ),
+        reverse=True,
+    )
+    return validate_papers(merged)
 
 
 def load_papers_file(path: Path) -> List[Dict[str, Any]]:
@@ -110,3 +140,21 @@ def find_latest_valid_snapshot(data_dir: Path) -> Optional[ValidSnapshot]:
             continue
         return ValidSnapshot(path=path, date=date_value, papers=papers)
     return None
+
+
+def build_archive_from_snapshots(data_dir: Path) -> List[Dict[str, Any]]:
+    """Build a deduplicated archive from all valid date-named snapshots."""
+    snapshots = []
+    for path in data_dir.glob("papers_*.json"):
+        date_value = snapshot_date(path)
+        if date_value is not None:
+            snapshots.append((date_value, path))
+
+    archive: List[Dict[str, Any]] = []
+    for _, path in sorted(snapshots):
+        try:
+            papers = load_papers_file(path)
+        except (OSError, json.JSONDecodeError, PaperValidationError):
+            continue
+        archive = merge_paper_collections(archive, papers)
+    return archive
