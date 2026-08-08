@@ -6,6 +6,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -123,7 +124,8 @@ class UpdatePipelineTests(unittest.TestCase):
             now_fn=lambda: self.now,
         )
         report_path = self.project_root / "update-report.json"
-        report = pipeline.run(report_path=report_path)
+        with mock.patch.dict(os.environ, {"GITHUB_ACTIONS": "false"}):
+            report = pipeline.run(report_path=report_path)
         saved_report = json.loads(report_path.read_text(encoding="utf-8"))
         self.assertEqual(report.to_dict(), saved_report)
         return report
