@@ -40,12 +40,16 @@ def validate_papers(papers: Iterable[Any]) -> List[Dict[str, Any]]:
         if not isinstance(paper, dict):
             raise PaperValidationError(f"Paper {index} is not an object")
 
-        title = paper.get("title")
-        arxiv_url = paper.get("arxiv_url")
-        if not isinstance(title, str) or not title.strip():
-            raise PaperValidationError(f"Paper {index} has no title")
-        if not isinstance(arxiv_url, str) or not arxiv_url.strip():
-            raise PaperValidationError(f"Paper {index} has no arXiv URL")
+        for field_name, label in (
+            ("title", "title"),
+            ("abstract", "abstract"),
+            ("arxiv_url", "arXiv URL"),
+            ("pdf_url", "PDF URL"),
+        ):
+            value = paper.get(field_name)
+            if not isinstance(value, str) or not value.strip():
+                raise PaperValidationError(f"Paper {index} has no {label}")
+        arxiv_url = paper["arxiv_url"]
 
         date_value = paper.get("published_date")
         if not isinstance(date_value, str):
@@ -62,10 +66,25 @@ def validate_papers(papers: Iterable[Any]) -> List[Dict[str, Any]]:
             )
 
         for field_name in ("authors", "categories"):
-            if not isinstance(paper.get(field_name), list):
+            value = paper.get(field_name)
+            if (
+                not isinstance(value, list)
+                or not value
+                or any(not isinstance(item, str) or not item.strip() for item in value)
+            ):
                 raise PaperValidationError(
-                    f"Paper {index} field '{field_name}' must be a list"
+                    f"Paper {index} field '{field_name}' must be a non-empty string list"
                 )
+
+        keywords = paper.get("keywords", [])
+        if not isinstance(keywords, list) or any(
+            not isinstance(keyword, str) or not keyword.strip() for keyword in keywords
+        ):
+            raise PaperValidationError(
+                f"Paper {index} field 'keywords' must be a string list"
+            )
+        if "links" in paper and not isinstance(paper["links"], dict):
+            raise PaperValidationError(f"Paper {index} field 'links' must be an object")
 
         arxiv_id = arxiv_url.rstrip("/").split("/")[-1]
         normalized_id = re.sub(r"v\d+$", "", arxiv_id)

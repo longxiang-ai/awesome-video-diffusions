@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 logging.disable(logging.CRITICAL)
 
-from arxiv_crawler import ArxivFetchError  # noqa: E402
+from arxiv_crawler import ArxivFetchError, ArxivTemporaryError  # noqa: E402
 from paper_data import (  # noqa: E402
     PaperValidationError,
     find_latest_valid_snapshot,
@@ -133,39 +133,57 @@ class UpdatePipelineTests(unittest.TestCase):
         paths.extend(sorted((self.project_root / "data").glob("papers_*.json")))
         return {path.relative_to(self.project_root): path.read_bytes() for path in paths}
 
-    def test_successfully_publishes_500_papers_and_readme(self):
-        report = self.run_pipeline(FakeCrawler(papers=make_papers(500)))
+    def test_successfully_publishes_1000_papers_and_readme(self):
+        report = self.run_pipeline(FakeCrawler(papers=make_papers(1000)))
 
         data_path = self.project_root / "data" / "papers_2026-07-15.json"
         self.assertEqual("updated", report.status)
-        self.assertEqual(500, report.paper_count)
-        self.assertEqual(500, len(json.loads(data_path.read_text(encoding="utf-8"))))
+        self.assertEqual(1000, report.paper_count)
+        self.assertEqual(1000, len(json.loads(data_path.read_text(encoding="utf-8"))))
         self.assertIn("Video generation paper 0", (
             self.project_root / "README.md"
         ).read_text(encoding="utf-8"))
 
-    def test_three_day_old_snapshot_degrades_without_modifying_files(self):
-        self.write_snapshot(self.now.date() - datetime.timedelta(days=3))
+    def test_ten_day_old_snapshot_survives_ten_temporary_failures(self):
+        self.write_snapshot(self.now.date() - datetime.timedelta(days=10))
         before = self.tracked_state()
 
-        report = self.run_pipeline(
-            FakeCrawler(error=ArxivFetchError("arXiv unavailable"))
-        )
+        for _ in range(10):
+            report = self.run_pipeline(
+                FakeCrawler(error=ArxivTemporaryError("arXiv unavailable"))
+            )
 
-        self.assertEqual("degraded", report.status)
-        self.assertEqual(3, report.stale_days)
+        self.assertEqual("temporary_failure", report.status)
+        self.assertEqual(10, report.stale_days)
         self.assertEqual(before, self.tracked_state())
 
-    def test_four_day_old_snapshot_fails_without_modifying_files(self):
-        self.write_snapshot(self.now.date() - datetime.timedelta(days=4))
+    def test_empty_result_preserves_snapshot_without_modifying_files(self):
+        self.write_snapshot(self.now.date() - datetime.timedelta(days=12))
         before = self.tracked_state()
 
+        report = self.run_pipeline(FakeCrawler(papers=[]))
+
+        self.assertEqual("no_results", report.status)
+        self.assertEqual(12, report.stale_days)
+        self.assertEqual(before, self.tracked_state())
+
+    def test_temporary_failure_without_snapshot_fails(self):
         report = self.run_pipeline(
-            FakeCrawler(error=ArxivFetchError("arXiv unavailable"))
+            FakeCrawler(error=ArxivTemporaryError("arXiv unavailable"))
         )
 
         self.assertEqual("failed", report.status)
-        self.assertEqual(4, report.stale_days)
+        self.assertIn("no valid historical snapshot", report.message)
+
+    def test_fatal_fetch_error_does_not_fall_back(self):
+        self.write_snapshot(self.now.date() - datetime.timedelta(days=1))
+        before = self.tracked_state()
+
+        report = self.run_pipeline(
+            FakeCrawler(error=ArxivFetchError("invalid XML"))
+        )
+
+        self.assertEqual("failed", report.status)
         self.assertEqual(before, self.tracked_state())
 
     def test_corrupt_newest_snapshot_is_skipped(self):
@@ -176,10 +194,10 @@ class UpdatePipelineTests(unittest.TestCase):
         )
 
         report = self.run_pipeline(
-            FakeCrawler(error=ArxivFetchError("arXiv unavailable"))
+            FakeCrawler(error=ArxivTemporaryError("arXiv unavailable"))
         )
 
-        self.assertEqual("degraded", report.status)
+        self.assertEqual("temporary_failure", report.status)
         self.assertEqual(valid_date.isoformat(), report.latest_data_date)
 
     def test_snapshot_selection_uses_filename_date_not_mtime(self):

@@ -6,8 +6,16 @@ A curated list of latest research papers, projects and resources related to Vide
 
 ## 📰 Latest Updates
 
+🔧 **[2026-08-08] Resilient Scheduled Updates**
+- Temporary arXiv rate limits, server errors, and timeouts now preserve the latest valid data and finish with a warning
+- Added stable search exit codes, atomic publication, strict JSON validation, and fallback to any valid historical snapshot
+
+🔎 **[2026-08-08] Broader and More Accurate Video Indexing**
+- Expanded coverage to 1,000 relevant papers across diffusion, flow matching, autoregressive generation, world models, editing, enhancement, and audio-video generation
+- Added broader arXiv domains, local relevance filtering, and boundary-aware category matching for acronyms such as DiT, T2V, I2V, and V2V
+
 🚀 **[2026-02] Project Launched — v1.0**
-- Adapted from [awesome-gaussians](https://github.com/limingwei/awesome-gaussians) framework for tracking video diffusion research
+- Adapted from [awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians) framework for tracking video diffusion research
 - **Unified CLI**: Single entry point `python main.py` with subcommands: `init`, `search`, `suggest`, `export-bib`, `readme`
 - **Interactive Configuration Wizard**: Run `python main.py init` to set up keywords, domains, time range, and API keys step-by-step
 - **Custom Time Range Filtering**: Support relative periods (`6m`, `1y`, `2y`) and absolute date ranges
@@ -176,16 +184,16 @@ All settings are stored in `data/user_config.json`:
 {
   "search": {
     "keywords": {
-      "both_abstract_and_title": ["video diffusion", "video generation", "text-to-video"],
-      "abstract_only": ["diffusion model video generation"],
-      "title_only": ["video generation", "video diffusion"]
+      "both_abstract_and_title": ["video diffusion", "video generation", "text-to-video", "video-to-video"],
+      "abstract_only": ["diffusion-based video generation", "flow-based video generation"],
+      "title_only": ["world foundation model", "world simulator", "video tokenizer"]
     },
-    "domains": ["cs.CV", "cs.AI", "cs.MM"],
+    "domains": ["cs.CV", "cs.AI", "cs.MM", "cs.LG", "cs.RO", "cs.GR", "eess.IV"],
     "time_range": {
       "mode": "relative",
       "relative": "1y"
     },
-    "max_results": 500
+    "max_results": 1000
   },
   "api_keys": {
     "openai_api_key": "",

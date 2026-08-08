@@ -15,7 +15,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
 
     steps:
       - name: 检出代码
@@ -72,7 +72,31 @@ jobs:
           print(f"- Latest data date: `{report['latest_data_date'] or 'none'}`")
           print(f"- Stale days: `{report['stale_days'] if report['stale_days'] is not None else 'unknown'}`")
           print(f"- Message: {report['message']}")
+          if report["status"] in {"no_results", "temporary_failure"}:
+              print("\n> [!WARNING]")
+              print("> Existing paper data was preserved; README and commit were skipped.")
           PY
+
+      - name: 验证新论文数据
+        if: steps.update.outputs.status == 'updated'
+        env:
+          REPORT_PATH: ${{ runner.temp }}/update-report.json
+        run: |
+          data_file=$(jq -r '.data_file // empty' "$REPORT_PATH")
+          test -n "$data_file"
+          test -f "$data_file"
+          jq -e '
+            type == "array" and length > 0 and
+            all(.[];
+              (.title | type == "string" and length > 0) and
+              (.abstract | type == "string" and length > 0) and
+              (.arxiv_url | type == "string" and length > 0) and
+              (.pdf_url | type == "string" and length > 0) and
+              (.published_date | type == "string" and test("^[0-9]{4}-[0-9]{2}-[0-9]{2}$")) and
+              (.authors | type == "array" and length > 0) and
+              (.categories | type == "array" and length > 0)
+            )
+          ' "$data_file"
 
       - name: 检查是否有更改
         id: verify-changed-files

@@ -12,7 +12,7 @@ Usage:
 
 Examples:
     python main.py init
-    python main.py search --max-results 500 --recent 6m --bibtex
+    python main.py search --max-results 1000 --recent 6m --bibtex
     python main.py suggest --titles "Video Diffusion Models" "Stable Video Diffusion" --apply
     python main.py suggest --arxiv-ids 2204.03458 2311.15127 --apply
     python main.py export-bib --output output/references.bib --category "Text-to-Video Generation"
@@ -36,22 +36,38 @@ def cmd_init(args):
 
 def cmd_search(args):
     """Run arXiv paper search."""
-    from arxiv_crawler import ArxivCrawler
-
-    crawler = ArxivCrawler(
-        fetch_citations=args.citations,
-        fetch_bibtex=args.bibtex,
-        date_from=args.date_from,
-        date_to=args.date_to,
-        recent=args.recent
+    from arxiv_crawler import (
+        ArxivCrawler,
+        ArxivTemporaryError,
+        EXIT_NO_RESULTS,
+        EXIT_TEMPORARY_FAILURE,
     )
+
     try:
+        crawler = ArxivCrawler(
+            fetch_citations=args.citations,
+            fetch_bibtex=args.bibtex,
+            date_from=args.date_from,
+            date_to=args.date_to,
+            recent=args.recent
+        )
         papers = crawler.search_papers(max_results=args.max_results)
+        if not papers:
+            print("SEARCH_STATUS=no_results")
+            print("[WARN] arXiv returned no relevant papers; existing data was preserved.")
+            return EXIT_NO_RESULTS
         crawler.save_papers(papers)
+        print("SEARCH_STATUS=updated")
         print(f"\n[OK] Saved {len(papers)} papers.")
+        return 0
+    except ArxivTemporaryError as exc:
+        print("SEARCH_STATUS=temporary_failure")
+        print(f"[WARN] Temporary arXiv failure; existing data was preserved: {exc}")
+        return EXIT_TEMPORARY_FAILURE
     except Exception as e:
+        print("SEARCH_STATUS=error")
         print(f"[ERROR] Search failed: {e}")
-        sys.exit(1)
+        return 1
 
 
 def cmd_update(args):
@@ -62,7 +78,8 @@ def cmd_update(args):
     report = pipeline.run(report_path=args.report, max_results=args.max_results)
     print(f"[{report.status.upper()}] {report.message}")
     if report.status == "failed":
-        sys.exit(1)
+        return 1
+    return 0
 
 
 def cmd_suggest(args):
@@ -240,7 +257,9 @@ def main():
         print("\nTip: Run 'python main.py init' to get started!")
         sys.exit(0)
 
-    args.func(args)
+    result = args.func(args)
+    if isinstance(result, int):
+        sys.exit(result)
 
 
 if __name__ == "__main__":

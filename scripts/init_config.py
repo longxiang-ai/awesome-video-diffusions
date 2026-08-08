@@ -21,8 +21,11 @@ ARXIV_DOMAINS = {
     "cs.CL": "Computation and Language",
     "cs.RO": "Robotics",
     "cs.MM": "Multimedia",
+    "cs.HC": "Human-Computer Interaction",
+    "cs.SD": "Sound",
     "cs.NE": "Neural and Evolutionary Computing",
     "eess.IV": "Image and Video Processing",
+    "eess.AS": "Audio and Speech Processing",
     "eess.SP": "Signal Processing",
     "stat.ML": "Machine Learning (Statistics)",
 }
@@ -41,7 +44,7 @@ DEFAULT_CONFIG = {
             "start_date": None,
             "end_date": None
         },
-        "max_results": 500
+        "max_results": 1000
     },
     "categories": {
         "description": "Custom category keywords (merged with data/keywords.json). Leave empty to use defaults only.",
@@ -223,7 +226,7 @@ def step_max_results(config: dict):
     print("  Step 4: Max Results")
     print("=" * 60)
 
-    current = config.get("search", {}).get("max_results", 500)
+    current = config.get("search", {}).get("max_results", 1000)
     val = prompt_input(f"Maximum number of papers to fetch", str(current))
     try:
         config.setdefault("search", {})["max_results"] = int(val)
@@ -295,7 +298,7 @@ def run_init():
         print(f"  Time range:          {tr.get('start_date')} to {tr.get('end_date')}")
     else:
         print(f"  Time range:          No filter")
-    print(f"  Max results:         {search.get('max_results', 500)}")
+    print(f"  Max results:         {search.get('max_results', 1000)}")
     api = config.get("api_keys", {})
     has_key = bool(api.get("openai_api_key"))
     print(f"  API key:             {'Configured' if has_key else 'Not configured'}")

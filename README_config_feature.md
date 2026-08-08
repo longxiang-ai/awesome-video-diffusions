@@ -97,7 +97,7 @@ python scripts/arxiv_crawler.py --max-results 10
 
 1. **Windows 兼容性**: 修复了 `test_workflow.py` 中的 `python3` 命令在 Windows 上的兼容性问题
 2. **API 错误处理**: 改进了 arXiv API 的错误处理，当遇到空页面时正常完成而不是失败
-3. **默认参数调整**: 将默认最大结果数量从 10000 调整为 500，避免频繁触发 API 限制
+3. **默认参数调整**: 最多保存 1000 篇通过相关性过滤的论文，arXiv API 每页请求 500 篇并按需分页
 
 ## 测试验证
 

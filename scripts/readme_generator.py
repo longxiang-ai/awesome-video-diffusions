@@ -10,6 +10,7 @@ from utils.logger import setup_logger
 from collections import defaultdict
 import argparse
 from paper_data import find_latest_valid_snapshot, load_papers_file, validate_papers
+from text_matching import contains_phrase
 
 class ReadmeGenerator:
     def __init__(self, data_dir: Path = Path("data"),
@@ -87,13 +88,13 @@ class ReadmeGenerator:
         return papers_by_month
 
     def _extract_keywords(self, abstract: str, title: str) -> List[str]:
-        """Extract keywords from abstract and title"""
+        """Extract boundary-aware keywords from abstract and title."""
         keywords = []
-        text = (abstract + " " + title).lower()
+        text = abstract + " " + title
 
         # Check each common keyword
         for keyword in self.common_keywords:
-            if keyword.lower() in text:
+            if contains_phrase(text, keyword):
                 keywords.append(keyword)
 
         return keywords
@@ -191,15 +192,16 @@ class ReadmeGenerator:
         """Categorize paper based on its keywords and title"""
         categories = set()
 
-        # Convert paper title and keywords to lowercase for matching
-        title = paper["title"].lower()
-        keywords = [k.lower() for k in paper["keywords"]] if paper["keywords"] else []
+        title = paper["title"]
+        keyword_text = " ".join(paper["keywords"] or [])
 
         # Check each category's keywords
         for category, category_info in self.keyword_categories.items():
             category_keywords = category_info["keywords"]
             for keyword in category_keywords:
-                if keyword.lower() in title or any(keyword.lower() in k for k in keywords):
+                if contains_phrase(title, keyword) or contains_phrase(
+                    keyword_text, keyword
+                ):
                     categories.add(category)
 
         return list(categories)
