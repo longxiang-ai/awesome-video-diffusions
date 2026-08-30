@@ -2,7 +2,7 @@
 
 A curated list of latest research papers, projects and resources related to Video Diffusion Models and Video Generation. Content is automatically updated daily.
 
-> Last Update: 2026-08-28 09:53:19
+> Last Update: 2026-08-30 03:57:02
 
 ## 📰 Latest Updates
 
