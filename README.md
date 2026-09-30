@@ -2,9 +2,14 @@
 
 A curated list of latest research papers, projects and resources related to Video Diffusion Models and Video Generation. Content is automatically updated daily.
 
+🗺️ **[Explore the Paper Atlas](https://longxiang-ai.github.io/awesome-video-diffusions/)**: an interactive paper map, monthly trends, topic network, co-author network and author rankings of every tracked paper.
+
 > Last Update: 2026-09-30 04:16:23
 
 ## 📰 Latest Updates
+
+🗺️ **[2026-09-30] Paper Atlas on GitHub Pages**
+- New [interactive site](https://longxiang-ai.github.io/awesome-video-diffusions/) built from all daily snapshots, rebuilt after every update
 
 🔧 **[2026-08-08] Resilient Scheduled Updates**
 - Temporary arXiv rate limits, server errors, and timeouts now preserve the latest valid data and finish with a warning

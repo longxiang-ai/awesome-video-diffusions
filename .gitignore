@@ -40,3 +40,6 @@ output/
 # OS
 .DS_Store
 Thumbs.db
+
+# GitHub Pages build output
+_site/
