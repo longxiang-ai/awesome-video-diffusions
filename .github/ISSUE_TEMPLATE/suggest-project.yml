@@ -1,0 +1,34 @@
+name: Suggest an open-source project or tutorial
+description: Public code (models, frameworks, toolkits) or a tutorial about video diffusion research.
+title: "[Project] "
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: The public code repository, or the tutorial or blog post.
+      placeholder: https://github.com/...
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: One or two sentences on what it does.
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: The code is publicly available under an open-source license, or this is a free tutorial.
+          required: true
+        - label: This is not a commercial product, paid service, or promotional link.
+          required: true

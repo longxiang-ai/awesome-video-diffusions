@@ -1,0 +1,46 @@
+name: Suggest a paper
+description: A research paper on video diffusion or video generation that the list is missing.
+title: "[Paper] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Most papers are collected from arXiv automatically every day. Please suggest papers the crawler missed, such as conference-only papers or papers outside the search keywords.
+  - type: input
+    id: title
+    attributes:
+      label: Paper title
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Paper link
+      description: arXiv, OpenReview, or the venue's page.
+      placeholder: https://arxiv.org/abs/...
+    validations:
+      required: true
+  - type: input
+    id: code
+    attributes:
+      label: Code link (optional)
+      placeholder: https://github.com/...
+  - type: input
+    id: venue
+    attributes:
+      label: Venue and year (optional)
+      placeholder: CVPR 2026
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it fits
+      description: One or two sentences on what the paper does and which topic it belongs to.
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: This is a research paper, not a commercial product or service.
+          required: true

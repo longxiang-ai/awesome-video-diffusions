@@ -1,0 +1,10 @@
+name: Report a problem
+description: Something wrong with the list, the Paper Atlas website, or the update workflow.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+      description: Include links, screenshots, or error messages if you have them.
+    validations:
+      required: true

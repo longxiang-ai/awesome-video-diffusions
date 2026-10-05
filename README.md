@@ -956,7 +956,14 @@ All settings are stored in `data/user_config.json`:
 ```
 
 ## Contribution Guidelines
-Feel free to submit Pull Requests to improve this list! Please follow these formats:
+Suggestions are welcome through [Issues](https://github.com/longxiang-ai/awesome-video-diffusions/issues/new/choose) or Pull Requests. This list covers:
+- **Research papers** on video diffusion and video generation (arXiv or peer-reviewed venues). Most papers are collected automatically every day, so please suggest ones the crawler missed.
+- **Open-source projects** with public code, such as models, training frameworks and toolkits.
+- **Tutorials and blog posts** that explain the research.
+
+Commercial products, paid services and promotional links are out of scope, and issues suggesting them will be closed.
+
+Please follow these formats:
 - Paper entry format: `**[Paper Title](link)** - Brief description`
 - Project entry format: `[Project Name](link) - Project description`
 
