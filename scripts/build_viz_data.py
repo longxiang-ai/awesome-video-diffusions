@@ -36,6 +36,19 @@ SITE = {
     "subject": "video diffusion and video generation",
     "search_hint": "e.g. world model, talking head, an author",
     "repo": "longxiang-ai/awesome-video-diffusions",
+    # Translations of the fields above for the page's language menu (site/i18n.js holds the rest of the UI).
+    "i18n": {
+        "zh": {
+            "title": "视频扩散论文图谱",
+            "subject": "视频扩散与视频生成",
+            "search_hint": "例如 world model、talking head、作者名",
+        },
+        "ja": {
+            "title": "動画拡散モデル論文アトラス",
+            "subject": "動画拡散モデル・動画生成",
+            "search_hint": "例：world model、talking head、著者名",
+        },
+    },
 }
 # Words nearly every paper in this field shares; they carry no signal for the map.
 DOMAIN_STOP_WORDS = {
