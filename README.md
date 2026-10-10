@@ -4,7 +4,7 @@ A curated list of latest research papers, projects and resources related to Vide
 
 🗺️ **[Explore the Paper Atlas](https://longxiang-ai.github.io/awesome-video-diffusions/)**: an interactive paper map, monthly trends, topic network, co-author network and author rankings of every tracked paper.
 
-> Last Update: 2026-10-09 04:50:48
+> Last Update: 2026-10-10 04:36:16
 
 ## 📰 Latest Updates
 
